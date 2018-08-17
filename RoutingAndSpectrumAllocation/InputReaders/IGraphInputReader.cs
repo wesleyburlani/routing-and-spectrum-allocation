@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 namespace RoutingAndSpectrumAllocation.InputReaders
 {
-    public interface IInputReader
+    public interface IGraphInputReader
     {
         List<GraphLink> GetLinks(string path);
         List<GraphNode> GetNodes(string path);

@@ -9,13 +9,14 @@ namespace RoutingAndSpectrumAllocation
         const char CsvColumnSeparator = ',';
         const string ReadNodesPath = @"Data\arnes_nodes.csv";
         const string ReadLinksPath = @"Data\arnes_links.csv";
+        const string ReadDemandPath = @"Data\arnes_demand.csv";
 
         static void Main(string[] args)
         {
             ServiceCollection serviceCollection = new ServiceCollection();
 
             serviceCollection.AddSingleton<IRoutingAndSpectrumAllocation, RoutingAndSpectrumAllocation>();
-            serviceCollection.AddScoped<IInputReader>(c => new CsvInputReader(CsvLineSeparator, CsvColumnSeparator));
+            serviceCollection.AddScoped<IGraphInputReader>(c => new CsvGraphInputReader(CsvLineSeparator, CsvColumnSeparator));
 
             var serviceProvider = serviceCollection.BuildServiceProvider();
 

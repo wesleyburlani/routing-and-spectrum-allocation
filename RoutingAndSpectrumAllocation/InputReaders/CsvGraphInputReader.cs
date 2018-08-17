@@ -7,12 +7,12 @@ using System.Linq;
 
 namespace RoutingAndSpectrumAllocation.InputReaders
 {
-    public class CsvInputReader : IInputReader
+    public class CsvGraphInputReader : IGraphInputReader
     {
         private char CsvLineSeparator { get; set; }
         private char CsvColumnSeparator { get; set; }
 
-        public CsvInputReader(char csvLineSeparator = '\n', char csvColumnSeparator = ',')
+        public CsvGraphInputReader(char csvLineSeparator = '\n', char csvColumnSeparator = ',')
         {
             CsvLineSeparator = csvLineSeparator;
             CsvColumnSeparator = csvColumnSeparator;
@@ -56,6 +56,6 @@ namespace RoutingAndSpectrumAllocation.InputReaders
         {
             string csv = File.ReadAllText(path);
             return csv;
-        }
+        } 
     }
 }
