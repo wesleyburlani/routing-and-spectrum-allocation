@@ -40,7 +40,7 @@ namespace RoutingAndSpectrumAllocation.InputReaders
             List<string> csvLines = csv.Split(CsvLineSeparator).ToList();
             List<string> fieldNames = csvLines.First().Split(CsvColumnSeparator).ToList();
 
-            foreach(string line in csvLines.Skip(1))
+            foreach(string line in csvLines.Skip(1).Where(r => string.IsNullOrEmpty(r) == false))
             {
                 List<string> lineColumns = line.Split(CsvColumnSeparator).ToList();
                 JObject element = new JObject();

@@ -7,6 +7,8 @@ namespace RoutingAndSpectrumAllocation
     {
         const char CsvLineSeparator = '\n';
         const char CsvColumnSeparator = ',';
+        const string ReadNodesPath = @"Data\arnes_nodes.csv";
+        const string ReadLinksPath = @"Data\arnes_links.csv";
 
         static void Main(string[] args)
         {
@@ -18,6 +20,7 @@ namespace RoutingAndSpectrumAllocation
             var serviceProvider = serviceCollection.BuildServiceProvider();
 
             var routingAndSpectrumAllocation = serviceProvider.GetService<IRoutingAndSpectrumAllocation>();
+            routingAndSpectrumAllocation.Start(ReadNodesPath, ReadLinksPath);
         }
     }
 }

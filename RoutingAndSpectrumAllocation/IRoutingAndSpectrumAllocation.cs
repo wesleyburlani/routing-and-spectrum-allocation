@@ -1,10 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace RoutingAndSpectrumAllocation
+﻿namespace RoutingAndSpectrumAllocation
 {
     interface IRoutingAndSpectrumAllocation
     {
+        void Start(string readNodesPath, string readLinksPath);
     }
 }
