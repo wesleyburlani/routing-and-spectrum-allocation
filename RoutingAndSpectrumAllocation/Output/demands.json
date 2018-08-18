@@ -1,0 +1,288 @@
+{
+  "Nodes": [
+    {
+      "Id": "Celje",
+      "Lat": 46.29,
+      "Long": 15.27,
+      "Type": "EOCC"
+    },
+    {
+      "Id": "Koper",
+      "Lat": 45.478,
+      "Long": 13.526,
+      "Type": "EOCC"
+    },
+    {
+      "Id": "NovaGorica",
+      "Lat": 45.935,
+      "Long": 13.617,
+      "Type": "EOCC"
+    },
+    {
+      "Id": "Ajdovscina",
+      "Lat": 45.824,
+      "Long": 13.965,
+      "Type": "EOCC"
+    },
+    {
+      "Id": "Kranj",
+      "Lat": 46.2507,
+      "Long": 14.3599,
+      "Type": "EOCC"
+    },
+    {
+      "Id": "Bled",
+      "Lat": 46.231,
+      "Long": 14.057,
+      "Type": "EOCC"
+    },
+    {
+      "Id": "Tolmin",
+      "Lat": 46.153,
+      "Long": 13.679,
+      "Type": "EOCC"
+    },
+    {
+      "Id": "Ljubljana",
+      "Lat": 45.999,
+      "Long": 14.512,
+      "Type": "EOCC"
+    },
+    {
+      "Id": "Kosevje",
+      "Lat": 45.598,
+      "Long": 14.696,
+      "Type": "EOCC"
+    },
+    {
+      "Id": "NovoMesto",
+      "Lat": 45.7,
+      "Long": 15.05,
+      "Type": "EOCC"
+    },
+    {
+      "Id": "Krki",
+      "Lat": 45.86,
+      "Long": 15.4,
+      "Type": "EOCC"
+    },
+    {
+      "Id": "Trbovlje",
+      "Lat": 46.058,
+      "Long": 15.032,
+      "Type": "EOCC"
+    },
+    {
+      "Id": "Lasko",
+      "Lat": 46.128,
+      "Long": 15.249,
+      "Type": "EOCC"
+    },
+    {
+      "Id": "Velenje",
+      "Lat": 46.4,
+      "Long": 15.097,
+      "Type": "EOCC"
+    },
+    {
+      "Id": "Dravograd",
+      "Lat": 46.586,
+      "Long": 14.994,
+      "Type": "EOCC"
+    },
+    {
+      "Id": "SBistrika",
+      "Lat": 46.363,
+      "Long": 15.53,
+      "Type": "EOCC"
+    },
+    {
+      "Id": "Maribor",
+      "Lat": 46.554,
+      "Long": 15.641,
+      "Type": "EOCC"
+    }
+  ],
+  "Links": [
+    {
+      "From": "Koper",
+      "To": "Ljubljana",
+      "Length": 100.165198199944,
+      "Capacity": 50,
+      "Cost": 0,
+      "Designation": "[Koper<->Ljubljana(1)]",
+      "Delay": "FIBER"
+    },
+    {
+      "From": "Ljubljana",
+      "To": "Kranj",
+      "Length": 24.3136621472108,
+      "Capacity": 50,
+      "Cost": 0,
+      "Designation": "[Ljubljana<->Kranj(1)]",
+      "Delay": "FIBER"
+    },
+    {
+      "From": "Kranj",
+      "To": "Bled",
+      "Length": 23.4236612626371,
+      "Capacity": 50,
+      "Cost": 0,
+      "Designation": "[Kranj<->Bled(1)]",
+      "Delay": "FIBER"
+    },
+    {
+      "From": "Bled",
+      "To": "Tolmin",
+      "Length": 30.3953335345456,
+      "Capacity": 50,
+      "Cost": 0,
+      "Designation": "[Bled<->Tolmin(1)]",
+      "Delay": "FIBER"
+    },
+    {
+      "From": "Tolmin",
+      "To": "NovaGorica",
+      "Length": 24.7359732665446,
+      "Capacity": 50,
+      "Cost": 0,
+      "Designation": "[Tolmin<->NovaGorica(1)]",
+      "Delay": "FIBER"
+    },
+    {
+      "From": "NovaGorica",
+      "To": "Ajdovscina",
+      "Length": 32.3368532181994,
+      "Capacity": 50,
+      "Cost": 0,
+      "Designation": "[NovaGorica<->Ajdovscina(1)]",
+      "Delay": "FIBER"
+    },
+    {
+      "From": "Ajdovscina",
+      "To": "Koper",
+      "Length": 53.3566652255639,
+      "Capacity": 50,
+      "Cost": 0,
+      "Designation": "[Ajdovscina<->Koper(1)]",
+      "Delay": "FIBER"
+    },
+    {
+      "From": "Ljubljana",
+      "To": "Celje",
+      "Length": 61.5770244007412,
+      "Capacity": 50,
+      "Cost": 0,
+      "Designation": "[Ljubljana<->Celje(1)]",
+      "Delay": "FIBER"
+    },
+    {
+      "From": "Celje",
+      "To": "Velenje",
+      "Length": 22.1366133805382,
+      "Capacity": 50,
+      "Cost": 0,
+      "Designation": "[Celje<->Velenje(1)]",
+      "Delay": "FIBER"
+    },
+    {
+      "From": "Velenje",
+      "To": "Dravograd",
+      "Length": 22.159055076486,
+      "Capacity": 50,
+      "Cost": 0,
+      "Designation": "[Velenje<->Dravograd(1)]",
+      "Delay": "FIBER"
+    },
+    {
+      "From": "Dravograd",
+      "To": "Maribor",
+      "Length": 49.6418188273287,
+      "Capacity": 50,
+      "Cost": 0,
+      "Designation": "[Dravograd<->Maribor(1)]",
+      "Delay": "FIBER"
+    },
+    {
+      "From": "Maribor",
+      "To": "SBistrika",
+      "Length": 22.9026081902097,
+      "Capacity": 50,
+      "Cost": 0,
+      "Designation": "[Maribor<->SBistrika(1)]",
+      "Delay": "FIBER"
+    },
+    {
+      "From": "SBistrika",
+      "To": "Celje",
+      "Length": 24.551409343466,
+      "Capacity": 50,
+      "Cost": 0,
+      "Designation": "[SBistrika<->Celje(1)]",
+      "Delay": "FIBER"
+    },
+    {
+      "From": "Celje",
+      "To": "Lasko",
+      "Length": 18.8775317562317,
+      "Capacity": 50,
+      "Cost": 0,
+      "Designation": "[Celje<->Lasko(1)]",
+      "Delay": "FIBER"
+    },
+    {
+      "From": "Lasko",
+      "To": "Trbovlje",
+      "Length": 10.7143352948188,
+      "Capacity": 50,
+      "Cost": 0,
+      "Designation": "[Lasko<->Trbovlje(1)]",
+      "Delay": "FIBER"
+    },
+    {
+      "From": "Trbovlje",
+      "To": "Ljubljana",
+      "Length": 40.270428376563,
+      "Capacity": 50,
+      "Cost": 0,
+      "Designation": "[Trbovlje<->Ljubljana(1)]",
+      "Delay": "FIBER"
+    },
+    {
+      "From": "SBistrika",
+      "To": "Krki",
+      "Length": 64.9341793186089,
+      "Capacity": 50,
+      "Cost": 0,
+      "Designation": "[SBistrika<->Krki(1)]",
+      "Delay": "FIBER"
+    },
+    {
+      "From": "Krki",
+      "To": "NovoMesto",
+      "Length": 27.3778482714203,
+      "Capacity": 50,
+      "Cost": 0,
+      "Designation": "[Krki<->NovoMesto(1)]",
+      "Delay": "FIBER"
+    },
+    {
+      "From": "NovoMesto",
+      "To": "Kosevje",
+      "Length": 46.0192031964808,
+      "Capacity": 50,
+      "Cost": 0,
+      "Designation": "[NovoMesto<->Kosevje(1)]",
+      "Delay": "FIBER"
+    },
+    {
+      "From": "Kosevje",
+      "To": "Ljubljana",
+      "Length": 60.0110455238066,
+      "Capacity": 50,
+      "Cost": 0,
+      "Designation": "[Kosevje<->Ljubljana(1)]",
+      "Delay": "FIBER"
+    }
+  ]
+}

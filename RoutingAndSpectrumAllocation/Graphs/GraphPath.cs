@@ -4,6 +4,6 @@ namespace RoutingAndSpectrumAllocation.Graphs
 {
     public class GraphPath
     {
-        public List<string> Path { get; set; }
+        public List<string> Path = new List<string>();
     }
 }

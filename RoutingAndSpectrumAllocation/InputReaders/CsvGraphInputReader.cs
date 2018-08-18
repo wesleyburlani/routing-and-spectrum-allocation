@@ -45,7 +45,7 @@ namespace RoutingAndSpectrumAllocation.InputReaders
                 List<string> lineColumns = line.Split(CsvColumnSeparator).ToList();
                 JObject element = new JObject();
                 for(int column = 0; column < lineColumns.Count(); column++)
-                    element[fieldNames[column]] = line[column];
+                    element[fieldNames[column].ToString()] = lineColumns[column];
                 json.Add(element);
             }
 

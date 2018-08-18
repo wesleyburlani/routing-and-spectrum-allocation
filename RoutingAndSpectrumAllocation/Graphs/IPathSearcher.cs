@@ -1,7 +1,9 @@
-﻿namespace RoutingAndSpectrumAllocation.Graphs
+﻿using System.Collections.Generic;
+
+namespace RoutingAndSpectrumAllocation.Graphs
 {
     public interface IPathSearcher
     {
-        GraphPath GetPath(Graph graph, GraphNode nodeFrom, GraphNode nodeTo);
+        List<GraphPath> GetPaths(Graph graph, GraphNode nodeFrom, GraphNode nodeTo, int numberOfPaths);
     }
 }

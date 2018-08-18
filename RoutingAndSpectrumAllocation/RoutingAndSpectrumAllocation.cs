@@ -50,25 +50,18 @@ namespace RoutingAndSpectrumAllocation
         { 
             foreach(Demand demand in demands)
             {
-                GraphNode nodeFrom = graph.Nodes.First(r => r.Id == demand.NodeIdFrom);
-                GraphNode nodeTo = graph.Nodes.First(r => r.Id == demand.NodeIdTo);
+                GraphNode nodeFrom = graph.Nodes.FirstOrDefault(r => r.Id == demand.NodeIdFrom);
+                GraphNode nodeTo = graph.Nodes.FirstOrDefault(r => r.Id == demand.NodeIdTo);
 
-                GraphPath path = PathSearcher.GetPath(graph, nodeFrom, nodeTo);
+                List<GraphPath> path = PathSearcher.GetPaths(graph, nodeFrom, nodeTo, 1);
 
-                if (path == null)
+                if (path.Count() == 0)
                 {
                     InfoLogger.LogInformation($"path from {demand.NodeIdFrom} to {demand.NodeIdTo} not found.");
                     continue;
                 }
 
-                
-
-                if (path is null)
-                {
-                    InfoLogger.LogInformation($"Demand of {demand.Slots} slots " +
-                        $"from {demand.NodeIdFrom} to {demand.NodeIdTo} can not be supplied.");
-                    continue;
-                }
+                InfoLogger.LogInformation("ok");
 
 
             }
