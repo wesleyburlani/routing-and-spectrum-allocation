@@ -4,7 +4,7 @@ using System.Threading.Tasks;
 
 namespace RoutingAndSpectrumAllocation.Loggers
 {
-    public class JsonFileLogger : IStorageLogger
+    public class JsonFileLogger : ILogger
     {
         string FileLoggingPath { get; set; }
 

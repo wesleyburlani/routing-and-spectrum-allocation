@@ -2,6 +2,7 @@
 using RoutingAndSpectrumAllocation.Loggers;
 using RoutingAndSpectrumAllocation.InputReaders;
 using RoutingAndSpectrumAllocation.Graphs;
+using RoutingAndSpectrumAllocation.RSA;
 
 namespace RoutingAndSpectrumAllocation
 {
@@ -18,14 +19,17 @@ namespace RoutingAndSpectrumAllocation
             ServiceCollection serviceCollection = new ServiceCollection();
 
             serviceCollection.AddSingleton<IRoutingAndSpectrumAllocation, RoutingAndSpectrumAllocation>();
-            serviceCollection.AddScoped<IInfoLogger, InfoLogger>();
-            serviceCollection.AddScoped<IStorageLogger>(c => new JsonFileLogger(LogPath));
+            serviceCollection.AddScoped<IProgramLogger>(c => new FileProgramLogger(LogPath));
+            //serviceCollection.AddScoped<IProgramLogger, NullFileProgramLogger>();
+            serviceCollection.AddScoped<ILogger>(c => new JsonFileLogger(LogPath));
+            serviceCollection.AddScoped<IRSATableFill, FirstFitRSATableFill>();
             serviceCollection.AddScoped<IGraphInputReader>(c => new CsvGraphInputReader(CsvLineSeparator, CsvColumnSeparator));
             serviceCollection.AddScoped<IPathSearcher, Dijkstra>();
             var serviceProvider = serviceCollection.BuildServiceProvider();
 
             var routingAndSpectrumAllocation = serviceProvider.GetService<IRoutingAndSpectrumAllocation>();
-            routingAndSpectrumAllocation.Start(ReadNodesPath, ReadLinksPath).Wait();
+            routingAndSpectrumAllocation.Start(ReadNodesPath, ReadLinksPath, 8).Wait();
+           
         }
     }
 }

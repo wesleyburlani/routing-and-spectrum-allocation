@@ -2,7 +2,7 @@
 
 namespace RoutingAndSpectrumAllocation.Loggers
 {
-    public interface IStorageLogger
+    public interface ILogger
     {
         Task WriteLog(string Id, object obj, string subFolder="");
     }

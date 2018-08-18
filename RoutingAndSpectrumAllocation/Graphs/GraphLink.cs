@@ -24,5 +24,10 @@ namespace RoutingAndSpectrumAllocation.Graphs
 
         [JsonProperty("Delay")]
         public string Delay { get; set; }
+
+        public string GetLinkId()
+        {
+            return From + "<->" + To;
+        }
     }
 }

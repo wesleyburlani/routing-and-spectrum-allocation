@@ -4,6 +4,6 @@ namespace RoutingAndSpectrumAllocation
 {
     interface IRoutingAndSpectrumAllocation
     {
-        Task Start(string readNodesPath, string readLinksPath);
+        Task Start(string readNodesPath, string readLinksPath, int numberOfLinkChannels);
     }
 }

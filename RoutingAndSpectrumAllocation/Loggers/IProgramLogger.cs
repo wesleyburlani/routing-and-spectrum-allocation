@@ -2,7 +2,7 @@
 
 namespace RoutingAndSpectrumAllocation.Loggers
 {
-    public interface IInfoLogger
+    public interface IProgramLogger
     {
         Task LogInformation(string payload);
     }
