@@ -16,6 +16,7 @@ namespace RoutingAndSpectrumAllocation
         ILogger StorageLogger { get; set; }
         IPathSearcher PathSearcher { get; set; }
         IRSATableFill RSATableFill { get; set; }
+        int supplied = 0;
 
         public RoutingAndSpectrumAllocation(
             IGraphInputReader inputReader, 
@@ -67,15 +68,17 @@ namespace RoutingAndSpectrumAllocation
                     continue;
                 }
 
-                table = await FillTable(graph, table, demand, paths);
+                table = await FillTable(table, graph,  demand, paths);
             }
 
             await InfoLogger.LogInformation($"Finished\n");
 
+            await InfoLogger.LogInformation($"Total Demands: {demands.Count}\nSupplied: {supplied}\nBlocked: {demands.Count - supplied}\n");
+
             await InfoLogger.LogInformation(table.ToStringTable());
         }
 
-        private async Task<RSATable> FillTable(Graph graph, RSATable table, Demand demand, List<GraphPath> paths)
+        private async Task<RSATable> FillTable(RSATable table, Graph graph, Demand demand, List<GraphPath> paths)
         {
             bool filled = false;
             foreach (var path in paths)
@@ -87,11 +90,12 @@ namespace RoutingAndSpectrumAllocation
                     filled = true;
                     await InfoLogger.LogInformation($"demand supplied\n");
                     await InfoLogger.LogInformation(table.ToStringTable());
+                    supplied++;
                     break;
                 }
             }
 
-            if (filled == false)
+            if (filled == false) 
                 await InfoLogger.LogInformation($"It's not possible to supply demand of {demand.Slots}  from {demand.NodeIdFrom} to {demand.NodeIdTo}\n");
             return table;
         }
