@@ -67,27 +67,33 @@ namespace RoutingAndSpectrumAllocation
                     continue;
                 }
 
-                bool filled = false;
-                foreach (var path in paths)
-                {
-                    await InfoLogger.LogInformation($"trying path: {string.Join("->", path.Path)}");
-
-                    if (RSATableFill.FillDemandOnTable(ref table, graph, demand, path))
-                    {
-                        filled = true;
-                        await InfoLogger.LogInformation($"demand supplied\n");
-                        await InfoLogger.LogInformation(table.ToStringTable());
-                        break;
-                    }
-                }
-
-                if (filled == false)
-                    await  InfoLogger.LogInformation($"It's not possible to supply demand of {demand.Slots}  from {demand.NodeIdFrom} to {demand.NodeIdTo}\n");
+                table = await FillTable(graph, table, demand, paths);
             }
 
             await InfoLogger.LogInformation($"Finished\n");
 
             await InfoLogger.LogInformation(table.ToStringTable());
+        }
+
+        private async Task<RSATable> FillTable(Graph graph, RSATable table, Demand demand, List<GraphPath> paths)
+        {
+            bool filled = false;
+            foreach (var path in paths)
+            {
+                await InfoLogger.LogInformation($"trying path: {string.Join("->", path.Path)}");
+
+                if (RSATableFill.FillDemandOnTable(ref table, graph, demand, path))
+                {
+                    filled = true;
+                    await InfoLogger.LogInformation($"demand supplied\n");
+                    await InfoLogger.LogInformation(table.ToStringTable());
+                    break;
+                }
+            }
+
+            if (filled == false)
+                await InfoLogger.LogInformation($"It's not possible to supply demand of {demand.Slots}  from {demand.NodeIdFrom} to {demand.NodeIdTo}\n");
+            return table;
         }
 
         private static List<Demand> GetDemands(Graph graph)
