@@ -53,7 +53,7 @@ namespace RoutingAndSpectrumAllocation
                 GraphNode nodeFrom = graph.Nodes.FirstOrDefault(r => r.Id == demand.NodeIdFrom);
                 GraphNode nodeTo = graph.Nodes.FirstOrDefault(r => r.Id == demand.NodeIdTo);
 
-                List<GraphPath> path = PathSearcher.GetPaths(graph, nodeFrom, nodeTo, 1);
+                List<GraphPath> path = PathSearcher.GetPaths(graph, nodeFrom, nodeTo, 2);
 
                 if (path.Count() == 0)
                 {

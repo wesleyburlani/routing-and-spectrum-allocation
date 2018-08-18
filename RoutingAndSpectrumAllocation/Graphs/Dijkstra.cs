@@ -8,21 +8,20 @@ namespace RoutingAndSpectrumAllocation.Graphs
         public List<GraphPath> GetPaths(Graph graph, GraphNode nodeFrom, GraphNode nodeTo, int numberOfPaths)
         {
             List<GraphPath> paths = new List<GraphPath>();
-            Queue<InternalNodeDijkstra> queue = new Queue<InternalNodeDijkstra>();
+            List<InternalNodeDijkstra> priorityList = new List<InternalNodeDijkstra>();
 
-            GraphPath path = new GraphPath();
-            path.Path.Add(nodeFrom.Id);
+            GraphPath path = new GraphPath(new string[]{ nodeFrom.Id });
+            Dictionary<string, int> counter = StartCounter(graph);
 
-            Dictionary<string, int> counter = new Dictionary<string, int>();
-            graph.Nodes.ForEach(r => counter[r.Id] = 0);
-            queue.Enqueue(new InternalNodeDijkstra(nodeFrom.Id, path, 0));
+            priorityList.Add(new InternalNodeDijkstra(nodeFrom.Id, path, 0));
 
             InternalNodeDijkstra nodeDijkstra;
             do
             {
-                nodeDijkstra  = queue.Dequeue();
+                nodeDijkstra = priorityList.First();
+                priorityList = priorityList.Skip(1).ToList();
 
-                if(nodeDijkstra.NodeId == nodeTo.Id)
+                if (nodeDijkstra.NodeId == nodeTo.Id)
                 {
                     paths.Add(nodeDijkstra.Path);
                     if (paths.Count == numberOfPaths)
@@ -33,26 +32,38 @@ namespace RoutingAndSpectrumAllocation.Graphs
                 if (++counter[nodeDijkstra.NodeId] > numberOfPaths)
                     continue;
 
-                var neighboors = graph.Links.Where(r => r.From == nodeDijkstra.NodeId).Select(r => r.To).ToList();
-                neighboors.AddRange(graph.Links.Where(r => r.To == nodeDijkstra.NodeId).Select(r => r.From));
-                
-                foreach (var neighboor in neighboors)
+                foreach (var neighboor in GetNodeNeighboorsIds(graph, nodeDijkstra))
                 {
                     if (nodeDijkstra.Path.Path.Contains(neighboor))
                         continue;
-                    path = new GraphPath();
-                    path.Path.AddRange(nodeDijkstra.Path.Path);
+
+                    path = new GraphPath(nodeDijkstra.Path.Path);
                     path.Path.Add(neighboor);
                     GraphLink link = graph.Links.FirstOrDefault(r => r.From == neighboor || r.To == neighboor);
-                    queue.Enqueue(new InternalNodeDijkstra(neighboor, path, nodeDijkstra.Distance + link.Cost));
+                    priorityList.Add(new InternalNodeDijkstra(neighboor, path, nodeDijkstra.Distance + link.Cost));
+                    priorityList.Sort((x,y) => x.CompareTo(y));
                 }
+
                 nodeDijkstra = null;
 
-            } while (queue.Count != 0);
+            } while (priorityList.Count != 0);
 
             return paths;
         }
 
+        private static Dictionary<string, int> StartCounter(Graph graph)
+        {
+            Dictionary<string, int> counter = new Dictionary<string, int>();
+            graph.Nodes.ForEach(r => counter[r.Id] = 0);
+            return counter;
+        }
+
+        private static List<string> GetNodeNeighboorsIds(Graph graph, InternalNodeDijkstra nodeDijkstra)
+        {
+            var neighboors = graph.Links.Where(r => r.From == nodeDijkstra.NodeId).Select(r => r.To).ToList();
+            neighboors.AddRange(graph.Links.Where(r => r.To == nodeDijkstra.NodeId).Select(r => r.From));
+            return neighboors;
+        }
 
         private class InternalNodeDijkstra
         {
@@ -71,7 +82,7 @@ namespace RoutingAndSpectrumAllocation.Graphs
             {
                 InternalNodeDijkstra next = (InternalNodeDijkstra)o;
                 if(Distance == next.Distance)
-                    return NodeId.CompareTo(next);
+                    return NodeId.CompareTo(next.NodeId);
                 
                 if (Distance > next.Distance)
                     return 1;
