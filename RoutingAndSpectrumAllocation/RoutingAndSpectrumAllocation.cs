@@ -1,7 +1,6 @@
 ﻿using RoutingAndSpectrumAllocation.Demands;
-using RoutingAndSpectrumAllocation.FileLogger;
+using RoutingAndSpectrumAllocation.Loggers;
 using RoutingAndSpectrumAllocation.Graphs;
-using RoutingAndSpectrumAllocation.InfoLoggers;
 using RoutingAndSpectrumAllocation.InputReaders;
 using System.Collections.Generic;
 using System.Threading.Tasks;
@@ -12,9 +11,9 @@ namespace RoutingAndSpectrumAllocation
     {
         IGraphInputReader InputReader { get; set; }
         IInfoLogger InfoLogger { get; set; }
-        IFileLogger FileLogger { get; set; }
+        IStorageLogger FileLogger { get; set; }
 
-        public RoutingAndSpectrumAllocation(IGraphInputReader inputReader, IInfoLogger infologger, IFileLogger fileLogger)
+        public RoutingAndSpectrumAllocation(IGraphInputReader inputReader, IInfoLogger infologger, IStorageLogger fileLogger)
         {
             InputReader = inputReader;
             InfoLogger = infologger;

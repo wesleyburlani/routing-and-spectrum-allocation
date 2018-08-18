@@ -1,8 +1,8 @@
 ﻿using System.Threading.Tasks;
 
-namespace RoutingAndSpectrumAllocation.FileLogger
+namespace RoutingAndSpectrumAllocation.Loggers
 {
-    public interface IFileLogger
+    public interface IStorageLogger
     {
         Task WriteLog(string Id, object obj, string subFolder="");
     }

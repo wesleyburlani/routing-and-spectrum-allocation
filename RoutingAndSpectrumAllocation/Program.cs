@@ -1,6 +1,5 @@
 ﻿using Microsoft.Extensions.DependencyInjection;
-using RoutingAndSpectrumAllocation.FileLogger;
-using RoutingAndSpectrumAllocation.InfoLoggers;
+using RoutingAndSpectrumAllocation.Loggers;
 using RoutingAndSpectrumAllocation.InputReaders;
 
 namespace RoutingAndSpectrumAllocation
@@ -19,7 +18,7 @@ namespace RoutingAndSpectrumAllocation
 
             serviceCollection.AddSingleton<IRoutingAndSpectrumAllocation, RoutingAndSpectrumAllocation>();
             serviceCollection.AddScoped<IInfoLogger, InfoLogger>();
-            serviceCollection.AddScoped<IFileLogger>(c => new JsonFileLogger(LogPath));
+            serviceCollection.AddScoped<IStorageLogger>(c => new JsonFileLogger(LogPath));
             serviceCollection.AddScoped<IGraphInputReader>(c => new CsvGraphInputReader(CsvLineSeparator, CsvColumnSeparator));
 
             var serviceProvider = serviceCollection.BuildServiceProvider();

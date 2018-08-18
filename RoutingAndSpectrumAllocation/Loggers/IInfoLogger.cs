@@ -1,6 +1,6 @@
 ﻿using System.Threading.Tasks;
 
-namespace RoutingAndSpectrumAllocation.InfoLoggers
+namespace RoutingAndSpectrumAllocation.Loggers
 {
     public interface IInfoLogger
     {

@@ -2,9 +2,9 @@
 using System.IO;
 using System.Threading.Tasks;
 
-namespace RoutingAndSpectrumAllocation.FileLogger
+namespace RoutingAndSpectrumAllocation.Loggers
 {
-    public class JsonFileLogger : IFileLogger
+    public class JsonFileLogger : IStorageLogger
     {
         string FileLoggingPath { get; set; }
 
