@@ -4,6 +4,9 @@ using RoutingAndSpectrumAllocation.Graphs;
 using RoutingAndSpectrumAllocation.InputReaders;
 using System.Collections.Generic;
 using System.Threading.Tasks;
+using System;
+using System.Linq;
+using System.Data;
 
 namespace RoutingAndSpectrumAllocation
 {
@@ -11,13 +14,19 @@ namespace RoutingAndSpectrumAllocation
     {
         IGraphInputReader InputReader { get; set; }
         IInfoLogger InfoLogger { get; set; }
-        IStorageLogger FileLogger { get; set; }
+        IStorageLogger StorageLogger { get; set; }
+        IPathSearcher PathSearcher { get; set; }
 
-        public RoutingAndSpectrumAllocation(IGraphInputReader inputReader, IInfoLogger infologger, IStorageLogger fileLogger)
+        public RoutingAndSpectrumAllocation(
+            IGraphInputReader inputReader, 
+            IInfoLogger infologger, 
+            IStorageLogger storageLogger, 
+            IPathSearcher pathSearcher)
         {
             InputReader = inputReader;
             InfoLogger = infologger;
-            FileLogger = fileLogger;
+            StorageLogger = storageLogger;
+            PathSearcher = pathSearcher;
         }
 
         public async Task Start(string readNodesPath, string readLinksPath)
@@ -28,13 +37,43 @@ namespace RoutingAndSpectrumAllocation
 
             Graph graph = ReadGraph(readNodesPath, readLinksPath);
 
-            await FileLogger.WriteLog("graph", graph);
+            await StorageLogger.WriteLog("graph", graph);
 
             List<Demand> demands = GetDemands(graph);
 
-            await FileLogger.WriteLog("demands", graph);
+            await StorageLogger.WriteLog("demands", graph);
+
+            await ApplyRSA(graph, demands);
+        }
+
+        private Task ApplyRSA(Graph graph, List<Demand> demands)
+        { 
+            foreach(Demand demand in demands)
+            {
+                GraphNode nodeFrom = graph.Nodes.First(r => r.Id == demand.NodeIdFrom);
+                GraphNode nodeTo = graph.Nodes.First(r => r.Id == demand.NodeIdTo);
+
+                GraphPath path = PathSearcher.GetPath(graph, nodeFrom, nodeTo);
+
+                if (path == null)
+                {
+                    InfoLogger.LogInformation($"path from {demand.NodeIdFrom} to {demand.NodeIdTo} not found.");
+                    continue;
+                }
+
+                
+
+                if (path is null)
+                {
+                    InfoLogger.LogInformation($"Demand of {demand.Slots} slots " +
+                        $"from {demand.NodeIdFrom} to {demand.NodeIdTo} can not be supplied.");
+                    continue;
+                }
 
 
+            }
+
+            return Task.CompletedTask;
         }
 
         private static List<Demand> GetDemands(Graph graph)

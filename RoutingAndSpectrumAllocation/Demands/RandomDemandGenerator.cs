@@ -22,7 +22,7 @@ namespace RoutingAndSpectrumAllocation.Demands
 
             Random random = new Random();
 
-            int iterator = random.Next(1, MaxNumberOfLinks(linkIds.Count()));
+            int iterator = random.Next(1, GetMaximumNumberOfLinks(linkIds.Count()));
 
             List<string> memory = new List<string>(); 
             
@@ -53,7 +53,7 @@ namespace RoutingAndSpectrumAllocation.Demands
             return distinctIds;
         }
 
-        private int MaxNumberOfLinks(int numberOfNodes)
+        private int GetMaximumNumberOfLinks(int numberOfNodes)
         {
             return numberOfNodes * (numberOfNodes - 1) / 2;
         } 
