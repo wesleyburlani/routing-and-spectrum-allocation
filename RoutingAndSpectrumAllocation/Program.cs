@@ -1,4 +1,6 @@
 ﻿using Microsoft.Extensions.DependencyInjection;
+using RoutingAndSpectrumAllocation.FileLogger;
+using RoutingAndSpectrumAllocation.InfoLoggers;
 using RoutingAndSpectrumAllocation.InputReaders;
 
 namespace RoutingAndSpectrumAllocation
@@ -7,21 +9,23 @@ namespace RoutingAndSpectrumAllocation
     {
         const char CsvLineSeparator = '\n';
         const char CsvColumnSeparator = ',';
+        const string LogPath = @"Log";
         const string ReadNodesPath = @"Data\arnes_nodes.csv";
         const string ReadLinksPath = @"Data\arnes_links.csv";
-        const string ReadDemandPath = @"Data\arnes_demand.csv";
 
         static void Main(string[] args)
         {
             ServiceCollection serviceCollection = new ServiceCollection();
 
             serviceCollection.AddSingleton<IRoutingAndSpectrumAllocation, RoutingAndSpectrumAllocation>();
+            serviceCollection.AddScoped<IInfoLogger, InfoLogger>();
+            serviceCollection.AddScoped<IFileLogger>(c => new JsonFileLogger(LogPath));
             serviceCollection.AddScoped<IGraphInputReader>(c => new CsvGraphInputReader(CsvLineSeparator, CsvColumnSeparator));
 
             var serviceProvider = serviceCollection.BuildServiceProvider();
 
             var routingAndSpectrumAllocation = serviceProvider.GetService<IRoutingAndSpectrumAllocation>();
-            routingAndSpectrumAllocation.Start(ReadNodesPath, ReadLinksPath);
+            routingAndSpectrumAllocation.Start(ReadNodesPath, ReadLinksPath).Wait();
         }
     }
 }

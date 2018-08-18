@@ -1,23 +1,39 @@
 ﻿using RoutingAndSpectrumAllocation.Demands;
+using RoutingAndSpectrumAllocation.FileLogger;
 using RoutingAndSpectrumAllocation.Graphs;
+using RoutingAndSpectrumAllocation.InfoLoggers;
 using RoutingAndSpectrumAllocation.InputReaders;
 using System.Collections.Generic;
+using System.Threading.Tasks;
 
 namespace RoutingAndSpectrumAllocation
 {
     public class RoutingAndSpectrumAllocation : IRoutingAndSpectrumAllocation
     {
         IGraphInputReader InputReader { get; set; }
+        IInfoLogger InfoLogger { get; set; }
+        IFileLogger FileLogger { get; set; }
 
-        public RoutingAndSpectrumAllocation(IGraphInputReader inputReader)
+        public RoutingAndSpectrumAllocation(IGraphInputReader inputReader, IInfoLogger infologger, IFileLogger fileLogger)
         {
             InputReader = inputReader;
+            InfoLogger = infologger;
+            FileLogger = fileLogger;
         }
 
-        public void Start(string readNodesPath, string readLinksPath)
+        public async Task Start(string readNodesPath, string readLinksPath)
         {
+            await InfoLogger.LogInformation($"Starting RoutingAndSpectrumAllocation");
+            await InfoLogger.LogInformation($"Nodes Path: \"{readNodesPath}\"");
+            await InfoLogger.LogInformation($"Links Path: \"{readLinksPath}\"");
+
             Graph graph = ReadGraph(readNodesPath, readLinksPath);
+
+            await FileLogger.WriteLog("graph", graph);
+
             List<Demand> demands = GetDemands(graph);
+
+            await FileLogger.WriteLog("demands", graph);
 
 
         }

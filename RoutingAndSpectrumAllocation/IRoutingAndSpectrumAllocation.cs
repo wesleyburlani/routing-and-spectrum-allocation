@@ -1,7 +1,9 @@
-﻿namespace RoutingAndSpectrumAllocation
+﻿using System.Threading.Tasks;
+
+namespace RoutingAndSpectrumAllocation
 {
     interface IRoutingAndSpectrumAllocation
     {
-        void Start(string readNodesPath, string readLinksPath);
+        Task Start(string readNodesPath, string readLinksPath);
     }
 }
