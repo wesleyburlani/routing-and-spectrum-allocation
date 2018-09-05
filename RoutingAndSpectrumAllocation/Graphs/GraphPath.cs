@@ -1,8 +1,10 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using System.Linq;
 
 namespace RoutingAndSpectrumAllocation.Graphs
 {
+    [Serializable]
     public class GraphPath
     {
         public GraphPath(IEnumerable<string> path = null)

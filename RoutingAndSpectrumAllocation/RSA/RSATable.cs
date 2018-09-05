@@ -1,9 +1,11 @@
 ﻿using RoutingAndSpectrumAllocation.Graphs;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 
 namespace RoutingAndSpectrumAllocation.RSA
 {
+    [Serializable]
     public class RSATable
     {
         public Dictionary<string, Dictionary<int, bool>> Table { get; set; }
