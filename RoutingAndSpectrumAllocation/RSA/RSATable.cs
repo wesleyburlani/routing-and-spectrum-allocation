@@ -8,7 +8,7 @@ namespace RoutingAndSpectrumAllocation.RSA
     [Serializable]
     public class RSATable
     {
-        public Dictionary<string, Dictionary<int, List<KeyValuePair<bool, string>>>> Table { get; set; }
+        public Dictionary<string, Dictionary<int, RSATableElement>> Table { get; set; }
         private List<GraphLink> Links { get; set; }
         private int NumberOfLinkChannels { get; set; }
 
@@ -16,21 +16,21 @@ namespace RoutingAndSpectrumAllocation.RSA
         {
             Links = links;
             NumberOfLinkChannels = numberOfLinkChannels;
-            Table = new Dictionary<string, Dictionary<int, List<KeyValuePair<bool, string>>>>();
+            Table = new Dictionary<string, Dictionary<int, RSATableElement>>();
             
             foreach(GraphLink link in Links)
             {
-                Table[link.GetLinkId()] = new Dictionary<int, List<KeyValuePair<bool, string>>>();
+                Table[link.GetLinkId()] = new Dictionary<int, RSATableElement>();
 
                 for (int i = 0; i < numberOfLinkChannels; i++)
-                    Table[link.GetLinkId()][i] = new List<KeyValuePair<bool, string>>();
+                    Table[link.GetLinkId()][i] = new RSATableElement();
             }
         }
 
         public string ToStringTable()
         {
             List<string> list = Table.Keys.ToList();
-            int maxDemands = Table.Values.Select(r => r.Values.Select(y => y.Count()).Max()).Max();
+            int maxDemands = Table.Values.Select(r => r.Values.Select(y => y.Values.Count()).Max()).Max();
             int maxLength = list.Select(r => r.Count()).Max();
 
             string table = "";
@@ -55,11 +55,11 @@ namespace RoutingAndSpectrumAllocation.RSA
                     table += "\t";
                     for (int j = 0; j < NumberOfLinkChannels; j++)
                     {
-                        int lenght = Table[list[i]][j].Count;
+                        int lenght = Table[list[i]][j].Values.Count;
                         if (y >= lenght)
                             table += "0\t";
                         else
-                            table += (Table[list[i]][j][y].Value) + (Table[list[i]][j][y].Key ? "*" : "") + "\t";
+                            table += (Table[list[i]][j].Values[y]) + (Table[list[i]][j].IsProtectionDemand ? "*" : "") + "\t";
                     }
                 }
                 table += "\n";
