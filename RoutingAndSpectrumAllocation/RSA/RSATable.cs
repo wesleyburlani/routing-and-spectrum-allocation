@@ -8,7 +8,7 @@ namespace RoutingAndSpectrumAllocation.RSA
     [Serializable]
     public class RSATable
     {
-        public Dictionary<string, Dictionary<int, List<string>>> Table { get; set; }
+        public Dictionary<string, Dictionary<int, List<KeyValuePair<bool, string>>>> Table { get; set; }
         private List<GraphLink> Links { get; set; }
         private int NumberOfLinkChannels { get; set; }
 
@@ -16,14 +16,14 @@ namespace RoutingAndSpectrumAllocation.RSA
         {
             Links = links;
             NumberOfLinkChannels = numberOfLinkChannels;
-            Table = new Dictionary<string, Dictionary<int, List<string>>>();
+            Table = new Dictionary<string, Dictionary<int, List<KeyValuePair<bool, string>>>>();
             
             foreach(GraphLink link in Links)
             {
-                Table[link.GetLinkId()] = new Dictionary<int, List<string>>();
+                Table[link.GetLinkId()] = new Dictionary<int, List<KeyValuePair<bool, string>>>();
 
                 for (int i = 0; i < numberOfLinkChannels; i++)
-                    Table[link.GetLinkId()][i] = new List<string>();
+                    Table[link.GetLinkId()][i] = new List<KeyValuePair<bool, string>>();
             }
         }
 
@@ -59,7 +59,7 @@ namespace RoutingAndSpectrumAllocation.RSA
                         if (y >= lenght)
                             table += "0\t";
                         else
-                            table += (Table[list[i]][j][y]) + "\t";
+                            table += (Table[list[i]][j][y].Value) + (Table[list[i]][j][y].Key ? "*" : "") + "\t";
                     }
                 }
                 table += "\n";

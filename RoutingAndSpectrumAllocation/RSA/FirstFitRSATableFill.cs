@@ -7,7 +7,7 @@ namespace RoutingAndSpectrumAllocation.RSA
 {
     class FirstFitRSATableFill : IRSATableFill
     {
-        public bool FillDemandOnTable(ref RSATable table, Graph graph, Demand demand, GraphPath path)
+        public bool FillDemandOnTable(ref RSATable table, Graph graph, Demand demand, GraphPath path, bool protection = false)
         {
             List<GraphLink> pathLinks = path.ToLinks(graph.Links);
 
@@ -26,7 +26,7 @@ namespace RoutingAndSpectrumAllocation.RSA
 
             foreach (GraphLink link in pathLinks)
                 foreach (var slot in indexesToFill)
-                    table.Table[link.GetLinkId()][slot].Add(demand.Id.ToString());
+                    table.Table[link.GetLinkId()][slot].Add(new KeyValuePair<bool, string>(protection, demand.Id.ToString()));
 
             return true;
         }

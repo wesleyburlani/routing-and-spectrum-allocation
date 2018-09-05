@@ -93,7 +93,7 @@ namespace RoutingAndSpectrumAllocation
                 {
                     await InfoLogger.LogInformation($"trying secundary path: {string.Join("->", path.Item2.Path)}");
 
-                    if (RSATableFill.FillDemandOnTable(ref tableMemory, graph, demand, path.Item2))
+                    if (RSATableFill.FillDemandOnTable(ref tableMemory, graph, demand, path.Item2, true))
                     {
                         filled = true;
                         await InfoLogger.LogInformation($"demand supplied\n");
