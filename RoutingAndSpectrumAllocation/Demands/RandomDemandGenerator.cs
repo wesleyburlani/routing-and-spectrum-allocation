@@ -26,7 +26,7 @@ namespace RoutingAndSpectrumAllocation.Demands
 
             List<string> memory = new List<string>(); 
             
-            for(int it = 0; it < iterator; it++)
+            for(int it = 1; it <= iterator; it++)
             {
                 int first = random.Next(linkIds.Count());
                 int second = random.Next(linkIds.Count());
@@ -38,7 +38,7 @@ namespace RoutingAndSpectrumAllocation.Demands
                     continue;
 
                 int demand = random.Next(1, 10);
-                demands.Add(new Demand(linkIds[first], linkIds[second], demand));
+                demands.Add(new Demand(it,linkIds[first], linkIds[second], demand));
                 memory.Add(hash);
             }
 

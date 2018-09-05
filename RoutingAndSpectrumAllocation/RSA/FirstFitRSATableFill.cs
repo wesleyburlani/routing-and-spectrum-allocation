@@ -13,7 +13,7 @@ namespace RoutingAndSpectrumAllocation.RSA
 
             List<List<int>> emptySlots = new List<List<int>>();
             foreach (GraphLink link in pathLinks)
-                emptySlots.Add(table.Table[link.GetLinkId()].Where(r => r.Value == false).Select(r => r.Key).ToList());
+                emptySlots.Add(table.Table[link.GetLinkId()].Where(r => r.Value.Count == 0).Select(r => r.Key).ToList());
 
             List<int> intersection = emptySlots.First();
             foreach (var list in emptySlots.Skip(1))
@@ -26,7 +26,7 @@ namespace RoutingAndSpectrumAllocation.RSA
 
             foreach (GraphLink link in pathLinks)
                 foreach (var slot in indexesToFill)
-                    table.Table[link.GetLinkId()][slot] = true;
+                    table.Table[link.GetLinkId()][slot].Add(demand.Id.ToString());
 
             return true;
         }

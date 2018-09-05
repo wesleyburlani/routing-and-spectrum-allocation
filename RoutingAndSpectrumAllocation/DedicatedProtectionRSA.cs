@@ -95,7 +95,6 @@ namespace RoutingAndSpectrumAllocation
 
                     if (RSATableFill.FillDemandOnTable(ref tableMemory, graph, demand, path.Item2))
                     {
-
                         filled = true;
                         await InfoLogger.LogInformation($"demand supplied\n");
                         table = tableMemory;
