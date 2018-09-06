@@ -1,290 +1,356 @@
 [
   {
     "id": 1,
-    "from": "Ljubljana",
-    "to": "NovoMesto",
-    "slots": 6
-  },
-  {
-    "id": 2,
-    "from": "Krki",
-    "to": "Velenje",
-    "slots": 5
-  },
-  {
-    "id": 3,
-    "from": "Ljubljana",
-    "to": "NovaGorica",
+    "from": "Bled",
+    "to": "Koper",
     "slots": 8
   },
   {
-    "id": 4,
-    "from": "Kosevje",
-    "to": "Maribor",
+    "id": 2,
+    "from": "Bled",
+    "to": "Dravograd",
     "slots": 4
   },
   {
+    "id": 3,
+    "from": "Velenje",
+    "to": "Kosevje",
+    "slots": 6
+  },
+  {
+    "id": 4,
+    "from": "SBistrika",
+    "to": "Krki",
+    "slots": 3
+  },
+  {
     "id": 5,
-    "from": "Bled",
-    "to": "NovoMesto",
+    "from": "Maribor",
+    "to": "Kosevje",
     "slots": 9
   },
   {
     "id": 6,
-    "from": "Velenje",
-    "to": "Ajdovscina",
-    "slots": 5
+    "from": "Ajdovscina",
+    "to": "Koper",
+    "slots": 1
   },
   {
     "id": 7,
-    "from": "Krki",
+    "from": "NovoMesto",
     "to": "Ajdovscina",
     "slots": 3
   },
   {
     "id": 8,
-    "from": "Lasko",
-    "to": "Tolmin",
-    "slots": 5
+    "from": "Velenje",
+    "to": "Koper",
+    "slots": 2
   },
   {
     "id": 9,
-    "from": "Ljubljana",
-    "to": "Lasko",
-    "slots": 5
-  },
-  {
-    "id": 10,
-    "from": "NovoMesto",
-    "to": "Ajdovscina",
+    "from": "Lasko",
+    "to": "Kosevje",
     "slots": 9
   },
   {
+    "id": 10,
+    "from": "Lasko",
+    "to": "Tolmin",
+    "slots": 7
+  },
+  {
     "id": 11,
-    "from": "Krki",
-    "to": "Trbovlje",
-    "slots": 3
+    "from": "Tolmin",
+    "to": "NovoMesto",
+    "slots": 5
   },
   {
     "id": 12,
     "from": "Dravograd",
-    "to": "Tolmin",
-    "slots": 1
+    "to": "SBistrika",
+    "slots": 3
   },
   {
     "id": 13,
-    "from": "SBistrika",
-    "to": "Trbovlje",
-    "slots": 5
+    "from": "Koper",
+    "to": "Maribor",
+    "slots": 7
   },
   {
     "id": 14,
-    "from": "Koper",
-    "to": "Bled",
-    "slots": 5
+    "from": "Celje",
+    "to": "Ljubljana",
+    "slots": 4
   },
   {
     "id": 15,
     "from": "Trbovlje",
-    "to": "Lasko",
-    "slots": 3
+    "to": "Kosevje",
+    "slots": 2
   },
   {
     "id": 16,
-    "from": "Koper",
-    "to": "Maribor",
-    "slots": 4
-  },
-  {
-    "id": 17,
-    "from": "Krki",
-    "to": "NovoMesto",
-    "slots": 3
-  },
-  {
-    "id": 18,
-    "from": "Kosevje",
-    "to": "Koper",
-    "slots": 9
-  },
-  {
-    "id": 19,
-    "from": "Trbovlje",
-    "to": "Bled",
-    "slots": 3
-  },
-  {
-    "id": 20,
-    "from": "Ajdovscina",
+    "from": "Ljubljana",
     "to": "Lasko",
     "slots": 7
   },
   {
-    "id": 21,
+    "id": 17,
+    "from": "Celje",
+    "to": "Tolmin",
+    "slots": 7
+  },
+  {
+    "id": 18,
+    "from": "Trbovlje",
+    "to": "Celje",
+    "slots": 2
+  },
+  {
+    "id": 19,
     "from": "Kosevje",
-    "to": "Kranj",
+    "to": "Lasko",
     "slots": 9
   },
   {
-    "id": 22,
-    "from": "NovoMesto",
-    "to": "Kranj",
-    "slots": 8
-  },
-  {
-    "id": 23,
-    "from": "Ljubljana",
-    "to": "SBistrika",
-    "slots": 6
-  },
-  {
-    "id": 24,
-    "from": "Kosevje",
-    "to": "Trbovlje",
-    "slots": 6
-  },
-  {
-    "id": 25,
-    "from": "Koper",
-    "to": "Trbovlje",
-    "slots": 2
-  },
-  {
-    "id": 26,
-    "from": "Lasko",
-    "to": "NovoMesto",
-    "slots": 5
-  },
-  {
-    "id": 27,
-    "from": "Bled",
-    "to": "Ljubljana",
-    "slots": 2
-  },
-  {
-    "id": 28,
-    "from": "Ljubljana",
+    "id": 20,
+    "from": "SBistrika",
     "to": "Celje",
     "slots": 6
   },
   {
-    "id": 30,
+    "id": 21,
+    "from": "Celje",
+    "to": "Trbovlje",
+    "slots": 7
+  },
+  {
+    "id": 22,
+    "from": "Krki",
+    "to": "Celje",
+    "slots": 9
+  },
+  {
+    "id": 23,
+    "from": "SBistrika",
+    "to": "Koper",
+    "slots": 3
+  },
+  {
+    "id": 24,
+    "from": "Maribor",
+    "to": "NovaGorica",
+    "slots": 4
+  },
+  {
+    "id": 25,
     "from": "Tolmin",
+    "to": "Celje",
+    "slots": 3
+  },
+  {
+    "id": 26,
+    "from": "Krki",
     "to": "Lasko",
     "slots": 1
   },
   {
-    "id": 31,
-    "from": "SBistrika",
+    "id": 27,
+    "from": "Koper",
+    "to": "SBistrika",
+    "slots": 3
+  },
+  {
+    "id": 28,
+    "from": "Bled",
     "to": "Tolmin",
     "slots": 1
   },
   {
+    "id": 29,
+    "from": "Kosevje",
+    "to": "Celje",
+    "slots": 5
+  },
+  {
+    "id": 30,
+    "from": "Celje",
+    "to": "Dravograd",
+    "slots": 9
+  },
+  {
+    "id": 31,
+    "from": "NovaGorica",
+    "to": "Ajdovscina",
+    "slots": 2
+  },
+  {
     "id": 32,
-    "from": "Trbovlje",
-    "to": "Ljubljana",
-    "slots": 1
+    "from": "Kranj",
+    "to": "Koper",
+    "slots": 3
   },
   {
     "id": 33,
-    "from": "Dravograd",
+    "from": "SBistrika",
     "to": "NovoMesto",
     "slots": 6
   },
   {
     "id": 34,
-    "from": "Celje",
-    "to": "NovoMesto",
-    "slots": 9
-  },
-  {
-    "id": 35,
-    "from": "Trbovlje",
-    "to": "Krki",
-    "slots": 2
-  },
-  {
-    "id": 36,
-    "from": "SBistrika",
-    "to": "Kosevje",
-    "slots": 3
-  },
-  {
-    "id": 37,
-    "from": "Krki",
-    "to": "Ljubljana",
-    "slots": 3
-  },
-  {
-    "id": 38,
-    "from": "Lasko",
-    "to": "Bled",
-    "slots": 6
-  },
-  {
-    "id": 39,
-    "from": "Maribor",
-    "to": "NovoMesto",
-    "slots": 1
-  },
-  {
-    "id": 40,
-    "from": "Velenje",
-    "to": "Tolmin",
-    "slots": 3
-  },
-  {
-    "id": 42,
-    "from": "NovoMesto",
-    "to": "Maribor",
-    "slots": 3
-  },
-  {
-    "id": 43,
-    "from": "Velenje",
-    "to": "Bled",
-    "slots": 7
-  },
-  {
-    "id": 44,
-    "from": "Ljubljana",
-    "to": "Kranj",
-    "slots": 1
-  },
-  {
-    "id": 45,
-    "from": "Kosevje",
-    "to": "Lasko",
-    "slots": 2
-  },
-  {
-    "id": 46,
     "from": "Bled",
-    "to": "Tolmin",
-    "slots": 3
-  },
-  {
-    "id": 47,
-    "from": "NovaGorica",
-    "to": "Kosevje",
-    "slots": 8
-  },
-  {
-    "id": 48,
-    "from": "Dravograd",
     "to": "Celje",
     "slots": 7
   },
   {
-    "id": 49,
-    "from": "Lasko",
+    "id": 36,
+    "from": "NovoMesto",
+    "to": "NovaGorica",
+    "slots": 5
+  },
+  {
+    "id": 37,
+    "from": "Kosevje",
+    "to": "Trbovlje",
+    "slots": 2
+  },
+  {
+    "id": 38,
+    "from": "Koper",
     "to": "Kosevje",
+    "slots": 6
+  },
+  {
+    "id": 39,
+    "from": "Trbovlje",
+    "to": "Ajdovscina",
+    "slots": 3
+  },
+  {
+    "id": 41,
+    "from": "NovoMesto",
+    "to": "Kosevje",
+    "slots": 5
+  },
+  {
+    "id": 42,
+    "from": "Tolmin",
+    "to": "Velenje",
+    "slots": 4
+  },
+  {
+    "id": 43,
+    "from": "NovaGorica",
+    "to": "Kosevje",
+    "slots": 3
+  },
+  {
+    "id": 44,
+    "from": "Kranj",
+    "to": "Celje",
     "slots": 1
   },
   {
-    "id": 50,
-    "from": "Celje",
+    "id": 45,
+    "from": "Kranj",
+    "to": "Trbovlje",
+    "slots": 5
+  },
+  {
+    "id": 46,
+    "from": "Krki",
     "to": "Bled",
+    "slots": 6
+  },
+  {
+    "id": 47,
+    "from": "Lasko",
+    "to": "Celje",
+    "slots": 2
+  },
+  {
+    "id": 48,
+    "from": "Maribor",
+    "to": "NovoMesto",
+    "slots": 5
+  },
+  {
+    "id": 49,
+    "from": "Maribor",
+    "to": "Celje",
+    "slots": 8
+  },
+  {
+    "id": 50,
+    "from": "NovaGorica",
+    "to": "Lasko",
+    "slots": 4
+  },
+  {
+    "id": 51,
+    "from": "Trbovlje",
+    "to": "Lasko",
+    "slots": 7
+  },
+  {
+    "id": 53,
+    "from": "Dravograd",
+    "to": "Lasko",
+    "slots": 2
+  },
+  {
+    "id": 55,
+    "from": "Celje",
+    "to": "NovoMesto",
+    "slots": 1
+  },
+  {
+    "id": 56,
+    "from": "Ajdovscina",
+    "to": "Velenje",
+    "slots": 8
+  },
+  {
+    "id": 57,
+    "from": "Kosevje",
+    "to": "Bled",
+    "slots": 5
+  },
+  {
+    "id": 58,
+    "from": "Lasko",
+    "to": "Dravograd",
+    "slots": 8
+  },
+  {
+    "id": 59,
+    "from": "Velenje",
+    "to": "Ljubljana",
+    "slots": 5
+  },
+  {
+    "id": 60,
+    "from": "Tolmin",
+    "to": "Ljubljana",
+    "slots": 9
+  },
+  {
+    "id": 63,
+    "from": "Bled",
+    "to": "NovoMesto",
+    "slots": 4
+  },
+  {
+    "id": 64,
+    "from": "Lasko",
+    "to": "NovaGorica",
+    "slots": 2
+  },
+  {
+    "id": 65,
+    "from": "Krki",
+    "to": "NovoMesto",
     "slots": 2
   }
 ]
