@@ -89,11 +89,15 @@ namespace RoutingAndSpectrumAllocation
 
                 await InfoLogger.LogInformation($"trying main path: {string.Join("->", path.Item1.Path)}");
 
-                if (RSATableFill.FillDemandOnTable(ref tableMemory, graph, demand, path.Item1))
+                List<AvailableSlot> availableTableSlots = GetAvailableTableSlots(graph, path.Item1, tableMemory);
+
+                if (RSATableFill.FillDemandOnTable(ref tableMemory, graph, demand, path.Item1, availableTableSlots))
                 {
+                   availableTableSlots = GetAvailableTableSlots(graph, path.Item2, tableMemory);
+
                     await InfoLogger.LogInformation($"trying secundary path: {string.Join("->", path.Item2.Path)}");
 
-                    if (RSATableFill.FillDemandOnTable(ref tableMemory, graph, demand, path.Item2, true))
+                    if (RSATableFill.FillDemandOnTable(ref tableMemory, graph, demand, path.Item2, availableTableSlots, true))
                     {
                         filled = true;
                         await InfoLogger.LogInformation($"demand supplied\n");
@@ -108,6 +112,22 @@ namespace RoutingAndSpectrumAllocation
             if (filled == false) 
                 await InfoLogger.LogInformation($"It's not possible to supply demand of {demand.Slots}  from {demand.NodeIdFrom} to {demand.NodeIdTo}\n");
             return table;
+        }
+
+        private List<AvailableSlot> GetAvailableTableSlots(Graph graph, GraphPath path, RSATable table)
+        {
+            List<AvailableSlot> availableSlots = new List<AvailableSlot>();
+            List<GraphLink> pathLinks = path.ToLinks(graph.Links);
+
+            foreach (GraphLink link in pathLinks)
+            {
+                AvailableSlot element = new AvailableSlot();
+                element.Link = link;
+                element.Availables = new List<int>(table.Table[link.GetLinkId()].Where(r => r.Value.Values.Count == 0).Select(r => r.Key).ToList());
+                availableSlots.Add(element);
+            }
+
+            return availableSlots;
         }
 
         private static List<Demand> GetDemands(Graph graph)

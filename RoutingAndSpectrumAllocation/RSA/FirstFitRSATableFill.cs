@@ -7,13 +7,17 @@ namespace RoutingAndSpectrumAllocation.RSA
 {
     class FirstFitRSATableFill : IRSATableFill
     {
-        public bool FillDemandOnTable(ref RSATable table, Graph graph, Demand demand, GraphPath path, bool protection = false)
+        public bool FillDemandOnTable(ref RSATable table, Graph graph, Demand demand, GraphPath path, List<AvailableSlot> availableSlots, bool protection = false)
         {
             List<GraphLink> pathLinks = path.ToLinks(graph.Links);
 
             List<List<int>> emptySlots = new List<List<int>>();
-            foreach (GraphLink link in pathLinks)
-                emptySlots.Add(table.Table[link.GetLinkId()].Where(r => r.Value.Values.Count == 0).Select(r => r.Key).ToList());
+            foreach (var column in table.Table.Keys)
+            {
+                var reference = availableSlots.FirstOrDefault(r => r.Link.GetLinkId() == column);
+                if (reference != null)
+                    emptySlots.Add(new List<int>(reference.Availables));
+            }
 
             List<int> intersection = emptySlots.First();
             foreach (var list in emptySlots.Skip(1))

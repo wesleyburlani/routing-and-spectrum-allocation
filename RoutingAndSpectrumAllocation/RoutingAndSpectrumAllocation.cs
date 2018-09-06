@@ -85,7 +85,9 @@ namespace RoutingAndSpectrumAllocation
             {
                 await InfoLogger.LogInformation($"trying path: {string.Join("->", path.Path)}");
 
-                if (RSATableFill.FillDemandOnTable(ref table, graph, demand, path))
+                List<AvailableSlot> availableTableSlots = GetAvailableTableSlots(graph, path, table);
+
+                if (RSATableFill.FillDemandOnTable(ref table, graph, demand, path, availableTableSlots))
                 {
                     filled = true;
                     await InfoLogger.LogInformation($"demand supplied\n");
@@ -98,6 +100,22 @@ namespace RoutingAndSpectrumAllocation
             if (filled == false) 
                 await InfoLogger.LogInformation($"It's not possible to supply demand of {demand.Slots}  from {demand.NodeIdFrom} to {demand.NodeIdTo}\n");
             return table;
+        }
+
+        private List<AvailableSlot> GetAvailableTableSlots(Graph graph, GraphPath path, RSATable table)
+        {
+            List<AvailableSlot> availableSlots = new List<AvailableSlot>();
+            List<GraphLink> pathLinks = path.ToLinks(graph.Links);
+
+            foreach (GraphLink link in pathLinks)
+            {
+                AvailableSlot element = new AvailableSlot();
+                element.Link = link;
+                element.Availables = new List<int>(table.Table[link.GetLinkId()].Where(r => r.Value.Values.Count == 0).Select(r => r.Key).ToList());
+                availableSlots.Add(element);
+            }
+
+            return availableSlots;
         }
 
         private static List<Demand> GetDemands(Graph graph)
