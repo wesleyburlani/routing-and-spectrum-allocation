@@ -31,7 +31,7 @@ namespace RoutingAndSpectrumAllocation.RSA
             foreach (GraphLink link in pathLinks)
                 foreach (var slot in indexesToFill)
                 {
-                    table.Table[link.GetLinkId()][slot].IsProtectionDemand = true;
+                    table.Table[link.GetLinkId()][slot].IsProtectionDemand = protection;
                     table.Table[link.GetLinkId()][slot].Values.Add(demand.Id.ToString());
                 }
 
