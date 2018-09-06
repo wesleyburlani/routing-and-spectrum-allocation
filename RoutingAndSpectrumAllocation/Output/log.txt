@@ -287,3 +287,115 @@ It's not possible to supply demand of 1  from Kranj to Celje
 
 processing demand from Kranj to Trbovlje with 5 slots
 
+trying main path: Kranj->Ljubljana->Trbovlje
+It's not possible to supply demand of 5  from Kranj to Trbovlje
+
+processing demand from Krki to Bled with 6 slots
+
+trying main path: Krki->NovoMesto->Kosevje->Ljubljana->Kranj->Bled
+It's not possible to supply demand of 6  from Krki to Bled
+
+processing demand from Lasko to Celje with 2 slots
+
+trying main path: Lasko->Celje
+trying secundary path: Lasko->Trbovlje->Ljubljana->Celje
+It's not possible to supply demand of 2  from Lasko to Celje
+
+processing demand from Maribor to NovoMesto with 5 slots
+
+trying main path: Maribor->SBistrika->Krki->NovoMesto
+It's not possible to supply demand of 5  from Maribor to NovoMesto
+
+processing demand from Maribor to Celje with 8 slots
+
+trying main path: Maribor->SBistrika->Celje
+It's not possible to supply demand of 8  from Maribor to Celje
+
+processing demand from NovaGorica to Lasko with 4 slots
+
+trying main path: NovaGorica->Ajdovscina->Koper->Ljubljana->Celje->Lasko
+It's not possible to supply demand of 4  from NovaGorica to Lasko
+
+processing demand from Trbovlje to Lasko with 7 slots
+
+trying main path: Trbovlje->Lasko
+It's not possible to supply demand of 7  from Trbovlje to Lasko
+
+processing demand from Dravograd to Lasko with 2 slots
+
+trying main path: Dravograd->Maribor->SBistrika->Celje->Lasko
+It's not possible to supply demand of 2  from Dravograd to Lasko
+
+processing demand from Celje to NovoMesto with 1 slots
+
+trying main path: Celje->Ljubljana->Kosevje->NovoMesto
+It's not possible to supply demand of 1  from Celje to NovoMesto
+
+processing demand from Ajdovscina to Velenje with 8 slots
+
+trying main path: Ajdovscina->Koper->Ljubljana->Celje->Velenje
+It's not possible to supply demand of 8  from Ajdovscina to Velenje
+
+processing demand from Kosevje to Bled with 5 slots
+
+trying main path: Kosevje->Ljubljana->Kranj->Bled
+It's not possible to supply demand of 5  from Kosevje to Bled
+
+processing demand from Lasko to Dravograd with 8 slots
+
+trying main path: Lasko->Celje->SBistrika->Maribor->Dravograd
+It's not possible to supply demand of 8  from Lasko to Dravograd
+
+processing demand from Velenje to Ljubljana with 5 slots
+
+trying main path: Velenje->Celje->Ljubljana
+It's not possible to supply demand of 5  from Velenje to Ljubljana
+
+processing demand from Tolmin to Ljubljana with 9 slots
+
+trying main path: Tolmin->Bled->Kranj->Ljubljana
+It's not possible to supply demand of 9  from Tolmin to Ljubljana
+
+processing demand from Bled to NovoMesto with 4 slots
+
+trying main path: Bled->Kranj->Ljubljana->Kosevje->NovoMesto
+It's not possible to supply demand of 4  from Bled to NovoMesto
+
+processing demand from Lasko to NovaGorica with 2 slots
+
+trying main path: Lasko->Celje->Ljubljana->Koper->Ajdovscina->NovaGorica
+It's not possible to supply demand of 2  from Lasko to NovaGorica
+
+processing demand from Krki to NovoMesto with 2 slots
+
+trying main path: Krki->NovoMesto
+It's not possible to supply demand of 2  from Krki to NovoMesto
+
+Finished
+
+Total Demands: 59
+Supplied: 3
+Blocked: 56
+
+                       	0	1	2	3	4	5	6	7	
+Koper<->Ljubljana      	1	1	1	1	1	1	1	1	
+Ljubljana<->Kranj      	1	1	1	1	1	1	1	1	
+Kranj<->Bled           	1	1	1	1	1	1	1	1	
+Bled<->Tolmin          	1*	1*	1*	1*	1*	1*	1*	1*	
+Tolmin<->NovaGorica    	1*	1*	1*	1*	1*	1*	1*	1*	
+NovaGorica<->Ajdovscina	1*	1*	1*	1*	1*	1*	1*	1*	
+Ajdovscina<->Koper     	1*	1*	1*	1*	1*	1*	1*	1*	
+Ljubljana<->Celje      	3	3	3	3	3	3	0	0	
+Celje<->Velenje        	3	3	3	3	3	3	15*	15*	
+Velenje<->Dravograd    	3*	3*	3*	3*	3*	3*	15*	15*	
+Dravograd<->Maribor    	3*	3*	3*	3*	3*	3*	15*	15*	
+Maribor<->SBistrika    	3*	3*	3*	3*	3*	3*	15*	15*	
+SBistrika<->Celje      	0	0	0	0	0	0	0	0	
+Celje<->Lasko          	0	0	0	0	0	0	15*	15*	
+Lasko<->Trbovlje       	0	0	0	0	0	0	15*	15*	
+Trbovlje<->Ljubljana   	0	0	0	0	0	0	15	15	
+SBistrika<->Krki       	3*	3*	3*	3*	3*	3*	15*	15*	
+Krki<->NovoMesto       	3*	3*	3*	3*	3*	3*	15*	15*	
+NovoMesto<->Kosevje    	3*	3*	3*	3*	3*	3*	15*	15*	
+Kosevje<->Ljubljana    	3	3	3	3	3	3	15	15	
+
