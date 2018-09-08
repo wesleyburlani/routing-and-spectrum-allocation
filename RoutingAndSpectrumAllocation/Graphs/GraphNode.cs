@@ -1,7 +1,9 @@
 ﻿using Newtonsoft.Json;
+using System;
 
 namespace RoutingAndSpectrumAllocation.Graphs
 {
+    [Serializable]
     public class GraphNode
     {
         [JsonProperty("Id")]

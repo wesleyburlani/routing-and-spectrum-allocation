@@ -4,12 +4,16 @@ namespace RoutingAndSpectrumAllocation.Demands
 {
     public class Demand
     {
-        public Demand(string nodeIdFrom, string nodeIdTo, int slots)
+        public Demand(int id, string nodeIdFrom, string nodeIdTo, int slots)
         {
+            Id = id;
             NodeIdFrom = nodeIdFrom;
             NodeIdTo = nodeIdTo;
             Slots = slots;
         }
+
+        [JsonProperty("id")]
+        public int Id { get; set; }
 
         [JsonProperty("from")]
         public string NodeIdFrom { get; set; }

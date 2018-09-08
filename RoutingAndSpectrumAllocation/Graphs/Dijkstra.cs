@@ -5,7 +5,7 @@ namespace RoutingAndSpectrumAllocation.Graphs
 {
     public class Dijkstra : IPathSearcher
     {
-        public List<GraphPath> GetPaths(Graph graph, GraphNode nodeFrom, GraphNode nodeTo, int numberOfPaths)
+        public List<GraphPath> GetPaths(Graph graph, GraphNode nodeFrom, GraphNode nodeTo, int numberOfPaths, bool directional=false)
         {
             List<GraphPath> paths = new List<GraphPath>();
             List<InternalNodeDijkstra> priorityList = new List<InternalNodeDijkstra>();
@@ -32,14 +32,16 @@ namespace RoutingAndSpectrumAllocation.Graphs
                 if (++counter[nodeDijkstra.NodeId] > numberOfPaths)
                     continue;
 
-                foreach (var neighboor in GetNodeNeighboorsIds(graph, nodeDijkstra))
+                foreach (var neighboor in GetNodeNeighboorsIds(graph, nodeDijkstra, directional))
                 {
                     if (nodeDijkstra.Path.Path.Contains(neighboor))
                         continue;
 
                     path = new GraphPath(nodeDijkstra.Path.Path);
                     path.Path.Add(neighboor);
-                    GraphLink link = graph.Links.FirstOrDefault(r => r.From == neighboor || r.To == neighboor);
+                    GraphLink link = graph.Links.FirstOrDefault(r => r.From == neighboor);
+                    if(link == null && !directional)
+                        link = graph.Links.FirstOrDefault(r => r.To == neighboor);
                     priorityList.Add(new InternalNodeDijkstra(neighboor, path, nodeDijkstra.Distance + link.Cost));
                     priorityList.Sort((x,y) => x.CompareTo(y));
                 }
@@ -58,10 +60,11 @@ namespace RoutingAndSpectrumAllocation.Graphs
             return counter;
         }
 
-        private static List<string> GetNodeNeighboorsIds(Graph graph, InternalNodeDijkstra nodeDijkstra)
+        private static List<string> GetNodeNeighboorsIds(Graph graph, InternalNodeDijkstra nodeDijkstra, bool directional = false)
         {
             var neighboors = graph.Links.Where(r => r.From == nodeDijkstra.NodeId).Select(r => r.To).ToList();
-            neighboors.AddRange(graph.Links.Where(r => r.To == nodeDijkstra.NodeId).Select(r => r.From));
+            if(!directional)
+                neighboors.AddRange(graph.Links.Where(r => r.To == nodeDijkstra.NodeId).Select(r => r.From));
             return neighboors;
         }
 

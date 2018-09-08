@@ -9,26 +9,23 @@ using System.Threading.Tasks;
 
 namespace RoutingAndSpectrumAllocation
 {
-    public class RoutingAndSpectrumAllocation : IRoutingAndSpectrumAllocation
+    public abstract class RoutingAndSpectrumAllocation : IRoutingAndSpectrumAllocation
     {
-        IGraphInputReader InputReader { get; set; }
-        IProgramLogger InfoLogger { get; set; }
-        ILogger StorageLogger { get; set; }
-        IPathSearcher PathSearcher { get; set; }
-        IRSATableFill RSATableFill { get; set; }
-        int supplied = 0;
+        protected IGraphInputReader InputReader { get; set; }
+        protected IProgramLogger InfoLogger { get; set; }
+        protected ILogger StorageLogger { get; set; }
+        protected IRSATableFill RSATableFill { get; set; }
+        protected int supplied = 0;
 
         public RoutingAndSpectrumAllocation(
             IGraphInputReader inputReader, 
             IProgramLogger infologger, 
             ILogger storageLogger, 
-            IPathSearcher pathSearcher,
             IRSATableFill RSATableFill)
         {
             InputReader = inputReader;
             InfoLogger = infologger;
             StorageLogger = storageLogger;
-            PathSearcher = pathSearcher;
             this.RSATableFill = RSATableFill;
         }
 
@@ -49,55 +46,22 @@ namespace RoutingAndSpectrumAllocation
             await ApplyRSA(graph, demands, numberOfLinkChannels);
         }
 
-        private async Task ApplyRSA(Graph graph, List<Demand> demands, int numberOfLinkChannels)
+        protected abstract Task ApplyRSA(Graph graph, List<Demand> demands, int numberOfLinkChannels);
+
+        protected virtual List<AvailableSlot> GetAvailableTableSlots(Graph graph, GraphPath path, RSATable table)
         {
-            RSATable table = new RSATable(graph.Links, numberOfLinkChannels);
+            List<AvailableSlot> availableSlots = new List<AvailableSlot>();
+            List<GraphLink> pathLinks = path.ToLinks(graph.Links);
 
-            foreach (Demand demand in demands)
+            foreach (GraphLink link in pathLinks)
             {
-                GraphNode nodeFrom = graph.Nodes.FirstOrDefault(r => r.Id == demand.NodeIdFrom);
-                GraphNode nodeTo = graph.Nodes.FirstOrDefault(r => r.Id == demand.NodeIdTo);
-
-                await InfoLogger.LogInformation($"processing demand from {demand.NodeIdFrom} to {demand.NodeIdTo} with {demand.Slots} slots\n");
-
-                List<GraphPath> paths = PathSearcher.GetPaths(graph, nodeFrom, nodeTo, 2);
-
-                if (paths.Count() == 0)
-                {
-                    await InfoLogger.LogInformation($"path from {demand.NodeIdFrom} to {demand.NodeIdTo} not found.\n");
-                    continue;
-                }
-
-                table = await FillTable(table, graph,  demand, paths);
+                AvailableSlot element = new AvailableSlot();
+                element.Link = link;
+                element.Availables = new List<int>(table.Table[link.GetLinkId()].Where(r => r.Value.Values.Count == 0).Select(r => r.Key).ToList());
+                availableSlots.Add(element);
             }
 
-            await InfoLogger.LogInformation($"Finished\n");
-
-            await InfoLogger.LogInformation($"Total Demands: {demands.Count}\nSupplied: {supplied}\nBlocked: {demands.Count - supplied}\n");
-
-            await InfoLogger.LogInformation(table.ToStringTable());
-        }
-
-        private async Task<RSATable> FillTable(RSATable table, Graph graph, Demand demand, List<GraphPath> paths)
-        {
-            bool filled = false;
-            foreach (var path in paths)
-            {
-                await InfoLogger.LogInformation($"trying path: {string.Join("->", path.Path)}");
-
-                if (RSATableFill.FillDemandOnTable(ref table, graph, demand, path))
-                {
-                    filled = true;
-                    await InfoLogger.LogInformation($"demand supplied\n");
-                    await InfoLogger.LogInformation(table.ToStringTable());
-                    supplied++;
-                    break;
-                }
-            }
-
-            if (filled == false) 
-                await InfoLogger.LogInformation($"It's not possible to supply demand of {demand.Slots}  from {demand.NodeIdFrom} to {demand.NodeIdTo}\n");
-            return table;
+            return availableSlots;
         }
 
         private static List<Demand> GetDemands(Graph graph)

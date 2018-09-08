@@ -4,481 +4,398 @@ Nodes Path: "Data\arnes_nodes.csv"
 
 Links Path: "Data\arnes_links.csv"
 
-processing demand from Lasko to NovoMesto with 4 slots
+processing demand from Bled to Koper with 8 slots
 
-trying path: Lasko->Celje->Ljubljana->Kosevje->NovoMesto
+trying main path: Bled->Kranj->Ljubljana->Koper
+trying secundary path: Bled->Tolmin->NovaGorica->Ajdovscina->Koper
 demand supplied
 
                        	0	1	2	3	4	5	6	7	
-Koper<->Ljubljana      	0	0	0	0	0	0	0	0	
-Ljubljana<->Kranj      	0	0	0	0	0	0	0	0	
-Kranj<->Bled           	0	0	0	0	0	0	0	0	
-Bled<->Tolmin          	0	0	0	0	0	0	0	0	
-Tolmin<->NovaGorica    	0	0	0	0	0	0	0	0	
-NovaGorica<->Ajdovscina	0	0	0	0	0	0	0	0	
-Ajdovscina<->Koper     	0	0	0	0	0	0	0	0	
-Ljubljana<->Celje      	1	1	1	1	0	0	0	0	
+Koper<->Ljubljana      	1	1	1	1	1	1	1	1	
+Ljubljana<->Kranj      	1	1	1	1	1	1	1	1	
+Kranj<->Bled           	1	1	1	1	1	1	1	1	
+Bled<->Tolmin          	1*	1*	1*	1*	1*	1*	1*	1*	
+Tolmin<->NovaGorica    	1*	1*	1*	1*	1*	1*	1*	1*	
+NovaGorica<->Ajdovscina	1*	1*	1*	1*	1*	1*	1*	1*	
+Ajdovscina<->Koper     	1*	1*	1*	1*	1*	1*	1*	1*	
+Ljubljana<->Celje      	0	0	0	0	0	0	0	0	
 Celje<->Velenje        	0	0	0	0	0	0	0	0	
 Velenje<->Dravograd    	0	0	0	0	0	0	0	0	
 Dravograd<->Maribor    	0	0	0	0	0	0	0	0	
 Maribor<->SBistrika    	0	0	0	0	0	0	0	0	
 SBistrika<->Celje      	0	0	0	0	0	0	0	0	
-Celje<->Lasko          	1	1	1	1	0	0	0	0	
+Celje<->Lasko          	0	0	0	0	0	0	0	0	
 Lasko<->Trbovlje       	0	0	0	0	0	0	0	0	
 Trbovlje<->Ljubljana   	0	0	0	0	0	0	0	0	
 SBistrika<->Krki       	0	0	0	0	0	0	0	0	
 Krki<->NovoMesto       	0	0	0	0	0	0	0	0	
-NovoMesto<->Kosevje    	1	1	1	1	0	0	0	0	
-Kosevje<->Ljubljana    	1	1	1	1	0	0	0	0	
+NovoMesto<->Kosevje    	0	0	0	0	0	0	0	0	
+Kosevje<->Ljubljana    	0	0	0	0	0	0	0	0	
 
-processing demand from Kosevje to Celje with 7 slots
+processing demand from Bled to Dravograd with 4 slots
 
-trying path: Kosevje->Ljubljana->Celje
-trying path: Kosevje->NovoMesto->Krki->SBistrika->Celje
-It's not possible to supply demand of 7  from Kosevje to Celje
+trying main path: Bled->Kranj->Ljubljana->Kosevje->NovoMesto->Krki->SBistrika->Maribor->Dravograd
+It's not possible to supply demand of 4  from Bled to Dravograd
 
-processing demand from Kranj to Dravograd with 1 slots
+processing demand from Velenje to Kosevje with 6 slots
 
-trying path: Kranj->Ljubljana->Celje->SBistrika->Maribor->Dravograd
+trying main path: Velenje->Celje->Ljubljana->Kosevje
+trying secundary path: Velenje->Dravograd->Maribor->SBistrika->Krki->NovoMesto->Kosevje
 demand supplied
 
                        	0	1	2	3	4	5	6	7	
-Koper<->Ljubljana      	0	0	0	0	0	0	0	0	
-Ljubljana<->Kranj      	0	0	0	0	1	0	0	0	
-Kranj<->Bled           	0	0	0	0	0	0	0	0	
-Bled<->Tolmin          	0	0	0	0	0	0	0	0	
-Tolmin<->NovaGorica    	0	0	0	0	0	0	0	0	
-NovaGorica<->Ajdovscina	0	0	0	0	0	0	0	0	
-Ajdovscina<->Koper     	0	0	0	0	0	0	0	0	
-Ljubljana<->Celje      	1	1	1	1	1	0	0	0	
-Celje<->Velenje        	0	0	0	0	0	0	0	0	
-Velenje<->Dravograd    	0	0	0	0	0	0	0	0	
-Dravograd<->Maribor    	0	0	0	0	1	0	0	0	
-Maribor<->SBistrika    	0	0	0	0	1	0	0	0	
-SBistrika<->Celje      	0	0	0	0	1	0	0	0	
-Celje<->Lasko          	1	1	1	1	0	0	0	0	
+Koper<->Ljubljana      	1	1	1	1	1	1	1	1	
+Ljubljana<->Kranj      	1	1	1	1	1	1	1	1	
+Kranj<->Bled           	1	1	1	1	1	1	1	1	
+Bled<->Tolmin          	1*	1*	1*	1*	1*	1*	1*	1*	
+Tolmin<->NovaGorica    	1*	1*	1*	1*	1*	1*	1*	1*	
+NovaGorica<->Ajdovscina	1*	1*	1*	1*	1*	1*	1*	1*	
+Ajdovscina<->Koper     	1*	1*	1*	1*	1*	1*	1*	1*	
+Ljubljana<->Celje      	3	3	3	3	3	3	0	0	
+Celje<->Velenje        	3	3	3	3	3	3	0	0	
+Velenje<->Dravograd    	3*	3*	3*	3*	3*	3*	0	0	
+Dravograd<->Maribor    	3*	3*	3*	3*	3*	3*	0	0	
+Maribor<->SBistrika    	3*	3*	3*	3*	3*	3*	0	0	
+SBistrika<->Celje      	0	0	0	0	0	0	0	0	
+Celje<->Lasko          	0	0	0	0	0	0	0	0	
 Lasko<->Trbovlje       	0	0	0	0	0	0	0	0	
 Trbovlje<->Ljubljana   	0	0	0	0	0	0	0	0	
-SBistrika<->Krki       	0	0	0	0	0	0	0	0	
-Krki<->NovoMesto       	0	0	0	0	0	0	0	0	
-NovoMesto<->Kosevje    	1	1	1	1	0	0	0	0	
-Kosevje<->Ljubljana    	1	1	1	1	0	0	0	0	
+SBistrika<->Krki       	3*	3*	3*	3*	3*	3*	0	0	
+Krki<->NovoMesto       	3*	3*	3*	3*	3*	3*	0	0	
+NovoMesto<->Kosevje    	3*	3*	3*	3*	3*	3*	0	0	
+Kosevje<->Ljubljana    	3	3	3	3	3	3	0	0	
 
-processing demand from SBistrika to Trbovlje with 7 slots
+processing demand from SBistrika to Krki with 3 slots
 
-trying path: SBistrika->Celje->Lasko->Trbovlje
-trying path: SBistrika->Celje->Ljubljana->Trbovlje
-It's not possible to supply demand of 7  from SBistrika to Trbovlje
+trying main path: SBistrika->Krki
+It's not possible to supply demand of 3  from SBistrika to Krki
 
-processing demand from Ajdovscina to Maribor with 7 slots
+processing demand from Maribor to Kosevje with 9 slots
 
-trying path: Ajdovscina->Koper->Ljubljana->Celje->SBistrika->Maribor
-trying path: Ajdovscina->Koper->Ljubljana->Kosevje->NovoMesto->Krki->SBistrika->Maribor
-It's not possible to supply demand of 7  from Ajdovscina to Maribor
+trying main path: Maribor->SBistrika->Krki->NovoMesto->Kosevje
+It's not possible to supply demand of 9  from Maribor to Kosevje
 
-processing demand from Koper to Dravograd with 1 slots
+processing demand from Ajdovscina to Koper with 1 slots
 
-trying path: Koper->Ljubljana->Celje->SBistrika->Maribor->Dravograd
+trying main path: Ajdovscina->Koper
+It's not possible to supply demand of 1  from Ajdovscina to Koper
+
+processing demand from NovoMesto to Ajdovscina with 3 slots
+
+trying main path: NovoMesto->Kosevje->Ljubljana->Koper->Ajdovscina
+It's not possible to supply demand of 3  from NovoMesto to Ajdovscina
+
+processing demand from Velenje to Koper with 2 slots
+
+trying main path: Velenje->Celje->Ljubljana->Koper
+It's not possible to supply demand of 2  from Velenje to Koper
+
+processing demand from Lasko to Kosevje with 9 slots
+
+trying main path: Lasko->Trbovlje->Ljubljana->Kosevje
+It's not possible to supply demand of 9  from Lasko to Kosevje
+
+processing demand from Lasko to Tolmin with 7 slots
+
+trying main path: Lasko->Celje->Ljubljana->Kranj->Bled->Tolmin
+It's not possible to supply demand of 7  from Lasko to Tolmin
+
+processing demand from Tolmin to NovoMesto with 5 slots
+
+trying main path: Tolmin->Bled->Kranj->Ljubljana->Kosevje->NovoMesto
+It's not possible to supply demand of 5  from Tolmin to NovoMesto
+
+processing demand from Dravograd to SBistrika with 3 slots
+
+trying main path: Dravograd->Maribor->SBistrika
+It's not possible to supply demand of 3  from Dravograd to SBistrika
+
+processing demand from Koper to Maribor with 7 slots
+
+trying main path: Koper->Ljubljana->Kosevje->NovoMesto->Krki->SBistrika->Maribor
+It's not possible to supply demand of 7  from Koper to Maribor
+
+processing demand from Celje to Ljubljana with 4 slots
+
+trying main path: Celje->Ljubljana
+It's not possible to supply demand of 4  from Celje to Ljubljana
+
+processing demand from Trbovlje to Kosevje with 2 slots
+
+trying main path: Trbovlje->Ljubljana->Kosevje
+trying secundary path: Trbovlje->Lasko->Celje->Velenje->Dravograd->Maribor->SBistrika->Krki->NovoMesto->Kosevje
 demand supplied
 
                        	0	1	2	3	4	5	6	7	
-Koper<->Ljubljana      	0	0	0	0	0	1	0	0	
-Ljubljana<->Kranj      	0	0	0	0	1	0	0	0	
-Kranj<->Bled           	0	0	0	0	0	0	0	0	
-Bled<->Tolmin          	0	0	0	0	0	0	0	0	
-Tolmin<->NovaGorica    	0	0	0	0	0	0	0	0	
-NovaGorica<->Ajdovscina	0	0	0	0	0	0	0	0	
-Ajdovscina<->Koper     	0	0	0	0	0	0	0	0	
-Ljubljana<->Celje      	1	1	1	1	1	1	0	0	
-Celje<->Velenje        	0	0	0	0	0	0	0	0	
-Velenje<->Dravograd    	0	0	0	0	0	0	0	0	
-Dravograd<->Maribor    	0	0	0	0	1	1	0	0	
-Maribor<->SBistrika    	0	0	0	0	1	1	0	0	
-SBistrika<->Celje      	0	0	0	0	1	1	0	0	
-Celje<->Lasko          	1	1	1	1	0	0	0	0	
-Lasko<->Trbovlje       	0	0	0	0	0	0	0	0	
-Trbovlje<->Ljubljana   	0	0	0	0	0	0	0	0	
-SBistrika<->Krki       	0	0	0	0	0	0	0	0	
-Krki<->NovoMesto       	0	0	0	0	0	0	0	0	
-NovoMesto<->Kosevje    	1	1	1	1	0	0	0	0	
-Kosevje<->Ljubljana    	1	1	1	1	0	0	0	0	
+Koper<->Ljubljana      	1	1	1	1	1	1	1	1	
+Ljubljana<->Kranj      	1	1	1	1	1	1	1	1	
+Kranj<->Bled           	1	1	1	1	1	1	1	1	
+Bled<->Tolmin          	1*	1*	1*	1*	1*	1*	1*	1*	
+Tolmin<->NovaGorica    	1*	1*	1*	1*	1*	1*	1*	1*	
+NovaGorica<->Ajdovscina	1*	1*	1*	1*	1*	1*	1*	1*	
+Ajdovscina<->Koper     	1*	1*	1*	1*	1*	1*	1*	1*	
+Ljubljana<->Celje      	3	3	3	3	3	3	0	0	
+Celje<->Velenje        	3	3	3	3	3	3	15*	15*	
+Velenje<->Dravograd    	3*	3*	3*	3*	3*	3*	15*	15*	
+Dravograd<->Maribor    	3*	3*	3*	3*	3*	3*	15*	15*	
+Maribor<->SBistrika    	3*	3*	3*	3*	3*	3*	15*	15*	
+SBistrika<->Celje      	0	0	0	0	0	0	0	0	
+Celje<->Lasko          	0	0	0	0	0	0	15*	15*	
+Lasko<->Trbovlje       	0	0	0	0	0	0	15*	15*	
+Trbovlje<->Ljubljana   	0	0	0	0	0	0	15	15	
+SBistrika<->Krki       	3*	3*	3*	3*	3*	3*	15*	15*	
+Krki<->NovoMesto       	3*	3*	3*	3*	3*	3*	15*	15*	
+NovoMesto<->Kosevje    	3*	3*	3*	3*	3*	3*	15*	15*	
+Kosevje<->Ljubljana    	3	3	3	3	3	3	15	15	
 
-processing demand from Trbovlje to Dravograd with 3 slots
+processing demand from Ljubljana to Lasko with 7 slots
 
-trying path: Trbovlje->Lasko->Celje->SBistrika->Maribor->Dravograd
-trying path: Trbovlje->Ljubljana->Celje->SBistrika->Maribor->Dravograd
-It's not possible to supply demand of 3  from Trbovlje to Dravograd
+trying main path: Ljubljana->Celje->Lasko
+It's not possible to supply demand of 7  from Ljubljana to Lasko
 
-processing demand from Maribor to Velenje with 2 slots
+processing demand from Celje to Tolmin with 7 slots
 
-trying path: Maribor->Dravograd->Velenje
-demand supplied
+trying main path: Celje->Ljubljana->Kranj->Bled->Tolmin
+It's not possible to supply demand of 7  from Celje to Tolmin
 
-                       	0	1	2	3	4	5	6	7	
-Koper<->Ljubljana      	0	0	0	0	0	1	0	0	
-Ljubljana<->Kranj      	0	0	0	0	1	0	0	0	
-Kranj<->Bled           	0	0	0	0	0	0	0	0	
-Bled<->Tolmin          	0	0	0	0	0	0	0	0	
-Tolmin<->NovaGorica    	0	0	0	0	0	0	0	0	
-NovaGorica<->Ajdovscina	0	0	0	0	0	0	0	0	
-Ajdovscina<->Koper     	0	0	0	0	0	0	0	0	
-Ljubljana<->Celje      	1	1	1	1	1	1	0	0	
-Celje<->Velenje        	0	0	0	0	0	0	0	0	
-Velenje<->Dravograd    	1	1	0	0	0	0	0	0	
-Dravograd<->Maribor    	1	1	0	0	1	1	0	0	
-Maribor<->SBistrika    	0	0	0	0	1	1	0	0	
-SBistrika<->Celje      	0	0	0	0	1	1	0	0	
-Celje<->Lasko          	1	1	1	1	0	0	0	0	
-Lasko<->Trbovlje       	0	0	0	0	0	0	0	0	
-Trbovlje<->Ljubljana   	0	0	0	0	0	0	0	0	
-SBistrika<->Krki       	0	0	0	0	0	0	0	0	
-Krki<->NovoMesto       	0	0	0	0	0	0	0	0	
-NovoMesto<->Kosevje    	1	1	1	1	0	0	0	0	
-Kosevje<->Ljubljana    	1	1	1	1	0	0	0	0	
+processing demand from Trbovlje to Celje with 2 slots
 
-processing demand from Bled to Tolmin with 3 slots
+trying main path: Trbovlje->Lasko->Celje
+trying secundary path: Trbovlje->Ljubljana->Celje
+It's not possible to supply demand of 2  from Trbovlje to Celje
 
-trying path: Bled->Tolmin
-demand supplied
+processing demand from Kosevje to Lasko with 9 slots
 
-                       	0	1	2	3	4	5	6	7	
-Koper<->Ljubljana      	0	0	0	0	0	1	0	0	
-Ljubljana<->Kranj      	0	0	0	0	1	0	0	0	
-Kranj<->Bled           	0	0	0	0	0	0	0	0	
-Bled<->Tolmin          	1	1	1	0	0	0	0	0	
-Tolmin<->NovaGorica    	0	0	0	0	0	0	0	0	
-NovaGorica<->Ajdovscina	0	0	0	0	0	0	0	0	
-Ajdovscina<->Koper     	0	0	0	0	0	0	0	0	
-Ljubljana<->Celje      	1	1	1	1	1	1	0	0	
-Celje<->Velenje        	0	0	0	0	0	0	0	0	
-Velenje<->Dravograd    	1	1	0	0	0	0	0	0	
-Dravograd<->Maribor    	1	1	0	0	1	1	0	0	
-Maribor<->SBistrika    	0	0	0	0	1	1	0	0	
-SBistrika<->Celje      	0	0	0	0	1	1	0	0	
-Celje<->Lasko          	1	1	1	1	0	0	0	0	
-Lasko<->Trbovlje       	0	0	0	0	0	0	0	0	
-Trbovlje<->Ljubljana   	0	0	0	0	0	0	0	0	
-SBistrika<->Krki       	0	0	0	0	0	0	0	0	
-Krki<->NovoMesto       	0	0	0	0	0	0	0	0	
-NovoMesto<->Kosevje    	1	1	1	1	0	0	0	0	
-Kosevje<->Ljubljana    	1	1	1	1	0	0	0	0	
+trying main path: Kosevje->NovoMesto->Krki->SBistrika->Celje->Lasko
+It's not possible to supply demand of 9  from Kosevje to Lasko
 
-processing demand from NovaGorica to Celje with 7 slots
+processing demand from SBistrika to Celje with 6 slots
 
-trying path: NovaGorica->Ajdovscina->Koper->Ljubljana->Celje
-trying path: NovaGorica->Ajdovscina->Koper->Ljubljana->Kosevje->NovoMesto->Krki->SBistrika->Celje
-It's not possible to supply demand of 7  from NovaGorica to Celje
+trying main path: SBistrika->Celje
+trying secundary path: SBistrika->Krki->NovoMesto->Kosevje->Ljubljana->Celje
+It's not possible to supply demand of 6  from SBistrika to Celje
 
-processing demand from Kosevje to Koper with 6 slots
+processing demand from Celje to Trbovlje with 7 slots
 
-trying path: Kosevje->Ljubljana->Koper
-trying path: Kosevje->NovoMesto->Krki->SBistrika->Celje->Ljubljana->Koper
-It's not possible to supply demand of 6  from Kosevje to Koper
+trying main path: Celje->Lasko->Trbovlje
+It's not possible to supply demand of 7  from Celje to Trbovlje
 
-processing demand from Tolmin to Ajdovscina with 8 slots
+processing demand from Krki to Celje with 9 slots
 
-trying path: Tolmin->Bled->Kranj->Ljubljana->Koper->Ajdovscina
-trying path: Tolmin->NovaGorica->Ajdovscina
-demand supplied
+trying main path: Krki->NovoMesto->Kosevje->Ljubljana->Celje
+It's not possible to supply demand of 9  from Krki to Celje
 
-                       	0	1	2	3	4	5	6	7	
-Koper<->Ljubljana      	0	0	0	0	0	1	0	0	
-Ljubljana<->Kranj      	0	0	0	0	1	0	0	0	
-Kranj<->Bled           	0	0	0	0	0	0	0	0	
-Bled<->Tolmin          	1	1	1	0	0	0	0	0	
-Tolmin<->NovaGorica    	1	1	1	1	1	1	1	1	
-NovaGorica<->Ajdovscina	1	1	1	1	1	1	1	1	
-Ajdovscina<->Koper     	0	0	0	0	0	0	0	0	
-Ljubljana<->Celje      	1	1	1	1	1	1	0	0	
-Celje<->Velenje        	0	0	0	0	0	0	0	0	
-Velenje<->Dravograd    	1	1	0	0	0	0	0	0	
-Dravograd<->Maribor    	1	1	0	0	1	1	0	0	
-Maribor<->SBistrika    	0	0	0	0	1	1	0	0	
-SBistrika<->Celje      	0	0	0	0	1	1	0	0	
-Celje<->Lasko          	1	1	1	1	0	0	0	0	
-Lasko<->Trbovlje       	0	0	0	0	0	0	0	0	
-Trbovlje<->Ljubljana   	0	0	0	0	0	0	0	0	
-SBistrika<->Krki       	0	0	0	0	0	0	0	0	
-Krki<->NovoMesto       	0	0	0	0	0	0	0	0	
-NovoMesto<->Kosevje    	1	1	1	1	0	0	0	0	
-Kosevje<->Ljubljana    	1	1	1	1	0	0	0	0	
+processing demand from SBistrika to Koper with 3 slots
 
-processing demand from SBistrika to Bled with 7 slots
+trying main path: SBistrika->Celje->Ljubljana->Koper
+It's not possible to supply demand of 3  from SBistrika to Koper
 
-trying path: SBistrika->Celje->Ljubljana->Kranj->Bled
-trying path: SBistrika->Krki->NovoMesto->Kosevje->Ljubljana->Kranj->Bled
-It's not possible to supply demand of 7  from SBistrika to Bled
+processing demand from Maribor to NovaGorica with 4 slots
 
-processing demand from SBistrika to Velenje with 6 slots
+trying main path: Maribor->SBistrika->Krki->NovoMesto->Kosevje->Ljubljana->Koper->Ajdovscina->NovaGorica
+It's not possible to supply demand of 4  from Maribor to NovaGorica
 
-trying path: SBistrika->Celje->Velenje
-trying path: SBistrika->Maribor->Dravograd->Velenje
-It's not possible to supply demand of 6  from SBistrika to Velenje
+processing demand from Tolmin to Celje with 3 slots
 
-processing demand from Ljubljana to Bled with 9 slots
+trying main path: Tolmin->Bled->Kranj->Ljubljana->Celje
+It's not possible to supply demand of 3  from Tolmin to Celje
 
-trying path: Ljubljana->Kranj->Bled
-trying path: Ljubljana->Koper->Ajdovscina->NovaGorica->Tolmin->Bled
-It's not possible to supply demand of 9  from Ljubljana to Bled
+processing demand from Krki to Lasko with 1 slots
 
-processing demand from SBistrika to Koper with 6 slots
+trying main path: Krki->SBistrika->Celje->Lasko
+It's not possible to supply demand of 1  from Krki to Lasko
 
-trying path: SBistrika->Celje->Ljubljana->Koper
-trying path: SBistrika->Krki->NovoMesto->Kosevje->Ljubljana->Koper
-It's not possible to supply demand of 6  from SBistrika to Koper
+processing demand from Koper to SBistrika with 3 slots
 
-processing demand from Trbovlje to Ljubljana with 4 slots
+trying main path: Koper->Ljubljana->Kosevje->NovoMesto->Krki->SBistrika
+It's not possible to supply demand of 3  from Koper to SBistrika
 
-trying path: Trbovlje->Ljubljana
-demand supplied
+processing demand from Bled to Tolmin with 1 slots
 
-                       	0	1	2	3	4	5	6	7	
-Koper<->Ljubljana      	0	0	0	0	0	1	0	0	
-Ljubljana<->Kranj      	0	0	0	0	1	0	0	0	
-Kranj<->Bled           	0	0	0	0	0	0	0	0	
-Bled<->Tolmin          	1	1	1	0	0	0	0	0	
-Tolmin<->NovaGorica    	1	1	1	1	1	1	1	1	
-NovaGorica<->Ajdovscina	1	1	1	1	1	1	1	1	
-Ajdovscina<->Koper     	0	0	0	0	0	0	0	0	
-Ljubljana<->Celje      	1	1	1	1	1	1	0	0	
-Celje<->Velenje        	0	0	0	0	0	0	0	0	
-Velenje<->Dravograd    	1	1	0	0	0	0	0	0	
-Dravograd<->Maribor    	1	1	0	0	1	1	0	0	
-Maribor<->SBistrika    	0	0	0	0	1	1	0	0	
-SBistrika<->Celje      	0	0	0	0	1	1	0	0	
-Celje<->Lasko          	1	1	1	1	0	0	0	0	
-Lasko<->Trbovlje       	0	0	0	0	0	0	0	0	
-Trbovlje<->Ljubljana   	1	1	1	1	0	0	0	0	
-SBistrika<->Krki       	0	0	0	0	0	0	0	0	
-Krki<->NovoMesto       	0	0	0	0	0	0	0	0	
-NovoMesto<->Kosevje    	1	1	1	1	0	0	0	0	
-Kosevje<->Ljubljana    	1	1	1	1	0	0	0	0	
+trying main path: Bled->Tolmin
+It's not possible to supply demand of 1  from Bled to Tolmin
 
-processing demand from Trbovlje to Ajdovscina with 2 slots
+processing demand from Kosevje to Celje with 5 slots
 
-trying path: Trbovlje->Ljubljana->Koper->Ajdovscina
-demand supplied
+trying main path: Kosevje->Ljubljana->Celje
+It's not possible to supply demand of 5  from Kosevje to Celje
 
-                       	0	1	2	3	4	5	6	7	
-Koper<->Ljubljana      	0	0	0	0	0	1	1	1	
-Ljubljana<->Kranj      	0	0	0	0	1	0	0	0	
-Kranj<->Bled           	0	0	0	0	0	0	0	0	
-Bled<->Tolmin          	1	1	1	0	0	0	0	0	
-Tolmin<->NovaGorica    	1	1	1	1	1	1	1	1	
-NovaGorica<->Ajdovscina	1	1	1	1	1	1	1	1	
-Ajdovscina<->Koper     	0	0	0	0	0	0	1	1	
-Ljubljana<->Celje      	1	1	1	1	1	1	0	0	
-Celje<->Velenje        	0	0	0	0	0	0	0	0	
-Velenje<->Dravograd    	1	1	0	0	0	0	0	0	
-Dravograd<->Maribor    	1	1	0	0	1	1	0	0	
-Maribor<->SBistrika    	0	0	0	0	1	1	0	0	
-SBistrika<->Celje      	0	0	0	0	1	1	0	0	
-Celje<->Lasko          	1	1	1	1	0	0	0	0	
-Lasko<->Trbovlje       	0	0	0	0	0	0	0	0	
-Trbovlje<->Ljubljana   	1	1	1	1	0	0	1	1	
-SBistrika<->Krki       	0	0	0	0	0	0	0	0	
-Krki<->NovoMesto       	0	0	0	0	0	0	0	0	
-NovoMesto<->Kosevje    	1	1	1	1	0	0	0	0	
-Kosevje<->Ljubljana    	1	1	1	1	0	0	0	0	
+processing demand from Celje to Dravograd with 9 slots
 
-processing demand from Ljubljana to Ajdovscina with 3 slots
+trying main path: Celje->SBistrika->Maribor->Dravograd
+It's not possible to supply demand of 9  from Celje to Dravograd
 
-trying path: Ljubljana->Koper->Ajdovscina
-demand supplied
+processing demand from NovaGorica to Ajdovscina with 2 slots
 
-                       	0	1	2	3	4	5	6	7	
-Koper<->Ljubljana      	1	1	1	0	0	1	1	1	
-Ljubljana<->Kranj      	0	0	0	0	1	0	0	0	
-Kranj<->Bled           	0	0	0	0	0	0	0	0	
-Bled<->Tolmin          	1	1	1	0	0	0	0	0	
-Tolmin<->NovaGorica    	1	1	1	1	1	1	1	1	
-NovaGorica<->Ajdovscina	1	1	1	1	1	1	1	1	
-Ajdovscina<->Koper     	1	1	1	0	0	0	1	1	
-Ljubljana<->Celje      	1	1	1	1	1	1	0	0	
-Celje<->Velenje        	0	0	0	0	0	0	0	0	
-Velenje<->Dravograd    	1	1	0	0	0	0	0	0	
-Dravograd<->Maribor    	1	1	0	0	1	1	0	0	
-Maribor<->SBistrika    	0	0	0	0	1	1	0	0	
-SBistrika<->Celje      	0	0	0	0	1	1	0	0	
-Celje<->Lasko          	1	1	1	1	0	0	0	0	
-Lasko<->Trbovlje       	0	0	0	0	0	0	0	0	
-Trbovlje<->Ljubljana   	1	1	1	1	0	0	1	1	
-SBistrika<->Krki       	0	0	0	0	0	0	0	0	
-Krki<->NovoMesto       	0	0	0	0	0	0	0	0	
-NovoMesto<->Kosevje    	1	1	1	1	0	0	0	0	
-Kosevje<->Ljubljana    	1	1	1	1	0	0	0	0	
+trying main path: NovaGorica->Ajdovscina
+It's not possible to supply demand of 2  from NovaGorica to Ajdovscina
 
-processing demand from Trbovlje to Kranj with 4 slots
+processing demand from Kranj to Koper with 3 slots
 
-trying path: Trbovlje->Ljubljana->Kranj
-trying path: Trbovlje->Lasko->Celje->Ljubljana->Kranj
-It's not possible to supply demand of 4  from Trbovlje to Kranj
+trying main path: Kranj->Ljubljana->Koper
+It's not possible to supply demand of 3  from Kranj to Koper
 
-processing demand from NovaGorica to SBistrika with 8 slots
+processing demand from SBistrika to NovoMesto with 6 slots
 
-trying path: NovaGorica->Ajdovscina->Koper->Ljubljana->Celje->SBistrika
-trying path: NovaGorica->Ajdovscina->Koper->Ljubljana->Kosevje->NovoMesto->Krki->SBistrika
-It's not possible to supply demand of 8  from NovaGorica to SBistrika
+trying main path: SBistrika->Krki->NovoMesto
+It's not possible to supply demand of 6  from SBistrika to NovoMesto
 
-processing demand from Kranj to Ljubljana with 2 slots
+processing demand from Bled to Celje with 7 slots
 
-trying path: Kranj->Ljubljana
-demand supplied
+trying main path: Bled->Kranj->Ljubljana->Celje
+It's not possible to supply demand of 7  from Bled to Celje
 
-                       	0	1	2	3	4	5	6	7	
-Koper<->Ljubljana      	1	1	1	0	0	1	1	1	
-Ljubljana<->Kranj      	1	1	0	0	1	0	0	0	
-Kranj<->Bled           	0	0	0	0	0	0	0	0	
-Bled<->Tolmin          	1	1	1	0	0	0	0	0	
-Tolmin<->NovaGorica    	1	1	1	1	1	1	1	1	
-NovaGorica<->Ajdovscina	1	1	1	1	1	1	1	1	
-Ajdovscina<->Koper     	1	1	1	0	0	0	1	1	
-Ljubljana<->Celje      	1	1	1	1	1	1	0	0	
-Celje<->Velenje        	0	0	0	0	0	0	0	0	
-Velenje<->Dravograd    	1	1	0	0	0	0	0	0	
-Dravograd<->Maribor    	1	1	0	0	1	1	0	0	
-Maribor<->SBistrika    	0	0	0	0	1	1	0	0	
-SBistrika<->Celje      	0	0	0	0	1	1	0	0	
-Celje<->Lasko          	1	1	1	1	0	0	0	0	
-Lasko<->Trbovlje       	0	0	0	0	0	0	0	0	
-Trbovlje<->Ljubljana   	1	1	1	1	0	0	1	1	
-SBistrika<->Krki       	0	0	0	0	0	0	0	0	
-Krki<->NovoMesto       	0	0	0	0	0	0	0	0	
-NovoMesto<->Kosevje    	1	1	1	1	0	0	0	0	
-Kosevje<->Ljubljana    	1	1	1	1	0	0	0	0	
+processing demand from NovoMesto to NovaGorica with 5 slots
 
-processing demand from Krki to NovaGorica with 4 slots
+trying main path: NovoMesto->Kosevje->Ljubljana->Koper->Ajdovscina->NovaGorica
+It's not possible to supply demand of 5  from NovoMesto to NovaGorica
 
-trying path: Krki->NovoMesto->Kosevje->Ljubljana->Koper->Ajdovscina->NovaGorica
-trying path: Krki->SBistrika->Celje->Ljubljana->Koper->Ajdovscina->NovaGorica
-It's not possible to supply demand of 4  from Krki to NovaGorica
+processing demand from Kosevje to Trbovlje with 2 slots
 
-processing demand from NovaGorica to Kranj with 8 slots
+trying main path: Kosevje->Ljubljana->Trbovlje
+It's not possible to supply demand of 2  from Kosevje to Trbovlje
 
-trying path: NovaGorica->Ajdovscina->Koper->Ljubljana->Kranj
-trying path: NovaGorica->Tolmin->Bled->Kranj
-It's not possible to supply demand of 8  from NovaGorica to Kranj
+processing demand from Koper to Kosevje with 6 slots
 
-processing demand from Krki to Koper with 4 slots
+trying main path: Koper->Ljubljana->Kosevje
+It's not possible to supply demand of 6  from Koper to Kosevje
 
-trying path: Krki->NovoMesto->Kosevje->Ljubljana->Koper
-trying path: Krki->SBistrika->Celje->Ljubljana->Koper
-It's not possible to supply demand of 4  from Krki to Koper
+processing demand from Trbovlje to Ajdovscina with 3 slots
 
-processing demand from NovoMesto to Tolmin with 6 slots
+trying main path: Trbovlje->Ljubljana->Koper->Ajdovscina
+It's not possible to supply demand of 3  from Trbovlje to Ajdovscina
 
-trying path: NovoMesto->Kosevje->Ljubljana->Kranj->Bled->Tolmin
-trying path: NovoMesto->Kosevje->Ljubljana->Koper->Ajdovscina->NovaGorica->Tolmin
-It's not possible to supply demand of 6  from NovoMesto to Tolmin
+processing demand from NovoMesto to Kosevje with 5 slots
 
-processing demand from Tolmin to Lasko with 6 slots
+trying main path: NovoMesto->Kosevje
+It's not possible to supply demand of 5  from NovoMesto to Kosevje
 
-trying path: Tolmin->Bled->Kranj->Ljubljana->Celje->Lasko
-trying path: Tolmin->NovaGorica->Ajdovscina->Koper->Ljubljana->Celje->Lasko
-It's not possible to supply demand of 6  from Tolmin to Lasko
+processing demand from Tolmin to Velenje with 4 slots
 
-processing demand from SBistrika to Maribor with 2 slots
+trying main path: Tolmin->Bled->Kranj->Ljubljana->Celje->Velenje
+It's not possible to supply demand of 4  from Tolmin to Velenje
 
-trying path: SBistrika->Maribor
-demand supplied
+processing demand from NovaGorica to Kosevje with 3 slots
+
+trying main path: NovaGorica->Ajdovscina->Koper->Ljubljana->Kosevje
+It's not possible to supply demand of 3  from NovaGorica to Kosevje
+
+processing demand from Kranj to Celje with 1 slots
+
+trying main path: Kranj->Ljubljana->Celje
+It's not possible to supply demand of 1  from Kranj to Celje
+
+processing demand from Kranj to Trbovlje with 5 slots
+
+trying main path: Kranj->Ljubljana->Trbovlje
+It's not possible to supply demand of 5  from Kranj to Trbovlje
+
+processing demand from Krki to Bled with 6 slots
+
+trying main path: Krki->NovoMesto->Kosevje->Ljubljana->Kranj->Bled
+It's not possible to supply demand of 6  from Krki to Bled
+
+processing demand from Lasko to Celje with 2 slots
+
+trying main path: Lasko->Celje
+trying secundary path: Lasko->Trbovlje->Ljubljana->Celje
+It's not possible to supply demand of 2  from Lasko to Celje
+
+processing demand from Maribor to NovoMesto with 5 slots
+
+trying main path: Maribor->SBistrika->Krki->NovoMesto
+It's not possible to supply demand of 5  from Maribor to NovoMesto
+
+processing demand from Maribor to Celje with 8 slots
+
+trying main path: Maribor->SBistrika->Celje
+It's not possible to supply demand of 8  from Maribor to Celje
+
+processing demand from NovaGorica to Lasko with 4 slots
+
+trying main path: NovaGorica->Ajdovscina->Koper->Ljubljana->Celje->Lasko
+It's not possible to supply demand of 4  from NovaGorica to Lasko
+
+processing demand from Trbovlje to Lasko with 7 slots
+
+trying main path: Trbovlje->Lasko
+It's not possible to supply demand of 7  from Trbovlje to Lasko
+
+processing demand from Dravograd to Lasko with 2 slots
+
+trying main path: Dravograd->Maribor->SBistrika->Celje->Lasko
+It's not possible to supply demand of 2  from Dravograd to Lasko
+
+processing demand from Celje to NovoMesto with 1 slots
+
+trying main path: Celje->Ljubljana->Kosevje->NovoMesto
+It's not possible to supply demand of 1  from Celje to NovoMesto
+
+processing demand from Ajdovscina to Velenje with 8 slots
+
+trying main path: Ajdovscina->Koper->Ljubljana->Celje->Velenje
+It's not possible to supply demand of 8  from Ajdovscina to Velenje
+
+processing demand from Kosevje to Bled with 5 slots
+
+trying main path: Kosevje->Ljubljana->Kranj->Bled
+It's not possible to supply demand of 5  from Kosevje to Bled
+
+processing demand from Lasko to Dravograd with 8 slots
+
+trying main path: Lasko->Celje->SBistrika->Maribor->Dravograd
+It's not possible to supply demand of 8  from Lasko to Dravograd
+
+processing demand from Velenje to Ljubljana with 5 slots
+
+trying main path: Velenje->Celje->Ljubljana
+It's not possible to supply demand of 5  from Velenje to Ljubljana
+
+processing demand from Tolmin to Ljubljana with 9 slots
+
+trying main path: Tolmin->Bled->Kranj->Ljubljana
+It's not possible to supply demand of 9  from Tolmin to Ljubljana
+
+processing demand from Bled to NovoMesto with 4 slots
+
+trying main path: Bled->Kranj->Ljubljana->Kosevje->NovoMesto
+It's not possible to supply demand of 4  from Bled to NovoMesto
+
+processing demand from Lasko to NovaGorica with 2 slots
+
+trying main path: Lasko->Celje->Ljubljana->Koper->Ajdovscina->NovaGorica
+It's not possible to supply demand of 2  from Lasko to NovaGorica
+
+processing demand from Krki to NovoMesto with 2 slots
+
+trying main path: Krki->NovoMesto
+It's not possible to supply demand of 2  from Krki to NovoMesto
+
+Finished
+
+Total Demands: 59
+Supplied: 3
+Blocked: 56
 
                        	0	1	2	3	4	5	6	7	
-Koper<->Ljubljana      	1	1	1	0	0	1	1	1	
-Ljubljana<->Kranj      	1	1	0	0	1	0	0	0	
-Kranj<->Bled           	0	0	0	0	0	0	0	0	
-Bled<->Tolmin          	1	1	1	0	0	0	0	0	
-Tolmin<->NovaGorica    	1	1	1	1	1	1	1	1	
-NovaGorica<->Ajdovscina	1	1	1	1	1	1	1	1	
-Ajdovscina<->Koper     	1	1	1	0	0	0	1	1	
-Ljubljana<->Celje      	1	1	1	1	1	1	0	0	
-Celje<->Velenje        	0	0	0	0	0	0	0	0	
-Velenje<->Dravograd    	1	1	0	0	0	0	0	0	
-Dravograd<->Maribor    	1	1	0	0	1	1	0	0	
-Maribor<->SBistrika    	1	1	0	0	1	1	0	0	
-SBistrika<->Celje      	0	0	0	0	1	1	0	0	
-Celje<->Lasko          	1	1	1	1	0	0	0	0	
-Lasko<->Trbovlje       	0	0	0	0	0	0	0	0	
-Trbovlje<->Ljubljana   	1	1	1	1	0	0	1	1	
-SBistrika<->Krki       	0	0	0	0	0	0	0	0	
-Krki<->NovoMesto       	0	0	0	0	0	0	0	0	
-NovoMesto<->Kosevje    	1	1	1	1	0	0	0	0	
-Kosevje<->Ljubljana    	1	1	1	1	0	0	0	0	
-
-processing demand from Bled to Ljubljana with 3 slots
-
-trying path: Bled->Kranj->Ljubljana
-demand supplied
-
-                       	0	1	2	3	4	5	6	7	
-Koper<->Ljubljana      	1	1	1	0	0	1	1	1	
-Ljubljana<->Kranj      	1	1	0	0	1	1	1	1	
-Kranj<->Bled           	0	0	0	0	0	1	1	1	
-Bled<->Tolmin          	1	1	1	0	0	0	0	0	
-Tolmin<->NovaGorica    	1	1	1	1	1	1	1	1	
-NovaGorica<->Ajdovscina	1	1	1	1	1	1	1	1	
-Ajdovscina<->Koper     	1	1	1	0	0	0	1	1	
-Ljubljana<->Celje      	1	1	1	1	1	1	0	0	
-Celje<->Velenje        	0	0	0	0	0	0	0	0	
-Velenje<->Dravograd    	1	1	0	0	0	0	0	0	
-Dravograd<->Maribor    	1	1	0	0	1	1	0	0	
-Maribor<->SBistrika    	1	1	0	0	1	1	0	0	
-SBistrika<->Celje      	0	0	0	0	1	1	0	0	
-Celje<->Lasko          	1	1	1	1	0	0	0	0	
-Lasko<->Trbovlje       	0	0	0	0	0	0	0	0	
-Trbovlje<->Ljubljana   	1	1	1	1	0	0	1	1	
-SBistrika<->Krki       	0	0	0	0	0	0	0	0	
-Krki<->NovoMesto       	0	0	0	0	0	0	0	0	
-NovoMesto<->Kosevje    	1	1	1	1	0	0	0	0	
-Kosevje<->Ljubljana    	1	1	1	1	0	0	0	0	
-
-processing demand from Celje to Dravograd with 3 slots
-
-trying path: Celje->SBistrika->Maribor->Dravograd
-trying path: Celje->Ljubljana->Kosevje->NovoMesto->Krki->SBistrika->Maribor->Dravograd
-It's not possible to supply demand of 3  from Celje to Dravograd
-
-processing demand from Krki to Ajdovscina with 3 slots
-
-trying path: Krki->NovoMesto->Kosevje->Ljubljana->Koper->Ajdovscina
-trying path: Krki->SBistrika->Celje->Ljubljana->Koper->Ajdovscina
-It's not possible to supply demand of 3  from Krki to Ajdovscina
-
-processing demand from Ajdovscina to Celje with 7 slots
-
-trying path: Ajdovscina->Koper->Ljubljana->Celje
-trying path: Ajdovscina->Koper->Ljubljana->Kosevje->NovoMesto->Krki->SBistrika->Celje
-It's not possible to supply demand of 7  from Ajdovscina to Celje
-
-processing demand from Dravograd to Trbovlje with 7 slots
-
-trying path: Dravograd->Maribor->SBistrika->Celje->Lasko->Trbovlje
-trying path: Dravograd->Maribor->SBistrika->Celje->Ljubljana->Trbovlje
-It's not possible to supply demand of 7  from Dravograd to Trbovlje
-
-processing demand from Celje to SBistrika with 1 slots
-
-trying path: Celje->SBistrika
-demand supplied
-
-                       	0	1	2	3	4	5	6	7	
-Koper<->Ljubljana      	1	1	1	0	0	1	1	1	
-Ljubljana<->Kranj      	1	1	0	0	1	1	1	1	
-Kranj<->Bled           	0	0	0	0	0	1	1	1	
-Bled<->Tolmin          	1	1	1	0	0	0	0	0	
-Tolmin<->NovaGorica    	1	1	1	1	1	1	1	1	
-NovaGorica<->Ajdovscina	1	1	1	1	1	1	1	1	
-Ajdovscina<->Koper     	1	1	1	0	0	0	1	1	
-Ljubljana<->Celje      	1	1	1	1	1	1	0	0	
-Celje<->Velenje        	0	0	0	0	0	0	0	0	
-Velenje<->Dravograd    	1	1	0	0	0	0	0	0	
-Dravograd<->Maribor    	1	1	0	0	1	1	0	0	
-Maribor<->SBistrika    	1	1	0	0	1	1	0	0	
-SBistrika<->Celje      	1	0	0	0	1	1	0	0	
-Celje<->Lasko          	1	1	1	1	0	0	0	0	
-Lasko<->Trbovlje       	0	0	0	0	0	0	0	0	
-Trbovlje<->Ljubljana   	1	1	1	1	0	0	1	1	
-SBistrika<->Krki       	0	0	0	0	0	0	0	0	
-Krki<->NovoMesto       	0	0	0	0	0	0	0	0	
-NovoMesto<->Kosevje    	1	1	1	1	0	0	0	0	
-Kosevje<->Ljubljana    	1	1	1	1	0	0	0	0	
+Koper<->Ljubljana      	1	1	1	1	1	1	1	1	
+Ljubljana<->Kranj      	1	1	1	1	1	1	1	1	
+Kranj<->Bled           	1	1	1	1	1	1	1	1	
+Bled<->Tolmin          	1*	1*	1*	1*	1*	1*	1*	1*	
+Tolmin<->NovaGorica    	1*	1*	1*	1*	1*	1*	1*	1*	
+NovaGorica<->Ajdovscina	1*	1*	1*	1*	1*	1*	1*	1*	
+Ajdovscina<->Koper     	1*	1*	1*	1*	1*	1*	1*	1*	
+Ljubljana<->Celje      	3	3	3	3	3	3	0	0	
+Celje<->Velenje        	3	3	3	3	3	3	15*	15*	
+Velenje<->Dravograd    	3*	3*	3*	3*	3*	3*	15*	15*	
+Dravograd<->Maribor    	3*	3*	3*	3*	3*	3*	15*	15*	
+Maribor<->SBistrika    	3*	3*	3*	3*	3*	3*	15*	15*	
+SBistrika<->Celje      	0	0	0	0	0	0	0	0	
+Celje<->Lasko          	0	0	0	0	0	0	15*	15*	
+Lasko<->Trbovlje       	0	0	0	0	0	0	15*	15*	
+Trbovlje<->Ljubljana   	0	0	0	0	0	0	15	15	
+SBistrika<->Krki       	3*	3*	3*	3*	3*	3*	15*	15*	
+Krki<->NovoMesto       	3*	3*	3*	3*	3*	3*	15*	15*	
+NovoMesto<->Kosevje    	3*	3*	3*	3*	3*	3*	15*	15*	
+Kosevje<->Ljubljana    	3	3	3	3	3	3	15	15	
 
