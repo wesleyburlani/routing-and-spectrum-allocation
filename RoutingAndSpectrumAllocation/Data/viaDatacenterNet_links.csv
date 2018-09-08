@@ -1,0 +1,15 @@
+From,To,Length,Capacity,Cost
+Lisbon,London,1581.53435050781,50,1
+London,Paris,347.063745185111,50,1
+Paris,Barcelona,809.332944909774,50,1
+Barcelona,Madrid,493.790557458009,50,1
+Madrid,Lisbon,506.347272267436,50,1
+Paris,Frankfurt,509.242999952704,50,1
+Frankfurt,Amsterdam,323.244804857422,50,1
+Amsterdam,London,322.007166039494,50,1
+London,Frankfurt,589.917491936945,50,1
+Frankfurt,Munich,358.72684905452,50,1
+Munich,Berlin,492.964343581454,50,1
+Berlin,Frankfurt,379.852102100873,50,1
+
+

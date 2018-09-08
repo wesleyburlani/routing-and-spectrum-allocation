@@ -1,0 +1,2145 @@
+{
+  "Nodes": [
+    {
+      "Id": "Seattle",
+      "Lat": 47.57,
+      "Long": -122.386,
+      "Type": null
+    },
+    {
+      "Id": "Portland",
+      "Lat": 45.523,
+      "Long": -122.676,
+      "Type": null
+    },
+    {
+      "Id": "Spokane",
+      "Lat": 47.658,
+      "Long": -117.426,
+      "Type": null
+    },
+    {
+      "Id": "Boise",
+      "Lat": 43.616,
+      "Long": -116.216,
+      "Type": null
+    },
+    {
+      "Id": "Eugene",
+      "Lat": 44.052,
+      "Long": -123.086,
+      "Type": null
+    },
+    {
+      "Id": "Billings",
+      "Lat": 45.783,
+      "Long": -108.5,
+      "Type": null
+    },
+    {
+      "Id": "FortCollins",
+      "Lat": 40.585,
+      "Long": -105.084,
+      "Type": null
+    },
+    {
+      "Id": "Denver",
+      "Lat": 39.739,
+      "Long": -104.984,
+      "Type": null
+    },
+    {
+      "Id": "Saltlakecity",
+      "Lat": 40.693,
+      "Long": -111.891,
+      "Type": null
+    },
+    {
+      "Id": "Sacramento",
+      "Lat": 38.567,
+      "Long": -121.422,
+      "Type": null
+    },
+    {
+      "Id": "SanFrancisco",
+      "Lat": 37.795,
+      "Long": -122.38,
+      "Type": null
+    },
+    {
+      "Id": "Modesto",
+      "Lat": 37.639,
+      "Long": -120.996,
+      "Type": null
+    },
+    {
+      "Id": "SanJose",
+      "Lat": 37.308,
+      "Long": -121.847,
+      "Type": null
+    },
+    {
+      "Id": "Bakersfield",
+      "Lat": 35.373,
+      "Long": -119.018,
+      "Type": null
+    },
+    {
+      "Id": "LosAngelos",
+      "Lat": 34.0,
+      "Long": -118.249,
+      "Type": null
+    },
+    {
+      "Id": "SanDiego",
+      "Lat": 32.761,
+      "Long": -117.125,
+      "Type": null
+    },
+    {
+      "Id": "Lasvegas",
+      "Lat": 36.175,
+      "Long": -115.137,
+      "Type": null
+    },
+    {
+      "Id": "Tempe",
+      "Lat": 33.415,
+      "Long": -111.909,
+      "Type": null
+    },
+    {
+      "Id": "Tucson",
+      "Lat": 32.221,
+      "Long": -110.926,
+      "Type": null
+    },
+    {
+      "Id": "Albuquerque",
+      "Lat": 35.084,
+      "Long": -106.651,
+      "Type": null
+    },
+    {
+      "Id": "ElPaso",
+      "Lat": 31.78,
+      "Long": -106.449,
+      "Type": null
+    },
+    {
+      "Id": "Amarilho",
+      "Lat": 35.222,
+      "Long": -101.831,
+      "Type": null
+    },
+    {
+      "Id": "lubbock",
+      "Lat": 33.577,
+      "Long": -101.855,
+      "Type": null
+    },
+    {
+      "Id": "SanAntonio",
+      "Lat": 29.429,
+      "Long": -98.524,
+      "Type": null
+    },
+    {
+      "Id": "Houston",
+      "Lat": 29.771,
+      "Long": -95.407,
+      "Type": null
+    },
+    {
+      "Id": "Waco",
+      "Lat": 31.549,
+      "Long": -97.146,
+      "Type": null
+    },
+    {
+      "Id": "Dallas",
+      "Lat": 32.763,
+      "Long": -96.663,
+      "Type": null
+    },
+    {
+      "Id": "shreveport",
+      "Lat": 32.525,
+      "Long": -93.75,
+      "Type": null
+    },
+    {
+      "Id": "Littlerock",
+      "Lat": 34.761,
+      "Long": -92.309,
+      "Type": null
+    },
+    {
+      "Id": "Oklahomacity",
+      "Lat": 35.49,
+      "Long": -97.529,
+      "Type": null
+    },
+    {
+      "Id": "Wichita",
+      "Lat": 37.692,
+      "Long": -97.337,
+      "Type": null
+    },
+    {
+      "Id": "Kansascity",
+      "Lat": 39.099,
+      "Long": -94.578,
+      "Type": null
+    },
+    {
+      "Id": "Omaha",
+      "Lat": 41.258,
+      "Long": -95.937,
+      "Type": null
+    },
+    {
+      "Id": "SiouxFalls",
+      "Lat": 43.549,
+      "Long": -96.7,
+      "Type": null
+    },
+    {
+      "Id": "Fargo",
+      "Lat": 46.877,
+      "Long": -96.789,
+      "Type": null
+    },
+    {
+      "Id": "Minneapolis",
+      "Lat": 44.924,
+      "Long": -93.307,
+      "Type": null
+    },
+    {
+      "Id": "DesMoines",
+      "Lat": 41.597,
+      "Long": -93.622,
+      "Type": null
+    },
+    {
+      "Id": "Peoria",
+      "Lat": 40.693,
+      "Long": -89.588,
+      "Type": null
+    },
+    {
+      "Id": "Milwaukee",
+      "Lat": 43.038,
+      "Long": -87.906,
+      "Type": null
+    },
+    {
+      "Id": "Chicago",
+      "Lat": 41.826,
+      "Long": -87.641,
+      "Type": null
+    },
+    {
+      "Id": "Grandrapids",
+      "Lat": 42.963,
+      "Long": -85.668,
+      "Type": null
+    },
+    {
+      "Id": "Southbend",
+      "Lat": 41.683,
+      "Long": -86.25,
+      "Type": null
+    },
+    {
+      "Id": "Detroit",
+      "Lat": 42.394,
+      "Long": -83.078,
+      "Type": null
+    },
+    {
+      "Id": "Toledo",
+      "Lat": 41.663,
+      "Long": -83.555,
+      "Type": null
+    },
+    {
+      "Id": "Columbus",
+      "Lat": 40.045,
+      "Long": -82.993,
+      "Type": null
+    },
+    {
+      "Id": "Indianapolis",
+      "Lat": 39.814,
+      "Long": -86.135,
+      "Type": null
+    },
+    {
+      "Id": "Springfield",
+      "Lat": 39.794,
+      "Long": -89.653,
+      "Type": null
+    },
+    {
+      "Id": "StLouis",
+      "Lat": 38.638,
+      "Long": -90.342,
+      "Type": null
+    },
+    {
+      "Id": "Memphis",
+      "Lat": 35.114,
+      "Long": -90.0,
+      "Type": null
+    },
+    {
+      "Id": "Jackson",
+      "Lat": 32.319,
+      "Long": -90.203,
+      "Type": null
+    },
+    {
+      "Id": "Neworleans",
+      "Lat": 29.956,
+      "Long": -90.098,
+      "Type": null
+    },
+    {
+      "Id": "Mobile",
+      "Lat": 30.683,
+      "Long": -88.116,
+      "Type": null
+    },
+    {
+      "Id": "tallahassee",
+      "Lat": 30.45,
+      "Long": -84.3,
+      "Type": null
+    },
+    {
+      "Id": "clearwater",
+      "Lat": 27.976,
+      "Long": -82.758,
+      "Type": null
+    },
+    {
+      "Id": "Miami",
+      "Lat": 25.832,
+      "Long": -80.27,
+      "Type": null
+    },
+    {
+      "Id": "Jupiter",
+      "Lat": 26.934,
+      "Long": -80.094,
+      "Type": null
+    },
+    {
+      "Id": "Orlando",
+      "Lat": 28.538,
+      "Long": -81.379,
+      "Type": null
+    },
+    {
+      "Id": "Gainesville",
+      "Lat": 29.652,
+      "Long": -82.324,
+      "Type": null
+    },
+    {
+      "Id": "Jacksonville",
+      "Lat": 30.33,
+      "Long": -81.66,
+      "Type": null
+    },
+    {
+      "Id": "Waycross",
+      "Lat": 31.213,
+      "Long": -82.354,
+      "Type": null
+    },
+    {
+      "Id": "Savannah",
+      "Lat": 32.086,
+      "Long": -81.099,
+      "Type": null
+    },
+    {
+      "Id": "Macon",
+      "Lat": 32.84,
+      "Long": -83.632,
+      "Type": null
+    },
+    {
+      "Id": "Montgomery",
+      "Lat": 32.36,
+      "Long": -86.299,
+      "Type": null
+    },
+    {
+      "Id": "Birminghan",
+      "Lat": 33.521,
+      "Long": -86.802,
+      "Type": null
+    },
+    {
+      "Id": "Nashville",
+      "Lat": 36.142,
+      "Long": -86.818,
+      "Type": null
+    },
+    {
+      "Id": "chattanooga",
+      "Lat": 35.046,
+      "Long": -85.309,
+      "Type": null
+    },
+    {
+      "Id": "Atlanta",
+      "Lat": 33.796,
+      "Long": -84.348,
+      "Type": null
+    },
+    {
+      "Id": "Augusta",
+      "Lat": 33.471,
+      "Long": -81.975,
+      "Type": null
+    },
+    {
+      "Id": "Columbia",
+      "Lat": 34.014,
+      "Long": -80.997,
+      "Type": null
+    },
+    {
+      "Id": "Charlotte",
+      "Lat": 35.205,
+      "Long": -80.835,
+      "Type": null
+    },
+    {
+      "Id": "Knoxville",
+      "Lat": 35.96,
+      "Long": -83.92,
+      "Type": null
+    },
+    {
+      "Id": "Louisville",
+      "Lat": 38.254,
+      "Long": -85.759,
+      "Type": null
+    },
+    {
+      "Id": "Cincinnati",
+      "Lat": 39.148,
+      "Long": -84.477,
+      "Type": null
+    },
+    {
+      "Id": "wytheville",
+      "Lat": 36.948,
+      "Long": -81.085,
+      "Type": null
+    },
+    {
+      "Id": "Greensboro",
+      "Lat": 36.072,
+      "Long": -79.792,
+      "Type": null
+    },
+    {
+      "Id": "Raleigh",
+      "Lat": 35.791,
+      "Long": -78.643,
+      "Type": null
+    },
+    {
+      "Id": "Richmond",
+      "Lat": 37.563,
+      "Long": -77.473,
+      "Type": null
+    },
+    {
+      "Id": "Washington",
+      "Lat": 38.895,
+      "Long": -77.036,
+      "Type": null
+    },
+    {
+      "Id": "Charleston",
+      "Lat": 38.355,
+      "Long": -81.653,
+      "Type": null
+    },
+    {
+      "Id": "Pittsburgh",
+      "Lat": 40.497,
+      "Long": -79.997,
+      "Type": null
+    },
+    {
+      "Id": "Cleveland",
+      "Lat": 41.391,
+      "Long": -81.727,
+      "Type": null
+    },
+    {
+      "Id": "Buffalo",
+      "Lat": 42.898,
+      "Long": -78.848,
+      "Type": null
+    },
+    {
+      "Id": "Syracuse",
+      "Lat": 43.048,
+      "Long": -76.147,
+      "Type": null
+    },
+    {
+      "Id": "Binghamton",
+      "Lat": 42.098,
+      "Long": -75.917,
+      "Type": null
+    },
+    {
+      "Id": "Scranton",
+      "Lat": 41.408,
+      "Long": -75.662,
+      "Type": null
+    },
+    {
+      "Id": "Philadelphia",
+      "Lat": 39.89,
+      "Long": -75.21,
+      "Type": null
+    },
+    {
+      "Id": "NewYork",
+      "Lat": 40.707,
+      "Long": -73.905,
+      "Type": null
+    },
+    {
+      "Id": "Allentown",
+      "Lat": 40.608,
+      "Long": -75.49,
+      "Type": null
+    },
+    {
+      "Id": "Stamford",
+      "Lat": 41.14,
+      "Long": -73.58,
+      "Type": null
+    },
+    {
+      "Id": "Bridgeport",
+      "Lat": 41.36,
+      "Long": -73.08,
+      "Type": null
+    },
+    {
+      "Id": "Hartford",
+      "Lat": 41.89,
+      "Long": -72.79,
+      "Type": null
+    },
+    {
+      "Id": "LakeKatrina",
+      "Lat": 41.985,
+      "Long": -73.988,
+      "Type": null
+    },
+    {
+      "Id": "Schenectady",
+      "Lat": 42.88,
+      "Long": -73.95,
+      "Type": null
+    },
+    {
+      "Id": "Rutland",
+      "Lat": 43.61,
+      "Long": -72.973,
+      "Type": null
+    },
+    {
+      "Id": "chicopee",
+      "Lat": 42.148,
+      "Long": -72.607,
+      "Type": null
+    },
+    {
+      "Id": "Providence",
+      "Lat": 40.35,
+      "Long": -74.59,
+      "Type": null
+    },
+    {
+      "Id": "Boston",
+      "Lat": 42.37,
+      "Long": -71.02,
+      "Type": null
+    },
+    {
+      "Id": "Worcester",
+      "Lat": 42.31,
+      "Long": -71.84,
+      "Type": null
+    },
+    {
+      "Id": "Manchester",
+      "Lat": 43.01,
+      "Long": -71.52,
+      "Type": null
+    },
+    {
+      "Id": "Westbrook",
+      "Lat": 43.677,
+      "Long": -70.371,
+      "Type": null
+    }
+  ],
+  "Links": [
+    {
+      "From": "Amarilho",
+      "To": "Albuquerque",
+      "Length": 458.0,
+      "Capacity": 5,
+      "Cost": 0,
+      "Designation": null,
+      "Delay": null
+    },
+    {
+      "From": "Denver",
+      "To": "Albuquerque",
+      "Length": 667.0,
+      "Capacity": 2,
+      "Cost": 0,
+      "Designation": null,
+      "Delay": null
+    },
+    {
+      "From": "NewYork",
+      "To": "Allentown",
+      "Length": 137.0,
+      "Capacity": 2,
+      "Cost": 0,
+      "Designation": null,
+      "Delay": null
+    },
+    {
+      "From": "Scranton",
+      "To": "Allentown",
+      "Length": 113.0,
+      "Capacity": 5,
+      "Cost": 0,
+      "Designation": null,
+      "Delay": null
+    },
+    {
+      "From": "Stamford",
+      "To": "Allentown",
+      "Length": 192.0,
+      "Capacity": 6,
+      "Cost": 0,
+      "Designation": null,
+      "Delay": null
+    },
+    {
+      "From": "Birminghan",
+      "To": "Atlanta",
+      "Length": 234.0,
+      "Capacity": 9,
+      "Cost": 0,
+      "Designation": null,
+      "Delay": null
+    },
+    {
+      "From": "Macon",
+      "To": "Atlanta",
+      "Length": 130.0,
+      "Capacity": 7,
+      "Cost": 0,
+      "Designation": null,
+      "Delay": null
+    },
+    {
+      "From": "Atlanta",
+      "To": "Augusta",
+      "Length": 234.0,
+      "Capacity": 3,
+      "Cost": 0,
+      "Designation": null,
+      "Delay": null
+    },
+    {
+      "From": "Modesto",
+      "To": "Bakersfield",
+      "Length": 324.0,
+      "Capacity": 3,
+      "Cost": 0,
+      "Designation": null,
+      "Delay": null
+    },
+    {
+      "From": "SanDiego",
+      "To": "Bakersfield",
+      "Length": 369.0,
+      "Capacity": 4,
+      "Cost": 0,
+      "Designation": null,
+      "Delay": null
+    },
+    {
+      "From": "SanJose",
+      "To": "Bakersfield",
+      "Length": 387.0,
+      "Capacity": 1,
+      "Cost": 0,
+      "Designation": null,
+      "Delay": null
+    },
+    {
+      "From": "Spokane",
+      "To": "Billings",
+      "Length": 865.0,
+      "Capacity": 6,
+      "Cost": 0,
+      "Designation": null,
+      "Delay": null
+    },
+    {
+      "From": "Allentown",
+      "To": "Binghamton",
+      "Length": 204.0,
+      "Capacity": 2,
+      "Cost": 0,
+      "Designation": null,
+      "Delay": null
+    },
+    {
+      "From": "Scranton",
+      "To": "Binghamton",
+      "Length": 93.0,
+      "Capacity": 9,
+      "Cost": 0,
+      "Designation": null,
+      "Delay": null
+    },
+    {
+      "From": "Syracuse",
+      "To": "Binghamton",
+      "Length": 207.0,
+      "Capacity": 3,
+      "Cost": 0,
+      "Designation": null,
+      "Delay": null
+    },
+    {
+      "From": "Jackson",
+      "To": "Birminghan",
+      "Length": 377.0,
+      "Capacity": 4,
+      "Cost": 0,
+      "Designation": null,
+      "Delay": null
+    },
+    {
+      "From": "Portland",
+      "To": "Boise",
+      "Length": 688.0,
+      "Capacity": 3,
+      "Cost": 0,
+      "Designation": null,
+      "Delay": null
+    },
+    {
+      "From": "Spokane",
+      "To": "Boise",
+      "Length": 664.0,
+      "Capacity": 2,
+      "Cost": 0,
+      "Designation": null,
+      "Delay": null
+    },
+    {
+      "From": "Manchester",
+      "To": "Boston",
+      "Length": 83.0,
+      "Capacity": 2,
+      "Cost": 0,
+      "Designation": null,
+      "Delay": null
+    },
+    {
+      "From": "Stamford",
+      "To": "Bridgeport",
+      "Length": 35.0,
+      "Capacity": 5,
+      "Cost": 0,
+      "Designation": null,
+      "Delay": null
+    },
+    {
+      "From": "Cleveland",
+      "To": "Buffalo",
+      "Length": 300.0,
+      "Capacity": 13,
+      "Cost": 0,
+      "Designation": null,
+      "Delay": null
+    },
+    {
+      "From": "Syracuse",
+      "To": "Buffalo",
+      "Length": 235.0,
+      "Capacity": 12,
+      "Cost": 0,
+      "Designation": null,
+      "Delay": null
+    },
+    {
+      "From": "Cincinnati",
+      "To": "Charleston",
+      "Length": 331.0,
+      "Capacity": 4,
+      "Cost": 0,
+      "Designation": null,
+      "Delay": null
+    },
+    {
+      "From": "Columbus",
+      "To": "Charleston",
+      "Length": 257.0,
+      "Capacity": 4,
+      "Cost": 0,
+      "Designation": null,
+      "Delay": null
+    },
+    {
+      "From": "Pittsburgh",
+      "To": "Charleston",
+      "Length": 352.0,
+      "Capacity": 5,
+      "Cost": 0,
+      "Designation": null,
+      "Delay": null
+    },
+    {
+      "From": "wytheville",
+      "To": "Charleston",
+      "Length": 204.0,
+      "Capacity": 5,
+      "Cost": 0,
+      "Designation": null,
+      "Delay": null
+    },
+    {
+      "From": "Atlanta",
+      "To": "Charlotte",
+      "Length": 386.0,
+      "Capacity": 4,
+      "Cost": 0,
+      "Designation": null,
+      "Delay": null
+    },
+    {
+      "From": "Atlanta",
+      "To": "chattanooga",
+      "Length": 187.0,
+      "Capacity": 4,
+      "Cost": 0,
+      "Designation": null,
+      "Delay": null
+    },
+    {
+      "From": "Milwaukee",
+      "To": "Chicago",
+      "Length": 138.0,
+      "Capacity": 7,
+      "Cost": 0,
+      "Designation": null,
+      "Delay": null
+    },
+    {
+      "From": "Peoria",
+      "To": "Chicago",
+      "Length": 245.0,
+      "Capacity": 7,
+      "Cost": 0,
+      "Designation": null,
+      "Delay": null
+    },
+    {
+      "From": "Knoxville",
+      "To": "Cincinnati",
+      "Length": 403.0,
+      "Capacity": 4,
+      "Cost": 0,
+      "Designation": null,
+      "Delay": null
+    },
+    {
+      "From": "Louisville",
+      "To": "Cincinnati",
+      "Length": 159.0,
+      "Capacity": 7,
+      "Cost": 0,
+      "Designation": null,
+      "Delay": null
+    },
+    {
+      "From": "Miami",
+      "To": "clearwater",
+      "Length": 438.0,
+      "Capacity": 2,
+      "Cost": 0,
+      "Designation": null,
+      "Delay": null
+    },
+    {
+      "From": "Columbus",
+      "To": "Cleveland",
+      "Length": 220.0,
+      "Capacity": 14,
+      "Cost": 0,
+      "Designation": null,
+      "Delay": null
+    },
+    {
+      "From": "Pittsburgh",
+      "To": "Cleveland",
+      "Length": 204.0,
+      "Capacity": 11,
+      "Cost": 0,
+      "Designation": null,
+      "Delay": null
+    },
+    {
+      "From": "Toledo",
+      "To": "Cleveland",
+      "Length": 175.0,
+      "Capacity": 10,
+      "Cost": 0,
+      "Designation": null,
+      "Delay": null
+    },
+    {
+      "From": "Augusta",
+      "To": "Columbia",
+      "Length": 109.0,
+      "Capacity": 2,
+      "Cost": 0,
+      "Designation": null,
+      "Delay": null
+    },
+    {
+      "From": "Cincinnati",
+      "To": "Columbus",
+      "Length": 168.0,
+      "Capacity": 4,
+      "Cost": 0,
+      "Designation": null,
+      "Delay": null
+    },
+    {
+      "From": "Indianapolis",
+      "To": "Columbus",
+      "Length": 273.0,
+      "Capacity": 15,
+      "Cost": 0,
+      "Designation": null,
+      "Delay": null
+    },
+    {
+      "From": "Toledo",
+      "To": "Columbus",
+      "Length": 211.0,
+      "Capacity": 3,
+      "Cost": 0,
+      "Designation": null,
+      "Delay": null
+    },
+    {
+      "From": "Houston",
+      "To": "Dallas",
+      "Length": 383.0,
+      "Capacity": 6,
+      "Cost": 0,
+      "Designation": null,
+      "Delay": null
+    },
+    {
+      "From": "Oklahomacity",
+      "To": "Dallas",
+      "Length": 328.0,
+      "Capacity": 4,
+      "Cost": 0,
+      "Designation": null,
+      "Delay": null
+    },
+    {
+      "From": "Waco",
+      "To": "Dallas",
+      "Length": 150.0,
+      "Capacity": 3,
+      "Cost": 0,
+      "Designation": null,
+      "Delay": null
+    },
+    {
+      "From": "Amarilho",
+      "To": "Denver",
+      "Length": 676.0,
+      "Capacity": 3,
+      "Cost": 0,
+      "Designation": null,
+      "Delay": null
+    },
+    {
+      "From": "Saltlakecity",
+      "To": "Denver",
+      "Length": 797.0,
+      "Capacity": 12,
+      "Cost": 0,
+      "Designation": null,
+      "Delay": null
+    },
+    {
+      "From": "Kansascity",
+      "To": "DesMoines",
+      "Length": 305.0,
+      "Capacity": 3,
+      "Cost": 0,
+      "Designation": null,
+      "Delay": null
+    },
+    {
+      "From": "Minneapolis",
+      "To": "DesMoines",
+      "Length": 390.0,
+      "Capacity": 3,
+      "Cost": 0,
+      "Designation": null,
+      "Delay": null
+    },
+    {
+      "From": "Peoria",
+      "To": "DesMoines",
+      "Length": 404.0,
+      "Capacity": 6,
+      "Cost": 0,
+      "Designation": null,
+      "Delay": null
+    },
+    {
+      "From": "Grandrapids",
+      "To": "Detroit",
+      "Length": 237.0,
+      "Capacity": 2,
+      "Cost": 0,
+      "Designation": null,
+      "Delay": null
+    },
+    {
+      "From": "Albuquerque",
+      "To": "ElPaso",
+      "Length": 425.0,
+      "Capacity": 2,
+      "Cost": 0,
+      "Designation": null,
+      "Delay": null
+    },
+    {
+      "From": "lubbock",
+      "To": "ElPaso",
+      "Length": 551.0,
+      "Capacity": 9,
+      "Cost": 0,
+      "Designation": null,
+      "Delay": null
+    },
+    {
+      "From": "Billings",
+      "To": "Fargo",
+      "Length": 974.0,
+      "Capacity": 6,
+      "Cost": 0,
+      "Designation": null,
+      "Delay": null
+    },
+    {
+      "From": "Minneapolis",
+      "To": "Fargo",
+      "Length": 369.0,
+      "Capacity": 6,
+      "Cost": 0,
+      "Designation": null,
+      "Delay": null
+    },
+    {
+      "From": "Billings",
+      "To": "FortCollins",
+      "Length": 798.0,
+      "Capacity": 3,
+      "Cost": 0,
+      "Designation": null,
+      "Delay": null
+    },
+    {
+      "From": "Denver",
+      "To": "FortCollins",
+      "Length": 99.0,
+      "Capacity": 3,
+      "Cost": 0,
+      "Designation": null,
+      "Delay": null
+    },
+    {
+      "From": "Charlotte",
+      "To": "Greensboro",
+      "Length": 143.0,
+      "Capacity": 5,
+      "Cost": 0,
+      "Designation": null,
+      "Delay": null
+    },
+    {
+      "From": "Raleigh",
+      "To": "Greensboro",
+      "Length": 119.0,
+      "Capacity": 3,
+      "Cost": 0,
+      "Designation": null,
+      "Delay": null
+    },
+    {
+      "From": "wytheville",
+      "To": "Greensboro",
+      "Length": 174.0,
+      "Capacity": 5,
+      "Cost": 0,
+      "Designation": null,
+      "Delay": null
+    },
+    {
+      "From": "Bridgeport",
+      "To": "Hartford",
+      "Length": 83.0,
+      "Capacity": 4,
+      "Cost": 0,
+      "Designation": null,
+      "Delay": null
+    },
+    {
+      "From": "chicopee",
+      "To": "Hartford",
+      "Length": 47.0,
+      "Capacity": 4,
+      "Cost": 0,
+      "Designation": null,
+      "Delay": null
+    },
+    {
+      "From": "LakeKatrina",
+      "To": "Hartford",
+      "Length": 139.0,
+      "Capacity": 7,
+      "Cost": 0,
+      "Designation": null,
+      "Delay": null
+    },
+    {
+      "From": "SanAntonio",
+      "To": "Houston",
+      "Length": 312.0,
+      "Capacity": 2,
+      "Cost": 0,
+      "Designation": null,
+      "Delay": null
+    },
+    {
+      "From": "Southbend",
+      "To": "Indianapolis",
+      "Length": 221.0,
+      "Capacity": 3,
+      "Cost": 0,
+      "Designation": null,
+      "Delay": null
+    },
+    {
+      "From": "StLouis",
+      "To": "Indianapolis",
+      "Length": 386.0,
+      "Capacity": 17,
+      "Cost": 0,
+      "Designation": null,
+      "Delay": null
+    },
+    {
+      "From": "Memphis",
+      "To": "Jackson",
+      "Length": 334.0,
+      "Capacity": 3,
+      "Cost": 0,
+      "Designation": null,
+      "Delay": null
+    },
+    {
+      "From": "Neworleans",
+      "To": "Jackson",
+      "Length": 298.0,
+      "Capacity": 3,
+      "Cost": 0,
+      "Designation": null,
+      "Delay": null
+    },
+    {
+      "From": "Gainesville",
+      "To": "Jacksonville",
+      "Length": 109.0,
+      "Capacity": 2,
+      "Cost": 0,
+      "Designation": null,
+      "Delay": null
+    },
+    {
+      "From": "Orlando",
+      "To": "Jacksonville",
+      "Length": 217.0,
+      "Capacity": 3,
+      "Cost": 0,
+      "Designation": null,
+      "Delay": null
+    },
+    {
+      "From": "Jacksonville",
+      "To": "Jupiter",
+      "Length": 423.0,
+      "Capacity": 4,
+      "Cost": 0,
+      "Designation": null,
+      "Delay": null
+    },
+    {
+      "From": "Miami",
+      "To": "Jupiter",
+      "Length": 140.0,
+      "Capacity": 3,
+      "Cost": 0,
+      "Designation": null,
+      "Delay": null
+    },
+    {
+      "From": "Oklahomacity",
+      "To": "Kansascity",
+      "Length": 560.0,
+      "Capacity": 2,
+      "Cost": 0,
+      "Designation": null,
+      "Delay": null
+    },
+    {
+      "From": "StLouis",
+      "To": "Kansascity",
+      "Length": 397.0,
+      "Capacity": 13,
+      "Cost": 0,
+      "Designation": null,
+      "Delay": null
+    },
+    {
+      "From": "Wichita",
+      "To": "Kansascity",
+      "Length": 313.0,
+      "Capacity": 8,
+      "Cost": 0,
+      "Designation": null,
+      "Delay": null
+    },
+    {
+      "From": "Charlotte",
+      "To": "Knoxville",
+      "Length": 358.0,
+      "Capacity": 2,
+      "Cost": 0,
+      "Designation": null,
+      "Delay": null
+    },
+    {
+      "From": "chattanooga",
+      "To": "Knoxville",
+      "Length": 175.0,
+      "Capacity": 4,
+      "Cost": 0,
+      "Designation": null,
+      "Delay": null
+    },
+    {
+      "From": "Nashville",
+      "To": "Knoxville",
+      "Length": 287.0,
+      "Capacity": 4,
+      "Cost": 0,
+      "Designation": null,
+      "Delay": null
+    },
+    {
+      "From": "Binghamton",
+      "To": "LakeKatrina",
+      "Length": 209.0,
+      "Capacity": 8,
+      "Cost": 0,
+      "Designation": null,
+      "Delay": null
+    },
+    {
+      "From": "Schenectady",
+      "To": "LakeKatrina",
+      "Length": 103.0,
+      "Capacity": 4,
+      "Cost": 0,
+      "Designation": null,
+      "Delay": null
+    },
+    {
+      "From": "Stamford",
+      "To": "LakeKatrina",
+      "Length": 132.0,
+      "Capacity": 2,
+      "Cost": 0,
+      "Designation": null,
+      "Delay": null
+    },
+    {
+      "From": "Saltlakecity",
+      "To": "Lasvegas",
+      "Length": 671.0,
+      "Capacity": 3,
+      "Cost": 0,
+      "Designation": null,
+      "Delay": null
+    },
+    {
+      "From": "SanDiego",
+      "To": "Lasvegas",
+      "Length": 532.0,
+      "Capacity": 2,
+      "Cost": 0,
+      "Designation": null,
+      "Delay": null
+    },
+    {
+      "From": "Oklahomacity",
+      "To": "Littlerock",
+      "Length": 539.0,
+      "Capacity": 2,
+      "Cost": 0,
+      "Designation": null,
+      "Delay": null
+    },
+    {
+      "From": "shreveport",
+      "To": "Littlerock",
+      "Length": 332.0,
+      "Capacity": 2,
+      "Cost": 0,
+      "Designation": null,
+      "Delay": null
+    },
+    {
+      "From": "SanJose",
+      "To": "LosAngelos",
+      "Length": 545.0,
+      "Capacity": 3,
+      "Cost": 0,
+      "Designation": null,
+      "Delay": null
+    },
+    {
+      "From": "Indianapolis",
+      "To": "Louisville",
+      "Length": 180.0,
+      "Capacity": 3,
+      "Cost": 0,
+      "Designation": null,
+      "Delay": null
+    },
+    {
+      "From": "Nashville",
+      "To": "Louisville",
+      "Length": 279.0,
+      "Capacity": 8,
+      "Cost": 0,
+      "Designation": null,
+      "Delay": null
+    },
+    {
+      "From": "Amarilho",
+      "To": "lubbock",
+      "Length": 190.0,
+      "Capacity": 7,
+      "Cost": 0,
+      "Designation": null,
+      "Delay": null
+    },
+    {
+      "From": "Dallas",
+      "To": "lubbock",
+      "Length": 518.0,
+      "Capacity": 7,
+      "Cost": 0,
+      "Designation": null,
+      "Delay": null
+    },
+    {
+      "From": "Augusta",
+      "To": "Macon",
+      "Length": 195.0,
+      "Capacity": 1,
+      "Cost": 0,
+      "Designation": null,
+      "Delay": null
+    },
+    {
+      "From": "Waycross",
+      "To": "Macon",
+      "Length": 251.0,
+      "Capacity": 6,
+      "Cost": 0,
+      "Designation": null,
+      "Delay": null
+    },
+    {
+      "From": "Worcester",
+      "To": "Manchester",
+      "Length": 95.0,
+      "Capacity": 2,
+      "Cost": 0,
+      "Designation": null,
+      "Delay": null
+    },
+    {
+      "From": "Littlerock",
+      "To": "Memphis",
+      "Length": 217.0,
+      "Capacity": 3,
+      "Cost": 0,
+      "Designation": null,
+      "Delay": null
+    },
+    {
+      "From": "Nashville",
+      "To": "Memphis",
+      "Length": 333.0,
+      "Capacity": 4,
+      "Cost": 0,
+      "Designation": null,
+      "Delay": null
+    },
+    {
+      "From": "StLouis",
+      "To": "Memphis",
+      "Length": 454.0,
+      "Capacity": 3,
+      "Cost": 0,
+      "Designation": null,
+      "Delay": null
+    },
+    {
+      "From": "Minneapolis",
+      "To": "Milwaukee",
+      "Length": 540.0,
+      "Capacity": 7,
+      "Cost": 0,
+      "Designation": null,
+      "Delay": null
+    },
+    {
+      "From": "Atlanta",
+      "To": "Montgomery",
+      "Length": 257.0,
+      "Capacity": 2,
+      "Cost": 0,
+      "Designation": null,
+      "Delay": null
+    },
+    {
+      "From": "Birminghan",
+      "To": "Montgomery",
+      "Length": 145.0,
+      "Capacity": 2,
+      "Cost": 0,
+      "Designation": null,
+      "Delay": null
+    },
+    {
+      "From": "Mobile",
+      "To": "Montgomery",
+      "Length": 270.0,
+      "Capacity": 2,
+      "Cost": 0,
+      "Designation": null,
+      "Delay": null
+    },
+    {
+      "From": "Birminghan",
+      "To": "Nashville",
+      "Length": 306.0,
+      "Capacity": 8,
+      "Cost": 0,
+      "Designation": null,
+      "Delay": null
+    },
+    {
+      "From": "StLouis",
+      "To": "Nashville",
+      "Length": 492.0,
+      "Capacity": 9,
+      "Cost": 0,
+      "Designation": null,
+      "Delay": null
+    },
+    {
+      "From": "Houston",
+      "To": "Neworleans",
+      "Length": 558.0,
+      "Capacity": 6,
+      "Cost": 0,
+      "Designation": null,
+      "Delay": null
+    },
+    {
+      "From": "Mobile",
+      "To": "Neworleans",
+      "Length": 229.0,
+      "Capacity": 7,
+      "Cost": 0,
+      "Designation": null,
+      "Delay": null
+    },
+    {
+      "From": "Amarilho",
+      "To": "Oklahomacity",
+      "Length": 412.0,
+      "Capacity": 9,
+      "Cost": 0,
+      "Designation": null,
+      "Delay": null
+    },
+    {
+      "From": "Denver",
+      "To": "Omaha",
+      "Length": 863.0,
+      "Capacity": 6,
+      "Cost": 0,
+      "Designation": null,
+      "Delay": null
+    },
+    {
+      "From": "DesMoines",
+      "To": "Omaha",
+      "Length": 210.0,
+      "Capacity": 6,
+      "Cost": 0,
+      "Designation": null,
+      "Delay": null
+    },
+    {
+      "From": "Kansascity",
+      "To": "Omaha",
+      "Length": 294.0,
+      "Capacity": 4,
+      "Cost": 0,
+      "Designation": null,
+      "Delay": null
+    },
+    {
+      "From": "clearwater",
+      "To": "Orlando",
+      "Length": 169.0,
+      "Capacity": 3,
+      "Cost": 0,
+      "Designation": null,
+      "Delay": null
+    },
+    {
+      "From": "Gainesville",
+      "To": "Orlando",
+      "Length": 177.0,
+      "Capacity": 3,
+      "Cost": 0,
+      "Designation": null,
+      "Delay": null
+    },
+    {
+      "From": "Jupiter",
+      "To": "Orlando",
+      "Length": 243.0,
+      "Capacity": 2,
+      "Cost": 0,
+      "Designation": null,
+      "Delay": null
+    },
+    {
+      "From": "Springfield",
+      "To": "Peoria",
+      "Length": 110.0,
+      "Capacity": 2,
+      "Cost": 0,
+      "Designation": null,
+      "Delay": null
+    },
+    {
+      "From": "Allentown",
+      "To": "Philadelphia",
+      "Length": 82.0,
+      "Capacity": 7,
+      "Cost": 0,
+      "Designation": null,
+      "Delay": null
+    },
+    {
+      "From": "Washington",
+      "To": "Philadelphia",
+      "Length": 214.0,
+      "Capacity": 8,
+      "Cost": 0,
+      "Designation": null,
+      "Delay": null
+    },
+    {
+      "From": "Washington",
+      "To": "Pittsburgh",
+      "Length": 381.0,
+      "Capacity": 2,
+      "Cost": 0,
+      "Designation": null,
+      "Delay": null
+    },
+    {
+      "From": "Eugene",
+      "To": "Portland",
+      "Length": 175.0,
+      "Capacity": 2,
+      "Cost": 0,
+      "Designation": null,
+      "Delay": null
+    },
+    {
+      "From": "Seattle",
+      "To": "Portland",
+      "Length": 280.0,
+      "Capacity": 3,
+      "Cost": 0,
+      "Designation": null,
+      "Delay": null
+    },
+    {
+      "From": "Boston",
+      "To": "Providence",
+      "Length": 70.0,
+      "Capacity": 4,
+      "Cost": 0,
+      "Designation": null,
+      "Delay": null
+    },
+    {
+      "From": "Hartford",
+      "To": "Providence",
+      "Length": 112.0,
+      "Capacity": 5,
+      "Cost": 0,
+      "Designation": null,
+      "Delay": null
+    },
+    {
+      "From": "Worcester",
+      "To": "Providence",
+      "Length": 62.0,
+      "Capacity": 2,
+      "Cost": 0,
+      "Designation": null,
+      "Delay": null
+    },
+    {
+      "From": "Columbia",
+      "To": "Raleigh",
+      "Length": 347.0,
+      "Capacity": 2,
+      "Cost": 0,
+      "Designation": null,
+      "Delay": null
+    },
+    {
+      "From": "Richmond",
+      "To": "Raleigh",
+      "Length": 244.0,
+      "Capacity": 6,
+      "Cost": 0,
+      "Designation": null,
+      "Delay": null
+    },
+    {
+      "From": "Savannah",
+      "To": "Raleigh",
+      "Length": 514.0,
+      "Capacity": 5,
+      "Cost": 0,
+      "Designation": null,
+      "Delay": null
+    },
+    {
+      "From": "Washington",
+      "To": "Richmond",
+      "Length": 170.0,
+      "Capacity": 5,
+      "Cost": 0,
+      "Designation": null,
+      "Delay": null
+    },
+    {
+      "From": "Schenectady",
+      "To": "Rutland",
+      "Length": 140.0,
+      "Capacity": 7,
+      "Cost": 0,
+      "Designation": null,
+      "Delay": null
+    },
+    {
+      "From": "Eugene",
+      "To": "Sacramento",
+      "Length": 758.0,
+      "Capacity": 2,
+      "Cost": 0,
+      "Designation": null,
+      "Delay": null
+    },
+    {
+      "From": "Modesto",
+      "To": "Sacramento",
+      "Length": 119.0,
+      "Capacity": 3,
+      "Cost": 0,
+      "Designation": null,
+      "Delay": null
+    },
+    {
+      "From": "Saltlakecity",
+      "To": "Sacramento",
+      "Length": 1043.0,
+      "Capacity": 8,
+      "Cost": 0,
+      "Designation": null,
+      "Delay": null
+    },
+    {
+      "From": "Boise",
+      "To": "Saltlakecity",
+      "Length": 543.0,
+      "Capacity": 5,
+      "Cost": 0,
+      "Designation": null,
+      "Delay": null
+    },
+    {
+      "From": "lubbock",
+      "To": "SanAntonio",
+      "Length": 652.0,
+      "Capacity": 2,
+      "Cost": 0,
+      "Designation": null,
+      "Delay": null
+    },
+    {
+      "From": "LosAngelos",
+      "To": "SanDiego",
+      "Length": 193.0,
+      "Capacity": 4,
+      "Cost": 0,
+      "Designation": null,
+      "Delay": null
+    },
+    {
+      "From": "Tucson",
+      "To": "SanDiego",
+      "Length": 654.0,
+      "Capacity": 7,
+      "Cost": 0,
+      "Designation": null,
+      "Delay": null
+    },
+    {
+      "From": "Sacramento",
+      "To": "SanFrancisco",
+      "Length": 138.0,
+      "Capacity": 4,
+      "Cost": 0,
+      "Designation": null,
+      "Delay": null
+    },
+    {
+      "From": "Modesto",
+      "To": "SanJose",
+      "Length": 120.0,
+      "Capacity": 1,
+      "Cost": 0,
+      "Designation": null,
+      "Delay": null
+    },
+    {
+      "From": "SanFrancisco",
+      "To": "SanJose",
+      "Length": 74.0,
+      "Capacity": 3,
+      "Cost": 0,
+      "Designation": null,
+      "Delay": null
+    },
+    {
+      "From": "Augusta",
+      "To": "Savannah",
+      "Length": 200.0,
+      "Capacity": 2,
+      "Cost": 0,
+      "Designation": null,
+      "Delay": null
+    },
+    {
+      "From": "Jacksonville",
+      "To": "Savannah",
+      "Length": 219.0,
+      "Capacity": 4,
+      "Cost": 0,
+      "Designation": null,
+      "Delay": null
+    },
+    {
+      "From": "Waycross",
+      "To": "Savannah",
+      "Length": 166.0,
+      "Capacity": 2,
+      "Cost": 0,
+      "Designation": null,
+      "Delay": null
+    },
+    {
+      "From": "Syracuse",
+      "To": "Schenectady",
+      "Length": 195.0,
+      "Capacity": 10,
+      "Cost": 0,
+      "Designation": null,
+      "Delay": null
+    },
+    {
+      "From": "Pittsburgh",
+      "To": "Scranton",
+      "Length": 446.0,
+      "Capacity": 13,
+      "Cost": 0,
+      "Designation": null,
+      "Delay": null
+    },
+    {
+      "From": "Spokane",
+      "To": "Seattle",
+      "Length": 449.0,
+      "Capacity": 4,
+      "Cost": 0,
+      "Designation": null,
+      "Delay": null
+    },
+    {
+      "From": "Dallas",
+      "To": "shreveport",
+      "Length": 300.0,
+      "Capacity": 5,
+      "Cost": 0,
+      "Designation": null,
+      "Delay": null
+    },
+    {
+      "From": "Jackson",
+      "To": "shreveport",
+      "Length": 347.0,
+      "Capacity": 4,
+      "Cost": 0,
+      "Designation": null,
+      "Delay": null
+    },
+    {
+      "From": "Fargo",
+      "To": "SiouxFalls",
+      "Length": 389.0,
+      "Capacity": 3,
+      "Cost": 0,
+      "Designation": null,
+      "Delay": null
+    },
+    {
+      "From": "Omaha",
+      "To": "SiouxFalls",
+      "Length": 291.0,
+      "Capacity": 4,
+      "Cost": 0,
+      "Designation": null,
+      "Delay": null
+    },
+    {
+      "From": "Chicago",
+      "To": "Southbend",
+      "Length": 140.0,
+      "Capacity": 12,
+      "Cost": 0,
+      "Designation": null,
+      "Delay": null
+    },
+    {
+      "From": "Grandrapids",
+      "To": "Southbend",
+      "Length": 173.0,
+      "Capacity": 3,
+      "Cost": 0,
+      "Designation": null,
+      "Delay": null
+    },
+    {
+      "From": "Oklahomacity",
+      "To": "StLouis",
+      "Length": 800.0,
+      "Capacity": 10,
+      "Cost": 0,
+      "Designation": null,
+      "Delay": null
+    },
+    {
+      "From": "Springfield",
+      "To": "StLouis",
+      "Length": 157.0,
+      "Capacity": 3,
+      "Cost": 0,
+      "Designation": null,
+      "Delay": null
+    },
+    {
+      "From": "NewYork",
+      "To": "Stamford",
+      "Length": 59.0,
+      "Capacity": 2,
+      "Cost": 0,
+      "Designation": null,
+      "Delay": null
+    },
+    {
+      "From": "Gainesville",
+      "To": "tallahassee",
+      "Length": 230.0,
+      "Capacity": 4,
+      "Cost": 0,
+      "Designation": null,
+      "Delay": null
+    },
+    {
+      "From": "Jacksonville",
+      "To": "tallahassee",
+      "Length": 263.0,
+      "Capacity": 1,
+      "Cost": 0,
+      "Designation": null,
+      "Delay": null
+    },
+    {
+      "From": "Mobile",
+      "To": "tallahassee",
+      "Length": 389.0,
+      "Capacity": 7,
+      "Cost": 0,
+      "Designation": null,
+      "Delay": null
+    },
+    {
+      "From": "Albuquerque",
+      "To": "Tempe",
+      "Length": 706.0,
+      "Capacity": 4,
+      "Cost": 0,
+      "Designation": null,
+      "Delay": null
+    },
+    {
+      "From": "Lasvegas",
+      "To": "Tempe",
+      "Length": 472.0,
+      "Capacity": 3,
+      "Cost": 0,
+      "Designation": null,
+      "Delay": null
+    },
+    {
+      "From": "Tucson",
+      "To": "Tempe",
+      "Length": 174.0,
+      "Capacity": 2,
+      "Cost": 0,
+      "Designation": null,
+      "Delay": null
+    },
+    {
+      "From": "Detroit",
+      "To": "Toledo",
+      "Length": 90.0,
+      "Capacity": 3,
+      "Cost": 0,
+      "Designation": null,
+      "Delay": null
+    },
+    {
+      "From": "Southbend",
+      "To": "Toledo",
+      "Length": 234.0,
+      "Capacity": 11,
+      "Cost": 0,
+      "Designation": null,
+      "Delay": null
+    },
+    {
+      "From": "ElPaso",
+      "To": "Tucson",
+      "Length": 508.0,
+      "Capacity": 9,
+      "Cost": 0,
+      "Designation": null,
+      "Delay": null
+    },
+    {
+      "From": "SanAntonio",
+      "To": "Waco",
+      "Length": 290.0,
+      "Capacity": 2,
+      "Cost": 0,
+      "Designation": null,
+      "Delay": null
+    },
+    {
+      "From": "Jacksonville",
+      "To": "Waycross",
+      "Length": 124.0,
+      "Capacity": 5,
+      "Cost": 0,
+      "Designation": null,
+      "Delay": null
+    },
+    {
+      "From": "tallahassee",
+      "To": "Waycross",
+      "Length": 212.0,
+      "Capacity": 3,
+      "Cost": 0,
+      "Designation": null,
+      "Delay": null
+    },
+    {
+      "From": "Boston",
+      "To": "Westbrook",
+      "Length": 166.0,
+      "Capacity": 2,
+      "Cost": 0,
+      "Designation": null,
+      "Delay": null
+    },
+    {
+      "From": "Manchester",
+      "To": "Westbrook",
+      "Length": 139.0,
+      "Capacity": 1,
+      "Cost": 0,
+      "Designation": null,
+      "Delay": null
+    },
+    {
+      "From": "Denver",
+      "To": "Wichita",
+      "Length": 818.0,
+      "Capacity": 8,
+      "Cost": 0,
+      "Designation": null,
+      "Delay": null
+    },
+    {
+      "From": "Oklahomacity",
+      "To": "Wichita",
+      "Length": 259.0,
+      "Capacity": 2,
+      "Cost": 0,
+      "Designation": null,
+      "Delay": null
+    },
+    {
+      "From": "Boston",
+      "To": "Worcester",
+      "Length": 64.0,
+      "Capacity": 2,
+      "Cost": 0,
+      "Designation": null,
+      "Delay": null
+    },
+    {
+      "From": "chicopee",
+      "To": "Worcester",
+      "Length": 80.0,
+      "Capacity": 3,
+      "Cost": 0,
+      "Designation": null,
+      "Delay": null
+    },
+    {
+      "From": "Rutland",
+      "To": "Worcester",
+      "Length": 206.0,
+      "Capacity": 5,
+      "Cost": 0,
+      "Designation": null,
+      "Delay": null
+    },
+    {
+      "From": "Cincinnati",
+      "To": "wytheville",
+      "Length": 541.0,
+      "Capacity": 2,
+      "Cost": 0,
+      "Designation": null,
+      "Delay": null
+    },
+    {
+      "From": "Richmond",
+      "To": "wytheville",
+      "Length": 386.0,
+      "Capacity": 2,
+      "Cost": 0,
+      "Designation": null,
+      "Delay": null
+    },
+    {
+      "From": "Washington",
+      "To": "wytheville",
+      "Length": 473.0,
+      "Capacity": 4,
+      "Cost": 0,
+      "Designation": null,
+      "Delay": null
+    },
+    {
+      "From": "Rutland",
+      "To": "Westbrook",
+      "Length": 209.731099442758,
+      "Capacity": 2,
+      "Cost": 0,
+      "Designation": null,
+      "Delay": null
+    }
+  ]
+}

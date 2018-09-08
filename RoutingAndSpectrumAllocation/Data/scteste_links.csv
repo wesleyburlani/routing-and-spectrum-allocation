@@ -1,0 +1,8 @@
+From,To,Length,Capacity,Cost,Designation,Delay
+SMO,Ipora,0,0,0,0,0
+SMO,CPora,0,0,0,0,0
+Ipora,SCarlos,0,0,0,0,0
+CPora,SCarlos,0,0,0,0,0
+CPora,Xaxim,0,0,0,0,0
+SCarlos,CCO,0,0,0,0,0
+CCO,Xaxim,0,0,0,0,0

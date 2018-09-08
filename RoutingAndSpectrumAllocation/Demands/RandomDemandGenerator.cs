@@ -28,8 +28,8 @@ namespace RoutingAndSpectrumAllocation.Demands
             
             for(int it = 0; it < iterator; it++)
             {
-                int first = random.Next(linkIds.Count());
-                int second = random.Next(linkIds.Count());
+                int first = random.Next(0,linkIds.Count()-1);
+                int second = random.Next(0,linkIds.Count()-1);
                 while(second == first)
                     second = random.Next(linkIds.Count());
 

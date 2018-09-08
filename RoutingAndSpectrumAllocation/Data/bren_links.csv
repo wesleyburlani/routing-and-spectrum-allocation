@@ -1,0 +1,12 @@
+From,To,Length,Capacity,Cost,Designation,Delay
+Sofia,Pleven,132.159502723906,50,0,[Sofia<->Pleven(1)],FIBER
+Pleven,Trnovo,90.7933623921787,50,0,[Pleven<->Trnovo(1)],FIBER
+Sofia,Plovdiv,133.153363187752,50,0,[Sofia<->Plovdiv(1)],FIBER
+Plovdiv,StaraZagora,76.9183810767923,50,0,[Plovdiv<->StaraZagora(1)],FIBER
+StaraZagora,Gabrovo,62.6217444614976,50,0,[StaraZagora<->Gabrovo(1)],FIBER
+Gabrovo,Trnovo,32.9306190127145,50,0,[Gabrovo<->Trnovo(1)],FIBER
+Trnovo,Ruse,87.0955023222503,50,0,[Trnovo<->Ruse(1)],FIBER
+Ruse,Choumen,98.2696824361884,50,0,[Ruse<->Choumen(1)],FIBER
+Choumen,Varna,79.6740058836075,50,0,[Choumen<->Varna(1)],FIBER
+Varna,Burgas,84.4436663617071,50,0,[Varna<->Burgas(1)],FIBER
+Burgas,StaraZagora,152.329933184572,50,0,[Burgas<->StaraZagora(1)],FIBER

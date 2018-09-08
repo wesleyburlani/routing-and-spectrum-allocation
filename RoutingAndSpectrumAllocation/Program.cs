@@ -11,8 +11,8 @@ namespace RoutingAndSpectrumAllocation
         const char CsvLineSeparator = '\n';
         const char CsvColumnSeparator = ',';
         const string LogPath = @"Output";
-        const string ReadNodesPath = @"Data\arnes_nodes.csv";
-        const string ReadLinksPath = @"Data\arnes_links.csv";
+        const string ReadNodesPath = @"Data/usaGde_nodes.csv";
+        const string ReadLinksPath = @"Data/usaGde_links.csv";
 
         static void Main(string[] args)
         {
