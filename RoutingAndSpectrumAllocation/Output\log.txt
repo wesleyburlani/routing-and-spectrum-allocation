@@ -1,373 +1,1611 @@
 Starting RoutingAndSpectrumAllocation
 
-Nodes Path: "Data/arnes_nodes.csv"
+Nodes Path: "Data/usaGde_nodes.csv"
 
-Links Path: "Data/arnes_links.csv"
+Links Path: "Data/usaGde_links.csv"
 
-processing demand from Lasko to Ajdovscina with 9 slots
+processing demand from Wichita to Atlanta with 8 slots
 
-trying main path: Lasko->Celje->Ljubljana->Koper->Ajdovscina
-It's not possible to supply demand of 9  from Lasko to Ajdovscina
+path from Wichita to Atlanta not found.
 
-processing demand from Trbovlje to NovoMesto with 1 slots
+processing demand from Southbend to Richmond with 8 slots
 
-trying main path: Trbovlje->Ljubljana->Kosevje->NovoMesto
-trying secundary path: Trbovlje->Lasko->Celje->Velenje->Dravograd->Maribor->SBistrika->Krki->NovoMesto
+path from Southbend to Richmond not found.
+
+processing demand from Bridgeport to Columbus with 1 slots
+
+path from Bridgeport to Columbus not found.
+
+processing demand from FortCollins to Jacksonville with 2 slots
+
+path from FortCollins to Jacksonville not found.
+
+processing demand from Jacksonville to LosAngelos with 1 slots
+
+path from Jacksonville to LosAngelos not found.
+
+processing demand from Savannah to Binghamton with 9 slots
+
+path from Savannah to Binghamton not found.
+
+processing demand from Savannah to Rutland with 2 slots
+
+path from Savannah to Rutland not found.
+
+processing demand from Knoxville to Binghamton with 2 slots
+
+path from Knoxville to Binghamton not found.
+
+processing demand from Dallas to Waco with 7 slots
+
+trying main path: Dallas->Waco
+trying secundary path: Dallas->lubbock->SanAntonio->Waco
 demand supplied
 
-                       	0	1	2	3	4	5	6	7	
-Koper<->Ljubljana      	0	0	0	0	0	0	0	0	
-Ljubljana<->Kranj      	0	0	0	0	0	0	0	0	
-Kranj<->Bled           	0	0	0	0	0	0	0	0	
-Bled<->Tolmin          	0	0	0	0	0	0	0	0	
-Tolmin<->NovaGorica    	0	0	0	0	0	0	0	0	
-NovaGorica<->Ajdovscina	0	0	0	0	0	0	0	0	
-Ajdovscina<->Koper     	0	0	0	0	0	0	0	0	
-Ljubljana<->Celje      	0	0	0	0	0	0	0	0	
-Celje<->Velenje        	2*	0	0	0	0	0	0	0	
-Velenje<->Dravograd    	2*	0	0	0	0	0	0	0	
-Dravograd<->Maribor    	2*	0	0	0	0	0	0	0	
-Maribor<->SBistrika    	2*	0	0	0	0	0	0	0	
-SBistrika<->Celje      	0	0	0	0	0	0	0	0	
-Celje<->Lasko          	2*	0	0	0	0	0	0	0	
-Lasko<->Trbovlje       	2*	0	0	0	0	0	0	0	
-Trbovlje<->Ljubljana   	2	0	0	0	0	0	0	0	
-SBistrika<->Krki       	2*	0	0	0	0	0	0	0	
-Krki<->NovoMesto       	2*	0	0	0	0	0	0	0	
-NovoMesto<->Kosevje    	2	0	0	0	0	0	0	0	
-Kosevje<->Ljubljana    	2	0	0	0	0	0	0	0	
+                          	0nn1nn2nn3nn4nn5nn6nn7nn
+Amarilho<->Albuquerque    	0  0  0  0  0  0  0  0  
+Denver<->Albuquerque      	0  0  0  0  0  0  0  0  
+NewYork<->Allentown       	0  0  0  0  0  0  0  0  
+Scranton<->Allentown      	0  0  0  0  0  0  0  0  
+Stamford<->Allentown      	0  0  0  0  0  0  0  0  
+Birminghan<->Atlanta      	0  0  0  0  0  0  0  0  
+Macon<->Atlanta           	0  0  0  0  0  0  0  0  
+Atlanta<->Augusta         	0  0  0  0  0  0  0  0  
+Modesto<->Bakersfield     	0  0  0  0  0  0  0  0  
+SanDiego<->Bakersfield    	0  0  0  0  0  0  0  0  
+SanJose<->Bakersfield     	0  0  0  0  0  0  0  0  
+Spokane<->Billings        	0  0  0  0  0  0  0  0  
+Allentown<->Binghamton    	0  0  0  0  0  0  0  0  
+Scranton<->Binghamton     	0  0  0  0  0  0  0  0  
+Syracuse<->Binghamton     	0  0  0  0  0  0  0  0  
+Jackson<->Birminghan      	0  0  0  0  0  0  0  0  
+Portland<->Boise          	0  0  0  0  0  0  0  0  
+Spokane<->Boise           	0  0  0  0  0  0  0  0  
+Manchester<->Boston       	0  0  0  0  0  0  0  0  
+Stamford<->Bridgeport     	0  0  0  0  0  0  0  0  
+Cleveland<->Buffalo       	0  0  0  0  0  0  0  0  
+Syracuse<->Buffalo        	0  0  0  0  0  0  0  0  
+Cincinnati<->Charleston   	0  0  0  0  0  0  0  0  
+Columbus<->Charleston     	0  0  0  0  0  0  0  0  
+Pittsburgh<->Charleston   	0  0  0  0  0  0  0  0  
+wytheville<->Charleston   	0  0  0  0  0  0  0  0  
+Atlanta<->Charlotte       	0  0  0  0  0  0  0  0  
+Atlanta<->chattanooga     	0  0  0  0  0  0  0  0  
+Milwaukee<->Chicago       	0  0  0  0  0  0  0  0  
+Peoria<->Chicago          	0  0  0  0  0  0  0  0  
+Knoxville<->Cincinnati    	0  0  0  0  0  0  0  0  
+Louisville<->Cincinnati   	0  0  0  0  0  0  0  0  
+Miami<->clearwater        	0  0  0  0  0  0  0  0  
+Columbus<->Cleveland      	0  0  0  0  0  0  0  0  
+Pittsburgh<->Cleveland    	0  0  0  0  0  0  0  0  
+Toledo<->Cleveland        	0  0  0  0  0  0  0  0  
+Augusta<->Columbia        	0  0  0  0  0  0  0  0  
+Cincinnati<->Columbus     	0  0  0  0  0  0  0  0  
+Indianapolis<->Columbus   	0  0  0  0  0  0  0  0  
+Toledo<->Columbus         	0  0  0  0  0  0  0  0  
+Houston<->Dallas          	0  0  0  0  0  0  0  0  
+Oklahomacity<->Dallas     	0  0  0  0  0  0  0  0  
+Waco<->Dallas             	9  9  9  9  9  9  9  0  
+Amarilho<->Denver         	0  0  0  0  0  0  0  0  
+Saltlakecity<->Denver     	0  0  0  0  0  0  0  0  
+Kansascity<->DesMoines    	0  0  0  0  0  0  0  0  
+Minneapolis<->DesMoines   	0  0  0  0  0  0  0  0  
+Peoria<->DesMoines        	0  0  0  0  0  0  0  0  
+Grandrapids<->Detroit     	0  0  0  0  0  0  0  0  
+Albuquerque<->ElPaso      	0  0  0  0  0  0  0  0  
+lubbock<->ElPaso          	0  0  0  0  0  0  0  0  
+Billings<->Fargo          	0  0  0  0  0  0  0  0  
+Minneapolis<->Fargo       	0  0  0  0  0  0  0  0  
+Billings<->FortCollins    	0  0  0  0  0  0  0  0  
+Denver<->FortCollins      	0  0  0  0  0  0  0  0  
+Charlotte<->Greensboro    	0  0  0  0  0  0  0  0  
+Raleigh<->Greensboro      	0  0  0  0  0  0  0  0  
+wytheville<->Greensboro   	0  0  0  0  0  0  0  0  
+Bridgeport<->Hartford     	0  0  0  0  0  0  0  0  
+chicopee<->Hartford       	0  0  0  0  0  0  0  0  
+LakeKatrina<->Hartford    	0  0  0  0  0  0  0  0  
+SanAntonio<->Houston      	0  0  0  0  0  0  0  0  
+Southbend<->Indianapolis  	0  0  0  0  0  0  0  0  
+StLouis<->Indianapolis    	0  0  0  0  0  0  0  0  
+Memphis<->Jackson         	0  0  0  0  0  0  0  0  
+Neworleans<->Jackson      	0  0  0  0  0  0  0  0  
+Gainesville<->Jacksonville	0  0  0  0  0  0  0  0  
+Orlando<->Jacksonville    	0  0  0  0  0  0  0  0  
+Jacksonville<->Jupiter    	0  0  0  0  0  0  0  0  
+Miami<->Jupiter           	0  0  0  0  0  0  0  0  
+Oklahomacity<->Kansascity 	0  0  0  0  0  0  0  0  
+StLouis<->Kansascity      	0  0  0  0  0  0  0  0  
+Wichita<->Kansascity      	0  0  0  0  0  0  0  0  
+Charlotte<->Knoxville     	0  0  0  0  0  0  0  0  
+chattanooga<->Knoxville   	0  0  0  0  0  0  0  0  
+Nashville<->Knoxville     	0  0  0  0  0  0  0  0  
+Binghamton<->LakeKatrina  	0  0  0  0  0  0  0  0  
+Schenectady<->LakeKatrina 	0  0  0  0  0  0  0  0  
+Stamford<->LakeKatrina    	0  0  0  0  0  0  0  0  
+Saltlakecity<->Lasvegas   	0  0  0  0  0  0  0  0  
+SanDiego<->Lasvegas       	0  0  0  0  0  0  0  0  
+Oklahomacity<->Littlerock 	0  0  0  0  0  0  0  0  
+shreveport<->Littlerock   	0  0  0  0  0  0  0  0  
+SanJose<->LosAngelos      	0  0  0  0  0  0  0  0  
+Indianapolis<->Louisville 	0  0  0  0  0  0  0  0  
+Nashville<->Louisville    	0  0  0  0  0  0  0  0  
+Amarilho<->lubbock        	0  0  0  0  0  0  0  0  
+Dallas<->lubbock          	9* 9* 9* 9* 9* 9* 9* 0  
+Augusta<->Macon           	0  0  0  0  0  0  0  0  
+Waycross<->Macon          	0  0  0  0  0  0  0  0  
+Worcester<->Manchester    	0  0  0  0  0  0  0  0  
+Littlerock<->Memphis      	0  0  0  0  0  0  0  0  
+Nashville<->Memphis       	0  0  0  0  0  0  0  0  
+StLouis<->Memphis         	0  0  0  0  0  0  0  0  
+Minneapolis<->Milwaukee   	0  0  0  0  0  0  0  0  
+Atlanta<->Montgomery      	0  0  0  0  0  0  0  0  
+Birminghan<->Montgomery   	0  0  0  0  0  0  0  0  
+Mobile<->Montgomery       	0  0  0  0  0  0  0  0  
+Birminghan<->Nashville    	0  0  0  0  0  0  0  0  
+StLouis<->Nashville       	0  0  0  0  0  0  0  0  
+Houston<->Neworleans      	0  0  0  0  0  0  0  0  
+Mobile<->Neworleans       	0  0  0  0  0  0  0  0  
+Amarilho<->Oklahomacity   	0  0  0  0  0  0  0  0  
+Denver<->Omaha            	0  0  0  0  0  0  0  0  
+DesMoines<->Omaha         	0  0  0  0  0  0  0  0  
+Kansascity<->Omaha        	0  0  0  0  0  0  0  0  
+clearwater<->Orlando      	0  0  0  0  0  0  0  0  
+Gainesville<->Orlando     	0  0  0  0  0  0  0  0  
+Jupiter<->Orlando         	0  0  0  0  0  0  0  0  
+Springfield<->Peoria      	0  0  0  0  0  0  0  0  
+Allentown<->Philadelphia  	0  0  0  0  0  0  0  0  
+Washington<->Philadelphia 	0  0  0  0  0  0  0  0  
+Washington<->Pittsburgh   	0  0  0  0  0  0  0  0  
+Eugene<->Portland         	0  0  0  0  0  0  0  0  
+Seattle<->Portland        	0  0  0  0  0  0  0  0  
+Boston<->Providence       	0  0  0  0  0  0  0  0  
+Hartford<->Providence     	0  0  0  0  0  0  0  0  
+Worcester<->Providence    	0  0  0  0  0  0  0  0  
+Columbia<->Raleigh        	0  0  0  0  0  0  0  0  
+Richmond<->Raleigh        	0  0  0  0  0  0  0  0  
+Savannah<->Raleigh        	0  0  0  0  0  0  0  0  
+Washington<->Richmond     	0  0  0  0  0  0  0  0  
+Schenectady<->Rutland     	0  0  0  0  0  0  0  0  
+Eugene<->Sacramento       	0  0  0  0  0  0  0  0  
+Modesto<->Sacramento      	0  0  0  0  0  0  0  0  
+Saltlakecity<->Sacramento 	0  0  0  0  0  0  0  0  
+Boise<->Saltlakecity      	0  0  0  0  0  0  0  0  
+lubbock<->SanAntonio      	9* 9* 9* 9* 9* 9* 9* 0  
+LosAngelos<->SanDiego     	0  0  0  0  0  0  0  0  
+Tucson<->SanDiego         	0  0  0  0  0  0  0  0  
+Sacramento<->SanFrancisco 	0  0  0  0  0  0  0  0  
+Modesto<->SanJose         	0  0  0  0  0  0  0  0  
+SanFrancisco<->SanJose    	0  0  0  0  0  0  0  0  
+Augusta<->Savannah        	0  0  0  0  0  0  0  0  
+Jacksonville<->Savannah   	0  0  0  0  0  0  0  0  
+Waycross<->Savannah       	0  0  0  0  0  0  0  0  
+Syracuse<->Schenectady    	0  0  0  0  0  0  0  0  
+Pittsburgh<->Scranton     	0  0  0  0  0  0  0  0  
+Spokane<->Seattle         	0  0  0  0  0  0  0  0  
+Dallas<->shreveport       	0  0  0  0  0  0  0  0  
+Jackson<->shreveport      	0  0  0  0  0  0  0  0  
+Fargo<->SiouxFalls        	0  0  0  0  0  0  0  0  
+Omaha<->SiouxFalls        	0  0  0  0  0  0  0  0  
+Chicago<->Southbend       	0  0  0  0  0  0  0  0  
+Grandrapids<->Southbend   	0  0  0  0  0  0  0  0  
+Oklahomacity<->StLouis    	0  0  0  0  0  0  0  0  
+Springfield<->StLouis     	0  0  0  0  0  0  0  0  
+NewYork<->Stamford        	0  0  0  0  0  0  0  0  
+Gainesville<->tallahassee 	0  0  0  0  0  0  0  0  
+Jacksonville<->tallahassee	0  0  0  0  0  0  0  0  
+Mobile<->tallahassee      	0  0  0  0  0  0  0  0  
+Albuquerque<->Tempe       	0  0  0  0  0  0  0  0  
+Lasvegas<->Tempe          	0  0  0  0  0  0  0  0  
+Tucson<->Tempe            	0  0  0  0  0  0  0  0  
+Detroit<->Toledo          	0  0  0  0  0  0  0  0  
+Southbend<->Toledo        	0  0  0  0  0  0  0  0  
+ElPaso<->Tucson           	0  0  0  0  0  0  0  0  
+SanAntonio<->Waco         	9* 9* 9* 9* 9* 9* 9* 0  
+Jacksonville<->Waycross   	0  0  0  0  0  0  0  0  
+tallahassee<->Waycross    	0  0  0  0  0  0  0  0  
+Boston<->Westbrook        	0  0  0  0  0  0  0  0  
+Manchester<->Westbrook    	0  0  0  0  0  0  0  0  
+Denver<->Wichita          	0  0  0  0  0  0  0  0  
+Oklahomacity<->Wichita    	0  0  0  0  0  0  0  0  
+Boston<->Worcester        	0  0  0  0  0  0  0  0  
+chicopee<->Worcester      	0  0  0  0  0  0  0  0  
+Rutland<->Worcester       	0  0  0  0  0  0  0  0  
+Cincinnati<->wytheville   	0  0  0  0  0  0  0  0  
+Richmond<->wytheville     	0  0  0  0  0  0  0  0  
+Washington<->wytheville   	0  0  0  0  0  0  0  0  
+Rutland<->Westbrook       	0  0  0  0  0  0  0  0  
 
-processing demand from Bled to Dravograd with 3 slots
+processing demand from FortCollins to Richmond with 8 slots
 
-trying main path: Bled->Kranj->Ljubljana->Kosevje->NovoMesto->Krki->SBistrika->Maribor->Dravograd
-trying secundary path: Bled->Tolmin->NovaGorica->Ajdovscina->Koper->Ljubljana->Celje->Velenje->Dravograd
+path from FortCollins to Richmond not found.
+
+processing demand from Southbend to Oklahomacity with 8 slots
+
+path from Southbend to Oklahomacity not found.
+
+processing demand from Houston to Montgomery with 2 slots
+
+trying main path: Houston->Neworleans->Jackson->Birminghan->Montgomery
+trying secundary path: Houston->Dallas->Oklahomacity->Littlerock->Memphis->Nashville->Birminghan->Atlanta->Montgomery
 demand supplied
 
-                       	0	1	2	3	4	5	6	7	
-Koper<->Ljubljana      	0	3*	3*	3*	0	0	0	0	
-Ljubljana<->Kranj      	0	3	3	3	0	0	0	0	
-Kranj<->Bled           	0	3	3	3	0	0	0	0	
-Bled<->Tolmin          	0	3*	3*	3*	0	0	0	0	
-Tolmin<->NovaGorica    	0	3*	3*	3*	0	0	0	0	
-NovaGorica<->Ajdovscina	0	3*	3*	3*	0	0	0	0	
-Ajdovscina<->Koper     	0	3*	3*	3*	0	0	0	0	
-Ljubljana<->Celje      	0	3*	3*	3*	0	0	0	0	
-Celje<->Velenje        	2*	3*	3*	3*	0	0	0	0	
-Velenje<->Dravograd    	2*	3*	3*	3*	0	0	0	0	
-Dravograd<->Maribor    	2*	3	3	3	0	0	0	0	
-Maribor<->SBistrika    	2*	3	3	3	0	0	0	0	
-SBistrika<->Celje      	0	0	0	0	0	0	0	0	
-Celje<->Lasko          	2*	0	0	0	0	0	0	0	
-Lasko<->Trbovlje       	2*	0	0	0	0	0	0	0	
-Trbovlje<->Ljubljana   	2	0	0	0	0	0	0	0	
-SBistrika<->Krki       	2*	3	3	3	0	0	0	0	
-Krki<->NovoMesto       	2*	3	3	3	0	0	0	0	
-NovoMesto<->Kosevje    	2	3	3	3	0	0	0	0	
-Kosevje<->Ljubljana    	2	3	3	3	0	0	0	0	
+                          	0nnn1nnn2nnn3nnn4nnn5nnn6nnn7nnn
+Amarilho<->Albuquerque    	0   0   0   0   0   0   0   0   
+Denver<->Albuquerque      	0   0   0   0   0   0   0   0   
+NewYork<->Allentown       	0   0   0   0   0   0   0   0   
+Scranton<->Allentown      	0   0   0   0   0   0   0   0   
+Stamford<->Allentown      	0   0   0   0   0   0   0   0   
+Birminghan<->Atlanta      	12* 12* 0   0   0   0   0   0   
+Macon<->Atlanta           	0   0   0   0   0   0   0   0   
+Atlanta<->Augusta         	0   0   0   0   0   0   0   0   
+Modesto<->Bakersfield     	0   0   0   0   0   0   0   0   
+SanDiego<->Bakersfield    	0   0   0   0   0   0   0   0   
+SanJose<->Bakersfield     	0   0   0   0   0   0   0   0   
+Spokane<->Billings        	0   0   0   0   0   0   0   0   
+Allentown<->Binghamton    	0   0   0   0   0   0   0   0   
+Scranton<->Binghamton     	0   0   0   0   0   0   0   0   
+Syracuse<->Binghamton     	0   0   0   0   0   0   0   0   
+Jackson<->Birminghan      	12  12  0   0   0   0   0   0   
+Portland<->Boise          	0   0   0   0   0   0   0   0   
+Spokane<->Boise           	0   0   0   0   0   0   0   0   
+Manchester<->Boston       	0   0   0   0   0   0   0   0   
+Stamford<->Bridgeport     	0   0   0   0   0   0   0   0   
+Cleveland<->Buffalo       	0   0   0   0   0   0   0   0   
+Syracuse<->Buffalo        	0   0   0   0   0   0   0   0   
+Cincinnati<->Charleston   	0   0   0   0   0   0   0   0   
+Columbus<->Charleston     	0   0   0   0   0   0   0   0   
+Pittsburgh<->Charleston   	0   0   0   0   0   0   0   0   
+wytheville<->Charleston   	0   0   0   0   0   0   0   0   
+Atlanta<->Charlotte       	0   0   0   0   0   0   0   0   
+Atlanta<->chattanooga     	0   0   0   0   0   0   0   0   
+Milwaukee<->Chicago       	0   0   0   0   0   0   0   0   
+Peoria<->Chicago          	0   0   0   0   0   0   0   0   
+Knoxville<->Cincinnati    	0   0   0   0   0   0   0   0   
+Louisville<->Cincinnati   	0   0   0   0   0   0   0   0   
+Miami<->clearwater        	0   0   0   0   0   0   0   0   
+Columbus<->Cleveland      	0   0   0   0   0   0   0   0   
+Pittsburgh<->Cleveland    	0   0   0   0   0   0   0   0   
+Toledo<->Cleveland        	0   0   0   0   0   0   0   0   
+Augusta<->Columbia        	0   0   0   0   0   0   0   0   
+Cincinnati<->Columbus     	0   0   0   0   0   0   0   0   
+Indianapolis<->Columbus   	0   0   0   0   0   0   0   0   
+Toledo<->Columbus         	0   0   0   0   0   0   0   0   
+Houston<->Dallas          	12* 12* 0   0   0   0   0   0   
+Oklahomacity<->Dallas     	12* 12* 0   0   0   0   0   0   
+Waco<->Dallas             	9   9   9   9   9   9   9   0   
+Amarilho<->Denver         	0   0   0   0   0   0   0   0   
+Saltlakecity<->Denver     	0   0   0   0   0   0   0   0   
+Kansascity<->DesMoines    	0   0   0   0   0   0   0   0   
+Minneapolis<->DesMoines   	0   0   0   0   0   0   0   0   
+Peoria<->DesMoines        	0   0   0   0   0   0   0   0   
+Grandrapids<->Detroit     	0   0   0   0   0   0   0   0   
+Albuquerque<->ElPaso      	0   0   0   0   0   0   0   0   
+lubbock<->ElPaso          	0   0   0   0   0   0   0   0   
+Billings<->Fargo          	0   0   0   0   0   0   0   0   
+Minneapolis<->Fargo       	0   0   0   0   0   0   0   0   
+Billings<->FortCollins    	0   0   0   0   0   0   0   0   
+Denver<->FortCollins      	0   0   0   0   0   0   0   0   
+Charlotte<->Greensboro    	0   0   0   0   0   0   0   0   
+Raleigh<->Greensboro      	0   0   0   0   0   0   0   0   
+wytheville<->Greensboro   	0   0   0   0   0   0   0   0   
+Bridgeport<->Hartford     	0   0   0   0   0   0   0   0   
+chicopee<->Hartford       	0   0   0   0   0   0   0   0   
+LakeKatrina<->Hartford    	0   0   0   0   0   0   0   0   
+SanAntonio<->Houston      	0   0   0   0   0   0   0   0   
+Southbend<->Indianapolis  	0   0   0   0   0   0   0   0   
+StLouis<->Indianapolis    	0   0   0   0   0   0   0   0   
+Memphis<->Jackson         	0   0   0   0   0   0   0   0   
+Neworleans<->Jackson      	12  12  0   0   0   0   0   0   
+Gainesville<->Jacksonville	0   0   0   0   0   0   0   0   
+Orlando<->Jacksonville    	0   0   0   0   0   0   0   0   
+Jacksonville<->Jupiter    	0   0   0   0   0   0   0   0   
+Miami<->Jupiter           	0   0   0   0   0   0   0   0   
+Oklahomacity<->Kansascity 	0   0   0   0   0   0   0   0   
+StLouis<->Kansascity      	0   0   0   0   0   0   0   0   
+Wichita<->Kansascity      	0   0   0   0   0   0   0   0   
+Charlotte<->Knoxville     	0   0   0   0   0   0   0   0   
+chattanooga<->Knoxville   	0   0   0   0   0   0   0   0   
+Nashville<->Knoxville     	0   0   0   0   0   0   0   0   
+Binghamton<->LakeKatrina  	0   0   0   0   0   0   0   0   
+Schenectady<->LakeKatrina 	0   0   0   0   0   0   0   0   
+Stamford<->LakeKatrina    	0   0   0   0   0   0   0   0   
+Saltlakecity<->Lasvegas   	0   0   0   0   0   0   0   0   
+SanDiego<->Lasvegas       	0   0   0   0   0   0   0   0   
+Oklahomacity<->Littlerock 	12* 12* 0   0   0   0   0   0   
+shreveport<->Littlerock   	0   0   0   0   0   0   0   0   
+SanJose<->LosAngelos      	0   0   0   0   0   0   0   0   
+Indianapolis<->Louisville 	0   0   0   0   0   0   0   0   
+Nashville<->Louisville    	0   0   0   0   0   0   0   0   
+Amarilho<->lubbock        	0   0   0   0   0   0   0   0   
+Dallas<->lubbock          	9*  9*  9*  9*  9*  9*  9*  0   
+Augusta<->Macon           	0   0   0   0   0   0   0   0   
+Waycross<->Macon          	0   0   0   0   0   0   0   0   
+Worcester<->Manchester    	0   0   0   0   0   0   0   0   
+Littlerock<->Memphis      	12* 12* 0   0   0   0   0   0   
+Nashville<->Memphis       	12* 12* 0   0   0   0   0   0   
+StLouis<->Memphis         	0   0   0   0   0   0   0   0   
+Minneapolis<->Milwaukee   	0   0   0   0   0   0   0   0   
+Atlanta<->Montgomery      	12* 12* 0   0   0   0   0   0   
+Birminghan<->Montgomery   	12  12  0   0   0   0   0   0   
+Mobile<->Montgomery       	0   0   0   0   0   0   0   0   
+Birminghan<->Nashville    	12* 12* 0   0   0   0   0   0   
+StLouis<->Nashville       	0   0   0   0   0   0   0   0   
+Houston<->Neworleans      	12  12  0   0   0   0   0   0   
+Mobile<->Neworleans       	0   0   0   0   0   0   0   0   
+Amarilho<->Oklahomacity   	0   0   0   0   0   0   0   0   
+Denver<->Omaha            	0   0   0   0   0   0   0   0   
+DesMoines<->Omaha         	0   0   0   0   0   0   0   0   
+Kansascity<->Omaha        	0   0   0   0   0   0   0   0   
+clearwater<->Orlando      	0   0   0   0   0   0   0   0   
+Gainesville<->Orlando     	0   0   0   0   0   0   0   0   
+Jupiter<->Orlando         	0   0   0   0   0   0   0   0   
+Springfield<->Peoria      	0   0   0   0   0   0   0   0   
+Allentown<->Philadelphia  	0   0   0   0   0   0   0   0   
+Washington<->Philadelphia 	0   0   0   0   0   0   0   0   
+Washington<->Pittsburgh   	0   0   0   0   0   0   0   0   
+Eugene<->Portland         	0   0   0   0   0   0   0   0   
+Seattle<->Portland        	0   0   0   0   0   0   0   0   
+Boston<->Providence       	0   0   0   0   0   0   0   0   
+Hartford<->Providence     	0   0   0   0   0   0   0   0   
+Worcester<->Providence    	0   0   0   0   0   0   0   0   
+Columbia<->Raleigh        	0   0   0   0   0   0   0   0   
+Richmond<->Raleigh        	0   0   0   0   0   0   0   0   
+Savannah<->Raleigh        	0   0   0   0   0   0   0   0   
+Washington<->Richmond     	0   0   0   0   0   0   0   0   
+Schenectady<->Rutland     	0   0   0   0   0   0   0   0   
+Eugene<->Sacramento       	0   0   0   0   0   0   0   0   
+Modesto<->Sacramento      	0   0   0   0   0   0   0   0   
+Saltlakecity<->Sacramento 	0   0   0   0   0   0   0   0   
+Boise<->Saltlakecity      	0   0   0   0   0   0   0   0   
+lubbock<->SanAntonio      	9*  9*  9*  9*  9*  9*  9*  0   
+LosAngelos<->SanDiego     	0   0   0   0   0   0   0   0   
+Tucson<->SanDiego         	0   0   0   0   0   0   0   0   
+Sacramento<->SanFrancisco 	0   0   0   0   0   0   0   0   
+Modesto<->SanJose         	0   0   0   0   0   0   0   0   
+SanFrancisco<->SanJose    	0   0   0   0   0   0   0   0   
+Augusta<->Savannah        	0   0   0   0   0   0   0   0   
+Jacksonville<->Savannah   	0   0   0   0   0   0   0   0   
+Waycross<->Savannah       	0   0   0   0   0   0   0   0   
+Syracuse<->Schenectady    	0   0   0   0   0   0   0   0   
+Pittsburgh<->Scranton     	0   0   0   0   0   0   0   0   
+Spokane<->Seattle         	0   0   0   0   0   0   0   0   
+Dallas<->shreveport       	0   0   0   0   0   0   0   0   
+Jackson<->shreveport      	0   0   0   0   0   0   0   0   
+Fargo<->SiouxFalls        	0   0   0   0   0   0   0   0   
+Omaha<->SiouxFalls        	0   0   0   0   0   0   0   0   
+Chicago<->Southbend       	0   0   0   0   0   0   0   0   
+Grandrapids<->Southbend   	0   0   0   0   0   0   0   0   
+Oklahomacity<->StLouis    	0   0   0   0   0   0   0   0   
+Springfield<->StLouis     	0   0   0   0   0   0   0   0   
+NewYork<->Stamford        	0   0   0   0   0   0   0   0   
+Gainesville<->tallahassee 	0   0   0   0   0   0   0   0   
+Jacksonville<->tallahassee	0   0   0   0   0   0   0   0   
+Mobile<->tallahassee      	0   0   0   0   0   0   0   0   
+Albuquerque<->Tempe       	0   0   0   0   0   0   0   0   
+Lasvegas<->Tempe          	0   0   0   0   0   0   0   0   
+Tucson<->Tempe            	0   0   0   0   0   0   0   0   
+Detroit<->Toledo          	0   0   0   0   0   0   0   0   
+Southbend<->Toledo        	0   0   0   0   0   0   0   0   
+ElPaso<->Tucson           	0   0   0   0   0   0   0   0   
+SanAntonio<->Waco         	9*  9*  9*  9*  9*  9*  9*  0   
+Jacksonville<->Waycross   	0   0   0   0   0   0   0   0   
+tallahassee<->Waycross    	0   0   0   0   0   0   0   0   
+Boston<->Westbrook        	0   0   0   0   0   0   0   0   
+Manchester<->Westbrook    	0   0   0   0   0   0   0   0   
+Denver<->Wichita          	0   0   0   0   0   0   0   0   
+Oklahomacity<->Wichita    	0   0   0   0   0   0   0   0   
+Boston<->Worcester        	0   0   0   0   0   0   0   0   
+chicopee<->Worcester      	0   0   0   0   0   0   0   0   
+Rutland<->Worcester       	0   0   0   0   0   0   0   0   
+Cincinnati<->wytheville   	0   0   0   0   0   0   0   0   
+Richmond<->wytheville     	0   0   0   0   0   0   0   0   
+Washington<->wytheville   	0   0   0   0   0   0   0   0   
+Rutland<->Westbrook       	0   0   0   0   0   0   0   0   
 
-processing demand from Krki to SBistrika with 4 slots
+processing demand from Worcester to Orlando with 4 slots
 
-trying main path: Krki->SBistrika
-trying secundary path: Krki->NovoMesto->Kosevje->Ljubljana->Celje->Velenje->Dravograd->Maribor->SBistrika
+path from Worcester to Orlando not found.
+
+processing demand from Charlotte to SanDiego with 1 slots
+
+path from Charlotte to SanDiego not found.
+
+processing demand from Columbus to Knoxville with 2 slots
+
+path from Columbus to Knoxville not found.
+
+processing demand from Gainesville to Atlanta with 6 slots
+
+trying main path: Gainesville->Jacksonville->Savannah->Augusta->Atlanta
+trying secundary path: Gainesville->Orlando->Jacksonville->Waycross->Macon->Atlanta
 demand supplied
 
-                       	0	1	2	3	4	5	6	7	
-Koper<->Ljubljana      	0	3*	3*	3*	0	0	0	0	
-Ljubljana<->Kranj      	0	3	3	3	0	0	0	0	
-Kranj<->Bled           	0	3	3	3	0	0	0	0	
-Bled<->Tolmin          	0	3*	3*	3*	0	0	0	0	
-Tolmin<->NovaGorica    	0	3*	3*	3*	0	0	0	0	
-NovaGorica<->Ajdovscina	0	3*	3*	3*	0	0	0	0	
-Ajdovscina<->Koper     	0	3*	3*	3*	0	0	0	0	
-Ljubljana<->Celje      	0	3*	3*	3*	4*	4*	4*	4*	
-Celje<->Velenje        	2*	3*	3*	3*	4*	4*	4*	4*	
-Velenje<->Dravograd    	2*	3*	3*	3*	4*	4*	4*	4*	
-Dravograd<->Maribor    	2*	3	3	3	4*	4*	4*	4*	
-Maribor<->SBistrika    	2*	3	3	3	4*	4*	4*	4*	
-SBistrika<->Celje      	0	0	0	0	0	0	0	0	
-Celje<->Lasko          	2*	0	0	0	0	0	0	0	
-Lasko<->Trbovlje       	2*	0	0	0	0	0	0	0	
-Trbovlje<->Ljubljana   	2	0	0	0	0	0	0	0	
-SBistrika<->Krki       	2*	3	3	3	4	4	4	4	
-Krki<->NovoMesto       	2*	3	3	3	4*	4*	4*	4*	
-NovoMesto<->Kosevje    	2	3	3	3	4*	4*	4*	4*	
-Kosevje<->Ljubljana    	2	3	3	3	4*	4*	4*	4*	
+                          	0nnn1nnn2nnn3nnn4nnn5nnn6nnn7nnn
+Amarilho<->Albuquerque    	0   0   0   0   0   0   0   0   
+Denver<->Albuquerque      	0   0   0   0   0   0   0   0   
+NewYork<->Allentown       	0   0   0   0   0   0   0   0   
+Scranton<->Allentown      	0   0   0   0   0   0   0   0   
+Stamford<->Allentown      	0   0   0   0   0   0   0   0   
+Birminghan<->Atlanta      	12* 12* 0   0   0   0   0   0   
+Macon<->Atlanta           	16* 16* 16* 16* 16* 16* 0   0   
+Atlanta<->Augusta         	16  16  16  16  16  16  0   0   
+Modesto<->Bakersfield     	0   0   0   0   0   0   0   0   
+SanDiego<->Bakersfield    	0   0   0   0   0   0   0   0   
+SanJose<->Bakersfield     	0   0   0   0   0   0   0   0   
+Spokane<->Billings        	0   0   0   0   0   0   0   0   
+Allentown<->Binghamton    	0   0   0   0   0   0   0   0   
+Scranton<->Binghamton     	0   0   0   0   0   0   0   0   
+Syracuse<->Binghamton     	0   0   0   0   0   0   0   0   
+Jackson<->Birminghan      	12  12  0   0   0   0   0   0   
+Portland<->Boise          	0   0   0   0   0   0   0   0   
+Spokane<->Boise           	0   0   0   0   0   0   0   0   
+Manchester<->Boston       	0   0   0   0   0   0   0   0   
+Stamford<->Bridgeport     	0   0   0   0   0   0   0   0   
+Cleveland<->Buffalo       	0   0   0   0   0   0   0   0   
+Syracuse<->Buffalo        	0   0   0   0   0   0   0   0   
+Cincinnati<->Charleston   	0   0   0   0   0   0   0   0   
+Columbus<->Charleston     	0   0   0   0   0   0   0   0   
+Pittsburgh<->Charleston   	0   0   0   0   0   0   0   0   
+wytheville<->Charleston   	0   0   0   0   0   0   0   0   
+Atlanta<->Charlotte       	0   0   0   0   0   0   0   0   
+Atlanta<->chattanooga     	0   0   0   0   0   0   0   0   
+Milwaukee<->Chicago       	0   0   0   0   0   0   0   0   
+Peoria<->Chicago          	0   0   0   0   0   0   0   0   
+Knoxville<->Cincinnati    	0   0   0   0   0   0   0   0   
+Louisville<->Cincinnati   	0   0   0   0   0   0   0   0   
+Miami<->clearwater        	0   0   0   0   0   0   0   0   
+Columbus<->Cleveland      	0   0   0   0   0   0   0   0   
+Pittsburgh<->Cleveland    	0   0   0   0   0   0   0   0   
+Toledo<->Cleveland        	0   0   0   0   0   0   0   0   
+Augusta<->Columbia        	0   0   0   0   0   0   0   0   
+Cincinnati<->Columbus     	0   0   0   0   0   0   0   0   
+Indianapolis<->Columbus   	0   0   0   0   0   0   0   0   
+Toledo<->Columbus         	0   0   0   0   0   0   0   0   
+Houston<->Dallas          	12* 12* 0   0   0   0   0   0   
+Oklahomacity<->Dallas     	12* 12* 0   0   0   0   0   0   
+Waco<->Dallas             	9   9   9   9   9   9   9   0   
+Amarilho<->Denver         	0   0   0   0   0   0   0   0   
+Saltlakecity<->Denver     	0   0   0   0   0   0   0   0   
+Kansascity<->DesMoines    	0   0   0   0   0   0   0   0   
+Minneapolis<->DesMoines   	0   0   0   0   0   0   0   0   
+Peoria<->DesMoines        	0   0   0   0   0   0   0   0   
+Grandrapids<->Detroit     	0   0   0   0   0   0   0   0   
+Albuquerque<->ElPaso      	0   0   0   0   0   0   0   0   
+lubbock<->ElPaso          	0   0   0   0   0   0   0   0   
+Billings<->Fargo          	0   0   0   0   0   0   0   0   
+Minneapolis<->Fargo       	0   0   0   0   0   0   0   0   
+Billings<->FortCollins    	0   0   0   0   0   0   0   0   
+Denver<->FortCollins      	0   0   0   0   0   0   0   0   
+Charlotte<->Greensboro    	0   0   0   0   0   0   0   0   
+Raleigh<->Greensboro      	0   0   0   0   0   0   0   0   
+wytheville<->Greensboro   	0   0   0   0   0   0   0   0   
+Bridgeport<->Hartford     	0   0   0   0   0   0   0   0   
+chicopee<->Hartford       	0   0   0   0   0   0   0   0   
+LakeKatrina<->Hartford    	0   0   0   0   0   0   0   0   
+SanAntonio<->Houston      	0   0   0   0   0   0   0   0   
+Southbend<->Indianapolis  	0   0   0   0   0   0   0   0   
+StLouis<->Indianapolis    	0   0   0   0   0   0   0   0   
+Memphis<->Jackson         	0   0   0   0   0   0   0   0   
+Neworleans<->Jackson      	12  12  0   0   0   0   0   0   
+Gainesville<->Jacksonville	16  16  16  16  16  16  0   0   
+Orlando<->Jacksonville    	16* 16* 16* 16* 16* 16* 0   0   
+Jacksonville<->Jupiter    	0   0   0   0   0   0   0   0   
+Miami<->Jupiter           	0   0   0   0   0   0   0   0   
+Oklahomacity<->Kansascity 	0   0   0   0   0   0   0   0   
+StLouis<->Kansascity      	0   0   0   0   0   0   0   0   
+Wichita<->Kansascity      	0   0   0   0   0   0   0   0   
+Charlotte<->Knoxville     	0   0   0   0   0   0   0   0   
+chattanooga<->Knoxville   	0   0   0   0   0   0   0   0   
+Nashville<->Knoxville     	0   0   0   0   0   0   0   0   
+Binghamton<->LakeKatrina  	0   0   0   0   0   0   0   0   
+Schenectady<->LakeKatrina 	0   0   0   0   0   0   0   0   
+Stamford<->LakeKatrina    	0   0   0   0   0   0   0   0   
+Saltlakecity<->Lasvegas   	0   0   0   0   0   0   0   0   
+SanDiego<->Lasvegas       	0   0   0   0   0   0   0   0   
+Oklahomacity<->Littlerock 	12* 12* 0   0   0   0   0   0   
+shreveport<->Littlerock   	0   0   0   0   0   0   0   0   
+SanJose<->LosAngelos      	0   0   0   0   0   0   0   0   
+Indianapolis<->Louisville 	0   0   0   0   0   0   0   0   
+Nashville<->Louisville    	0   0   0   0   0   0   0   0   
+Amarilho<->lubbock        	0   0   0   0   0   0   0   0   
+Dallas<->lubbock          	9*  9*  9*  9*  9*  9*  9*  0   
+Augusta<->Macon           	0   0   0   0   0   0   0   0   
+Waycross<->Macon          	16* 16* 16* 16* 16* 16* 0   0   
+Worcester<->Manchester    	0   0   0   0   0   0   0   0   
+Littlerock<->Memphis      	12* 12* 0   0   0   0   0   0   
+Nashville<->Memphis       	12* 12* 0   0   0   0   0   0   
+StLouis<->Memphis         	0   0   0   0   0   0   0   0   
+Minneapolis<->Milwaukee   	0   0   0   0   0   0   0   0   
+Atlanta<->Montgomery      	12* 12* 0   0   0   0   0   0   
+Birminghan<->Montgomery   	12  12  0   0   0   0   0   0   
+Mobile<->Montgomery       	0   0   0   0   0   0   0   0   
+Birminghan<->Nashville    	12* 12* 0   0   0   0   0   0   
+StLouis<->Nashville       	0   0   0   0   0   0   0   0   
+Houston<->Neworleans      	12  12  0   0   0   0   0   0   
+Mobile<->Neworleans       	0   0   0   0   0   0   0   0   
+Amarilho<->Oklahomacity   	0   0   0   0   0   0   0   0   
+Denver<->Omaha            	0   0   0   0   0   0   0   0   
+DesMoines<->Omaha         	0   0   0   0   0   0   0   0   
+Kansascity<->Omaha        	0   0   0   0   0   0   0   0   
+clearwater<->Orlando      	0   0   0   0   0   0   0   0   
+Gainesville<->Orlando     	16* 16* 16* 16* 16* 16* 0   0   
+Jupiter<->Orlando         	0   0   0   0   0   0   0   0   
+Springfield<->Peoria      	0   0   0   0   0   0   0   0   
+Allentown<->Philadelphia  	0   0   0   0   0   0   0   0   
+Washington<->Philadelphia 	0   0   0   0   0   0   0   0   
+Washington<->Pittsburgh   	0   0   0   0   0   0   0   0   
+Eugene<->Portland         	0   0   0   0   0   0   0   0   
+Seattle<->Portland        	0   0   0   0   0   0   0   0   
+Boston<->Providence       	0   0   0   0   0   0   0   0   
+Hartford<->Providence     	0   0   0   0   0   0   0   0   
+Worcester<->Providence    	0   0   0   0   0   0   0   0   
+Columbia<->Raleigh        	0   0   0   0   0   0   0   0   
+Richmond<->Raleigh        	0   0   0   0   0   0   0   0   
+Savannah<->Raleigh        	0   0   0   0   0   0   0   0   
+Washington<->Richmond     	0   0   0   0   0   0   0   0   
+Schenectady<->Rutland     	0   0   0   0   0   0   0   0   
+Eugene<->Sacramento       	0   0   0   0   0   0   0   0   
+Modesto<->Sacramento      	0   0   0   0   0   0   0   0   
+Saltlakecity<->Sacramento 	0   0   0   0   0   0   0   0   
+Boise<->Saltlakecity      	0   0   0   0   0   0   0   0   
+lubbock<->SanAntonio      	9*  9*  9*  9*  9*  9*  9*  0   
+LosAngelos<->SanDiego     	0   0   0   0   0   0   0   0   
+Tucson<->SanDiego         	0   0   0   0   0   0   0   0   
+Sacramento<->SanFrancisco 	0   0   0   0   0   0   0   0   
+Modesto<->SanJose         	0   0   0   0   0   0   0   0   
+SanFrancisco<->SanJose    	0   0   0   0   0   0   0   0   
+Augusta<->Savannah        	16  16  16  16  16  16  0   0   
+Jacksonville<->Savannah   	16  16  16  16  16  16  0   0   
+Waycross<->Savannah       	0   0   0   0   0   0   0   0   
+Syracuse<->Schenectady    	0   0   0   0   0   0   0   0   
+Pittsburgh<->Scranton     	0   0   0   0   0   0   0   0   
+Spokane<->Seattle         	0   0   0   0   0   0   0   0   
+Dallas<->shreveport       	0   0   0   0   0   0   0   0   
+Jackson<->shreveport      	0   0   0   0   0   0   0   0   
+Fargo<->SiouxFalls        	0   0   0   0   0   0   0   0   
+Omaha<->SiouxFalls        	0   0   0   0   0   0   0   0   
+Chicago<->Southbend       	0   0   0   0   0   0   0   0   
+Grandrapids<->Southbend   	0   0   0   0   0   0   0   0   
+Oklahomacity<->StLouis    	0   0   0   0   0   0   0   0   
+Springfield<->StLouis     	0   0   0   0   0   0   0   0   
+NewYork<->Stamford        	0   0   0   0   0   0   0   0   
+Gainesville<->tallahassee 	0   0   0   0   0   0   0   0   
+Jacksonville<->tallahassee	0   0   0   0   0   0   0   0   
+Mobile<->tallahassee      	0   0   0   0   0   0   0   0   
+Albuquerque<->Tempe       	0   0   0   0   0   0   0   0   
+Lasvegas<->Tempe          	0   0   0   0   0   0   0   0   
+Tucson<->Tempe            	0   0   0   0   0   0   0   0   
+Detroit<->Toledo          	0   0   0   0   0   0   0   0   
+Southbend<->Toledo        	0   0   0   0   0   0   0   0   
+ElPaso<->Tucson           	0   0   0   0   0   0   0   0   
+SanAntonio<->Waco         	9*  9*  9*  9*  9*  9*  9*  0   
+Jacksonville<->Waycross   	16* 16* 16* 16* 16* 16* 0   0   
+tallahassee<->Waycross    	0   0   0   0   0   0   0   0   
+Boston<->Westbrook        	0   0   0   0   0   0   0   0   
+Manchester<->Westbrook    	0   0   0   0   0   0   0   0   
+Denver<->Wichita          	0   0   0   0   0   0   0   0   
+Oklahomacity<->Wichita    	0   0   0   0   0   0   0   0   
+Boston<->Worcester        	0   0   0   0   0   0   0   0   
+chicopee<->Worcester      	0   0   0   0   0   0   0   0   
+Rutland<->Worcester       	0   0   0   0   0   0   0   0   
+Cincinnati<->wytheville   	0   0   0   0   0   0   0   0   
+Richmond<->wytheville     	0   0   0   0   0   0   0   0   
+Washington<->wytheville   	0   0   0   0   0   0   0   0   
+Rutland<->Westbrook       	0   0   0   0   0   0   0   0   
 
-processing demand from NovoMesto to Ljubljana with 2 slots
+processing demand from Columbus to FortCollins with 1 slots
 
-trying main path: NovoMesto->Kosevje->Ljubljana
-It's not possible to supply demand of 2  from NovoMesto to Ljubljana
+path from Columbus to FortCollins not found.
 
-processing demand from Tolmin to Maribor with 6 slots
+processing demand from Stamford to Detroit with 9 slots
 
-trying main path: Tolmin->Bled->Kranj->Ljubljana->Kosevje->NovoMesto->Krki->SBistrika->Maribor
-It's not possible to supply demand of 6  from Tolmin to Maribor
+path from Stamford to Detroit not found.
 
-processing demand from Ljubljana to NovaGorica with 7 slots
+processing demand from Billings to Indianapolis with 5 slots
 
-trying main path: Ljubljana->Koper->Ajdovscina->NovaGorica
-It's not possible to supply demand of 7  from Ljubljana to NovaGorica
+path from Billings to Indianapolis not found.
 
-processing demand from Celje to Bled with 2 slots
+processing demand from Washington to Detroit with 4 slots
 
-trying main path: Celje->Ljubljana->Kranj->Bled
-It's not possible to supply demand of 2  from Celje to Bled
+path from Washington to Detroit not found.
 
-processing demand from Dravograd to SBistrika with 1 slots
+processing demand from Atlanta to Memphis with 4 slots
 
-trying main path: Dravograd->Maribor->SBistrika
-It's not possible to supply demand of 1  from Dravograd to SBistrika
+path from Atlanta to Memphis not found.
 
-processing demand from Dravograd to Maribor with 7 slots
+processing demand from Indianapolis to Southbend with 2 slots
 
-trying main path: Dravograd->Maribor
-It's not possible to supply demand of 7  from Dravograd to Maribor
+path from Indianapolis to Southbend not found.
 
-processing demand from NovaGorica to Maribor with 2 slots
+processing demand from Minneapolis to Milwaukee with 8 slots
 
-trying main path: NovaGorica->Ajdovscina->Koper->Ljubljana->Kosevje->NovoMesto->Krki->SBistrika->Maribor
-It's not possible to supply demand of 2  from NovaGorica to Maribor
-
-processing demand from NovoMesto to Bled with 3 slots
-
-trying main path: NovoMesto->Kosevje->Ljubljana->Kranj->Bled
-It's not possible to supply demand of 3  from NovoMesto to Bled
-
-processing demand from Koper to Krki with 5 slots
-
-trying main path: Koper->Ljubljana->Kosevje->NovoMesto->Krki
-It's not possible to supply demand of 5  from Koper to Krki
-
-processing demand from Celje to Trbovlje with 4 slots
-
-trying main path: Celje->Lasko->Trbovlje
-trying secundary path: Celje->Ljubljana->Trbovlje
+trying main path: Minneapolis->Milwaukee
+trying secundary path: Minneapolis->DesMoines->Peoria->Chicago->Milwaukee
 demand supplied
 
-                       	0	1	2	3	4	5	6	7	                       	0	1	2	3	4	5	6	7	
-Koper<->Ljubljana      	0	3*	3*	3*	0	0	0	0	Koper<->Ljubljana      	0	0	0	0	0	0	0	0	
-Ljubljana<->Kranj      	0	3	3	3	0	0	0	0	Ljubljana<->Kranj      	0	0	0	0	0	0	0	0	
-Kranj<->Bled           	0	3	3	3	0	0	0	0	Kranj<->Bled           	0	0	0	0	0	0	0	0	
-Bled<->Tolmin          	0	3*	3*	3*	0	0	0	0	Bled<->Tolmin          	0	0	0	0	0	0	0	0	
-Tolmin<->NovaGorica    	0	3*	3*	3*	0	0	0	0	Tolmin<->NovaGorica    	0	0	0	0	0	0	0	0	
-NovaGorica<->Ajdovscina	0	3*	3*	3*	0	0	0	0	NovaGorica<->Ajdovscina	0	0	0	0	0	0	0	0	
-Ajdovscina<->Koper     	0	3*	3*	3*	0	0	0	0	Ajdovscina<->Koper     	0	0	0	0	0	0	0	0	
-Ljubljana<->Celje      	0	3*	3*	3*	4*	4*	4*	4*	Ljubljana<->Celje      	0	0	0	0	15*	15*	15*	15*	
-Celje<->Velenje        	2*	3*	3*	3*	4*	4*	4*	4*	Celje<->Velenje        	0	0	0	0	0	0	0	0	
-Velenje<->Dravograd    	2*	3*	3*	3*	4*	4*	4*	4*	Velenje<->Dravograd    	0	0	0	0	0	0	0	0	
-Dravograd<->Maribor    	2*	3	3	3	4*	4*	4*	4*	Dravograd<->Maribor    	0	0	0	0	0	0	0	0	
-Maribor<->SBistrika    	2*	3	3	3	4*	4*	4*	4*	Maribor<->SBistrika    	0	0	0	0	0	0	0	0	
-SBistrika<->Celje      	0	0	0	0	0	0	0	0	SBistrika<->Celje      	0	0	0	0	0	0	0	0	
-Celje<->Lasko          	2*	15	15	15	15	0	0	0	Celje<->Lasko          	0	0	0	0	0	0	0	0	
-Lasko<->Trbovlje       	2*	15	15	15	15	0	0	0	Lasko<->Trbovlje       	0	0	0	0	0	0	0	0	
-Trbovlje<->Ljubljana   	2	0	0	0	15*	15*	15*	15*	Trbovlje<->Ljubljana   	0	0	0	0	0	0	0	0	
-SBistrika<->Krki       	2*	3	3	3	4	4	4	4	SBistrika<->Krki       	0	0	0	0	0	0	0	0	
-Krki<->NovoMesto       	2*	3	3	3	4*	4*	4*	4*	Krki<->NovoMesto       	0	0	0	0	0	0	0	0	
-NovoMesto<->Kosevje    	2	3	3	3	4*	4*	4*	4*	NovoMesto<->Kosevje    	0	0	0	0	0	0	0	0	
-Kosevje<->Ljubljana    	2	3	3	3	4*	4*	4*	4*	Kosevje<->Ljubljana    	0	0	0	0	0	0	0	0	
-
-processing demand from NovoMesto to Tolmin with 8 slots
-
-trying main path: NovoMesto->Kosevje->Ljubljana->Kranj->Bled->Tolmin
-It's not possible to supply demand of 8  from NovoMesto to Tolmin
-
-processing demand from Ljubljana to SBistrika with 8 slots
-
-trying main path: Ljubljana->Kosevje->NovoMesto->Krki->SBistrika
-It's not possible to supply demand of 8  from Ljubljana to SBistrika
-
-processing demand from Velenje to Tolmin with 5 slots
-
-trying main path: Velenje->Celje->Ljubljana->Kranj->Bled->Tolmin
-It's not possible to supply demand of 5  from Velenje to Tolmin
-
-processing demand from Maribor to Celje with 4 slots
-
-trying main path: Maribor->SBistrika->Celje
-It's not possible to supply demand of 4  from Maribor to Celje
-
-processing demand from Celje to Lasko with 1 slots
-
-trying main path: Celje->Lasko
-trying secundary path: Celje->Ljubljana->Trbovlje->Lasko
-It's not possible to supply demand of 1  from Celje to Lasko
-
-processing demand from Koper to Dravograd with 8 slots
-
-trying main path: Koper->Ljubljana->Kosevje->NovoMesto->Krki->SBistrika->Maribor->Dravograd
-It's not possible to supply demand of 8  from Koper to Dravograd
-
-processing demand from Ljubljana to Lasko with 3 slots
-
-trying main path: Ljubljana->Celje->Lasko
-It's not possible to supply demand of 3  from Ljubljana to Lasko
-
-processing demand from SBistrika to Dravograd with 1 slots
-
-trying main path: SBistrika->Maribor->Dravograd
-It's not possible to supply demand of 1  from SBistrika to Dravograd
-
-processing demand from Maribor to Ajdovscina with 9 slots
-
-trying main path: Maribor->SBistrika->Krki->NovoMesto->Kosevje->Ljubljana->Koper->Ajdovscina
-It's not possible to supply demand of 9  from Maribor to Ajdovscina
-
-processing demand from Velenje to Bled with 8 slots
-
-trying main path: Velenje->Celje->Ljubljana->Kranj->Bled
-It's not possible to supply demand of 8  from Velenje to Bled
-
-processing demand from Tolmin to Dravograd with 1 slots
-
-trying main path: Tolmin->Bled->Kranj->Ljubljana->Kosevje->NovoMesto->Krki->SBistrika->Maribor->Dravograd
-It's not possible to supply demand of 1  from Tolmin to Dravograd
-
-processing demand from Celje to Krki with 3 slots
-
-trying main path: Celje->Ljubljana->Kosevje->NovoMesto->Krki
-It's not possible to supply demand of 3  from Celje to Krki
-
-processing demand from Velenje to Dravograd with 4 slots
-
-trying main path: Velenje->Dravograd
-It's not possible to supply demand of 4  from Velenje to Dravograd
-
-processing demand from SBistrika to Ljubljana with 4 slots
-
-trying main path: SBistrika->Celje->Ljubljana
-It's not possible to supply demand of 4  from SBistrika to Ljubljana
-
-processing demand from Krki to NovoMesto with 7 slots
-
-trying main path: Krki->NovoMesto
-It's not possible to supply demand of 7  from Krki to NovoMesto
-
-processing demand from Dravograd to Lasko with 5 slots
-
-trying main path: Dravograd->Maribor->SBistrika->Celje->Lasko
-It's not possible to supply demand of 5  from Dravograd to Lasko
-
-processing demand from Krki to Maribor with 7 slots
-
-trying main path: Krki->SBistrika->Maribor
-It's not possible to supply demand of 7  from Krki to Maribor
-
-processing demand from Maribor to SBistrika with 6 slots
-
-trying main path: Maribor->SBistrika
-It's not possible to supply demand of 6  from Maribor to SBistrika
-
-processing demand from Tolmin to NovoMesto with 5 slots
-
-trying main path: Tolmin->Bled->Kranj->Ljubljana->Kosevje->NovoMesto
-It's not possible to supply demand of 5  from Tolmin to NovoMesto
-
-processing demand from Koper to Ljubljana with 6 slots
-
-trying main path: Koper->Ljubljana
-It's not possible to supply demand of 6  from Koper to Ljubljana
-
-processing demand from Ajdovscina to Trbovlje with 4 slots
-
-trying main path: Ajdovscina->Koper->Ljubljana->Trbovlje
-It's not possible to supply demand of 4  from Ajdovscina to Trbovlje
-
-processing demand from SBistrika to Celje with 1 slots
-
-trying main path: SBistrika->Celje
-trying secundary path: SBistrika->Krki->NovoMesto->Kosevje->Ljubljana->Celje
-It's not possible to supply demand of 1  from SBistrika to Celje
-
-processing demand from Ajdovscina to SBistrika with 8 slots
-
-trying main path: Ajdovscina->Koper->Ljubljana->Kosevje->NovoMesto->Krki->SBistrika
-It's not possible to supply demand of 8  from Ajdovscina to SBistrika
-
-processing demand from Trbovlje to Dravograd with 4 slots
-
-trying main path: Trbovlje->Lasko->Celje->SBistrika->Maribor->Dravograd
-It's not possible to supply demand of 4  from Trbovlje to Dravograd
-
-processing demand from Ljubljana to Maribor with 4 slots
-
-trying main path: Ljubljana->Kosevje->NovoMesto->Krki->SBistrika->Maribor
-It's not possible to supply demand of 4  from Ljubljana to Maribor
-
-processing demand from Krki to Dravograd with 9 slots
-
-trying main path: Krki->SBistrika->Maribor->Dravograd
-It's not possible to supply demand of 9  from Krki to Dravograd
-
-processing demand from NovaGorica to Lasko with 3 slots
-
-trying main path: NovaGorica->Ajdovscina->Koper->Ljubljana->Celje->Lasko
-It's not possible to supply demand of 3  from NovaGorica to Lasko
-
-processing demand from NovoMesto to Velenje with 1 slots
-
-trying main path: NovoMesto->Kosevje->Ljubljana->Celje->Velenje
-It's not possible to supply demand of 1  from NovoMesto to Velenje
-
-processing demand from Kranj to Lasko with 1 slots
-
-trying main path: Kranj->Ljubljana->Celje->Lasko
-It's not possible to supply demand of 1  from Kranj to Lasko
-
-processing demand from Krki to Bled with 7 slots
-
-trying main path: Krki->NovoMesto->Kosevje->Ljubljana->Kranj->Bled
-It's not possible to supply demand of 7  from Krki to Bled
-
-processing demand from Dravograd to Tolmin with 4 slots
-
-trying main path: Dravograd->Maribor->SBistrika->Krki->NovoMesto->Kosevje->Ljubljana->Kranj->Bled->Tolmin
-It's not possible to supply demand of 4  from Dravograd to Tolmin
-
-processing demand from Trbovlje to Tolmin with 3 slots
-
-trying main path: Trbovlje->Ljubljana->Kranj->Bled->Tolmin
-It's not possible to supply demand of 3  from Trbovlje to Tolmin
-
-processing demand from Koper to Trbovlje with 7 slots
-
-trying main path: Koper->Ljubljana->Trbovlje
-It's not possible to supply demand of 7  from Koper to Trbovlje
-
-processing demand from Maribor to Velenje with 5 slots
-
-trying main path: Maribor->Dravograd->Velenje
-It's not possible to supply demand of 5  from Maribor to Velenje
-
-processing demand from Lasko to SBistrika with 8 slots
-
-trying main path: Lasko->Celje->SBistrika
-It's not possible to supply demand of 8  from Lasko to SBistrika
-
-Finished
-
-Total Demands: 49
-Supplied: 4
-Blocked: 45
-
-                       	0	1	2	3	4	5	6	7	                       	0	1	2	3	4	5	6	7	
-Koper<->Ljubljana      	0	3*	3*	3*	0	0	0	0	Koper<->Ljubljana      	0	0	0	0	0	0	0	0	
-Ljubljana<->Kranj      	0	3	3	3	0	0	0	0	Ljubljana<->Kranj      	0	0	0	0	0	0	0	0	
-Kranj<->Bled           	0	3	3	3	0	0	0	0	Kranj<->Bled           	0	0	0	0	0	0	0	0	
-Bled<->Tolmin          	0	3*	3*	3*	0	0	0	0	Bled<->Tolmin          	0	0	0	0	0	0	0	0	
-Tolmin<->NovaGorica    	0	3*	3*	3*	0	0	0	0	Tolmin<->NovaGorica    	0	0	0	0	0	0	0	0	
-NovaGorica<->Ajdovscina	0	3*	3*	3*	0	0	0	0	NovaGorica<->Ajdovscina	0	0	0	0	0	0	0	0	
-Ajdovscina<->Koper     	0	3*	3*	3*	0	0	0	0	Ajdovscina<->Koper     	0	0	0	0	0	0	0	0	
-Ljubljana<->Celje      	0	3*	3*	3*	4*	4*	4*	4*	Ljubljana<->Celje      	0	0	0	0	15*	15*	15*	15*	
-Celje<->Velenje        	2*	3*	3*	3*	4*	4*	4*	4*	Celje<->Velenje        	0	0	0	0	0	0	0	0	
-Velenje<->Dravograd    	2*	3*	3*	3*	4*	4*	4*	4*	Velenje<->Dravograd    	0	0	0	0	0	0	0	0	
-Dravograd<->Maribor    	2*	3	3	3	4*	4*	4*	4*	Dravograd<->Maribor    	0	0	0	0	0	0	0	0	
-Maribor<->SBistrika    	2*	3	3	3	4*	4*	4*	4*	Maribor<->SBistrika    	0	0	0	0	0	0	0	0	
-SBistrika<->Celje      	0	0	0	0	0	0	0	0	SBistrika<->Celje      	0	0	0	0	0	0	0	0	
-Celje<->Lasko          	2*	15	15	15	15	0	0	0	Celje<->Lasko          	0	0	0	0	0	0	0	0	
-Lasko<->Trbovlje       	2*	15	15	15	15	0	0	0	Lasko<->Trbovlje       	0	0	0	0	0	0	0	0	
-Trbovlje<->Ljubljana   	2	0	0	0	15*	15*	15*	15*	Trbovlje<->Ljubljana   	0	0	0	0	0	0	0	0	
-SBistrika<->Krki       	2*	3	3	3	4	4	4	4	SBistrika<->Krki       	0	0	0	0	0	0	0	0	
-Krki<->NovoMesto       	2*	3	3	3	4*	4*	4*	4*	Krki<->NovoMesto       	0	0	0	0	0	0	0	0	
-NovoMesto<->Kosevje    	2	3	3	3	4*	4*	4*	4*	NovoMesto<->Kosevje    	0	0	0	0	0	0	0	0	
-Kosevje<->Ljubljana    	2	3	3	3	4*	4*	4*	4*	Kosevje<->Ljubljana    	0	0	0	0	0	0	0	0	
+                          	0nnn1nnn2nnn3nnn4nnn5nnn6nnn7nnn
+Amarilho<->Albuquerque    	0   0   0   0   0   0   0   0   
+Denver<->Albuquerque      	0   0   0   0   0   0   0   0   
+NewYork<->Allentown       	0   0   0   0   0   0   0   0   
+Scranton<->Allentown      	0   0   0   0   0   0   0   0   
+Stamford<->Allentown      	0   0   0   0   0   0   0   0   
+Birminghan<->Atlanta      	12* 12* 0   0   0   0   0   0   
+Macon<->Atlanta           	16* 16* 16* 16* 16* 16* 0   0   
+Atlanta<->Augusta         	16  16  16  16  16  16  0   0   
+Modesto<->Bakersfield     	0   0   0   0   0   0   0   0   
+SanDiego<->Bakersfield    	0   0   0   0   0   0   0   0   
+SanJose<->Bakersfield     	0   0   0   0   0   0   0   0   
+Spokane<->Billings        	0   0   0   0   0   0   0   0   
+Allentown<->Binghamton    	0   0   0   0   0   0   0   0   
+Scranton<->Binghamton     	0   0   0   0   0   0   0   0   
+Syracuse<->Binghamton     	0   0   0   0   0   0   0   0   
+Jackson<->Birminghan      	12  12  0   0   0   0   0   0   
+Portland<->Boise          	0   0   0   0   0   0   0   0   
+Spokane<->Boise           	0   0   0   0   0   0   0   0   
+Manchester<->Boston       	0   0   0   0   0   0   0   0   
+Stamford<->Bridgeport     	0   0   0   0   0   0   0   0   
+Cleveland<->Buffalo       	0   0   0   0   0   0   0   0   
+Syracuse<->Buffalo        	0   0   0   0   0   0   0   0   
+Cincinnati<->Charleston   	0   0   0   0   0   0   0   0   
+Columbus<->Charleston     	0   0   0   0   0   0   0   0   
+Pittsburgh<->Charleston   	0   0   0   0   0   0   0   0   
+wytheville<->Charleston   	0   0   0   0   0   0   0   0   
+Atlanta<->Charlotte       	0   0   0   0   0   0   0   0   
+Atlanta<->chattanooga     	0   0   0   0   0   0   0   0   
+Milwaukee<->Chicago       	23* 23* 23* 23* 23* 23* 23* 23* 
+Peoria<->Chicago          	23* 23* 23* 23* 23* 23* 23* 23* 
+Knoxville<->Cincinnati    	0   0   0   0   0   0   0   0   
+Louisville<->Cincinnati   	0   0   0   0   0   0   0   0   
+Miami<->clearwater        	0   0   0   0   0   0   0   0   
+Columbus<->Cleveland      	0   0   0   0   0   0   0   0   
+Pittsburgh<->Cleveland    	0   0   0   0   0   0   0   0   
+Toledo<->Cleveland        	0   0   0   0   0   0   0   0   
+Augusta<->Columbia        	0   0   0   0   0   0   0   0   
+Cincinnati<->Columbus     	0   0   0   0   0   0   0   0   
+Indianapolis<->Columbus   	0   0   0   0   0   0   0   0   
+Toledo<->Columbus         	0   0   0   0   0   0   0   0   
+Houston<->Dallas          	12* 12* 0   0   0   0   0   0   
+Oklahomacity<->Dallas     	12* 12* 0   0   0   0   0   0   
+Waco<->Dallas             	9   9   9   9   9   9   9   0   
+Amarilho<->Denver         	0   0   0   0   0   0   0   0   
+Saltlakecity<->Denver     	0   0   0   0   0   0   0   0   
+Kansascity<->DesMoines    	0   0   0   0   0   0   0   0   
+Minneapolis<->DesMoines   	23* 23* 23* 23* 23* 23* 23* 23* 
+Peoria<->DesMoines        	23* 23* 23* 23* 23* 23* 23* 23* 
+Grandrapids<->Detroit     	0   0   0   0   0   0   0   0   
+Albuquerque<->ElPaso      	0   0   0   0   0   0   0   0   
+lubbock<->ElPaso          	0   0   0   0   0   0   0   0   
+Billings<->Fargo          	0   0   0   0   0   0   0   0   
+Minneapolis<->Fargo       	0   0   0   0   0   0   0   0   
+Billings<->FortCollins    	0   0   0   0   0   0   0   0   
+Denver<->FortCollins      	0   0   0   0   0   0   0   0   
+Charlotte<->Greensboro    	0   0   0   0   0   0   0   0   
+Raleigh<->Greensboro      	0   0   0   0   0   0   0   0   
+wytheville<->Greensboro   	0   0   0   0   0   0   0   0   
+Bridgeport<->Hartford     	0   0   0   0   0   0   0   0   
+chicopee<->Hartford       	0   0   0   0   0   0   0   0   
+LakeKatrina<->Hartford    	0   0   0   0   0   0   0   0   
+SanAntonio<->Houston      	0   0   0   0   0   0   0   0   
+Southbend<->Indianapolis  	0   0   0   0   0   0   0   0   
+StLouis<->Indianapolis    	0   0   0   0   0   0   0   0   
+Memphis<->Jackson         	0   0   0   0   0   0   0   0   
+Neworleans<->Jackson      	12  12  0   0   0   0   0   0   
+Gainesville<->Jacksonville	16  16  16  16  16  16  0   0   
+Orlando<->Jacksonville    	16* 16* 16* 16* 16* 16* 0   0   
+Jacksonville<->Jupiter    	0   0   0   0   0   0   0   0   
+Miami<->Jupiter           	0   0   0   0   0   0   0   0   
+Oklahomacity<->Kansascity 	0   0   0   0   0   0   0   0   
+StLouis<->Kansascity      	0   0   0   0   0   0   0   0   
+Wichita<->Kansascity      	0   0   0   0   0   0   0   0   
+Charlotte<->Knoxville     	0   0   0   0   0   0   0   0   
+chattanooga<->Knoxville   	0   0   0   0   0   0   0   0   
+Nashville<->Knoxville     	0   0   0   0   0   0   0   0   
+Binghamton<->LakeKatrina  	0   0   0   0   0   0   0   0   
+Schenectady<->LakeKatrina 	0   0   0   0   0   0   0   0   
+Stamford<->LakeKatrina    	0   0   0   0   0   0   0   0   
+Saltlakecity<->Lasvegas   	0   0   0   0   0   0   0   0   
+SanDiego<->Lasvegas       	0   0   0   0   0   0   0   0   
+Oklahomacity<->Littlerock 	12* 12* 0   0   0   0   0   0   
+shreveport<->Littlerock   	0   0   0   0   0   0   0   0   
+SanJose<->LosAngelos      	0   0   0   0   0   0   0   0   
+Indianapolis<->Louisville 	0   0   0   0   0   0   0   0   
+Nashville<->Louisville    	0   0   0   0   0   0   0   0   
+Amarilho<->lubbock        	0   0   0   0   0   0   0   0   
+Dallas<->lubbock          	9*  9*  9*  9*  9*  9*  9*  0   
+Augusta<->Macon           	0   0   0   0   0   0   0   0   
+Waycross<->Macon          	16* 16* 16* 16* 16* 16* 0   0   
+Worcester<->Manchester    	0   0   0   0   0   0   0   0   
+Littlerock<->Memphis      	12* 12* 0   0   0   0   0   0   
+Nashville<->Memphis       	12* 12* 0   0   0   0   0   0   
+StLouis<->Memphis         	0   0   0   0   0   0   0   0   
+Minneapolis<->Milwaukee   	23  23  23  23  23  23  23  23  
+Atlanta<->Montgomery      	12* 12* 0   0   0   0   0   0   
+Birminghan<->Montgomery   	12  12  0   0   0   0   0   0   
+Mobile<->Montgomery       	0   0   0   0   0   0   0   0   
+Birminghan<->Nashville    	12* 12* 0   0   0   0   0   0   
+StLouis<->Nashville       	0   0   0   0   0   0   0   0   
+Houston<->Neworleans      	12  12  0   0   0   0   0   0   
+Mobile<->Neworleans       	0   0   0   0   0   0   0   0   
+Amarilho<->Oklahomacity   	0   0   0   0   0   0   0   0   
+Denver<->Omaha            	0   0   0   0   0   0   0   0   
+DesMoines<->Omaha         	0   0   0   0   0   0   0   0   
+Kansascity<->Omaha        	0   0   0   0   0   0   0   0   
+clearwater<->Orlando      	0   0   0   0   0   0   0   0   
+Gainesville<->Orlando     	16* 16* 16* 16* 16* 16* 0   0   
+Jupiter<->Orlando         	0   0   0   0   0   0   0   0   
+Springfield<->Peoria      	0   0   0   0   0   0   0   0   
+Allentown<->Philadelphia  	0   0   0   0   0   0   0   0   
+Washington<->Philadelphia 	0   0   0   0   0   0   0   0   
+Washington<->Pittsburgh   	0   0   0   0   0   0   0   0   
+Eugene<->Portland         	0   0   0   0   0   0   0   0   
+Seattle<->Portland        	0   0   0   0   0   0   0   0   
+Boston<->Providence       	0   0   0   0   0   0   0   0   
+Hartford<->Providence     	0   0   0   0   0   0   0   0   
+Worcester<->Providence    	0   0   0   0   0   0   0   0   
+Columbia<->Raleigh        	0   0   0   0   0   0   0   0   
+Richmond<->Raleigh        	0   0   0   0   0   0   0   0   
+Savannah<->Raleigh        	0   0   0   0   0   0   0   0   
+Washington<->Richmond     	0   0   0   0   0   0   0   0   
+Schenectady<->Rutland     	0   0   0   0   0   0   0   0   
+Eugene<->Sacramento       	0   0   0   0   0   0   0   0   
+Modesto<->Sacramento      	0   0   0   0   0   0   0   0   
+Saltlakecity<->Sacramento 	0   0   0   0   0   0   0   0   
+Boise<->Saltlakecity      	0   0   0   0   0   0   0   0   
+lubbock<->SanAntonio      	9*  9*  9*  9*  9*  9*  9*  0   
+LosAngelos<->SanDiego     	0   0   0   0   0   0   0   0   
+Tucson<->SanDiego         	0   0   0   0   0   0   0   0   
+Sacramento<->SanFrancisco 	0   0   0   0   0   0   0   0   
+Modesto<->SanJose         	0   0   0   0   0   0   0   0   
+SanFrancisco<->SanJose    	0   0   0   0   0   0   0   0   
+Augusta<->Savannah        	16  16  16  16  16  16  0   0   
+Jacksonville<->Savannah   	16  16  16  16  16  16  0   0   
+Waycross<->Savannah       	0   0   0   0   0   0   0   0   
+Syracuse<->Schenectady    	0   0   0   0   0   0   0   0   
+Pittsburgh<->Scranton     	0   0   0   0   0   0   0   0   
+Spokane<->Seattle         	0   0   0   0   0   0   0   0   
+Dallas<->shreveport       	0   0   0   0   0   0   0   0   
+Jackson<->shreveport      	0   0   0   0   0   0   0   0   
+Fargo<->SiouxFalls        	0   0   0   0   0   0   0   0   
+Omaha<->SiouxFalls        	0   0   0   0   0   0   0   0   
+Chicago<->Southbend       	0   0   0   0   0   0   0   0   
+Grandrapids<->Southbend   	0   0   0   0   0   0   0   0   
+Oklahomacity<->StLouis    	0   0   0   0   0   0   0   0   
+Springfield<->StLouis     	0   0   0   0   0   0   0   0   
+NewYork<->Stamford        	0   0   0   0   0   0   0   0   
+Gainesville<->tallahassee 	0   0   0   0   0   0   0   0   
+Jacksonville<->tallahassee	0   0   0   0   0   0   0   0   
+Mobile<->tallahassee      	0   0   0   0   0   0   0   0   
+Albuquerque<->Tempe       	0   0   0   0   0   0   0   0   
+Lasvegas<->Tempe          	0   0   0   0   0   0   0   0   
+Tucson<->Tempe            	0   0   0   0   0   0   0   0   
+Detroit<->Toledo          	0   0   0   0   0   0   0   0   
+Southbend<->Toledo        	0   0   0   0   0   0   0   0   
+ElPaso<->Tucson           	0   0   0   0   0   0   0   0   
+SanAntonio<->Waco         	9*  9*  9*  9*  9*  9*  9*  0   
+Jacksonville<->Waycross   	16* 16* 16* 16* 16* 16* 0   0   
+tallahassee<->Waycross    	0   0   0   0   0   0   0   0   
+Boston<->Westbrook        	0   0   0   0   0   0   0   0   
+Manchester<->Westbrook    	0   0   0   0   0   0   0   0   
+Denver<->Wichita          	0   0   0   0   0   0   0   0   
+Oklahomacity<->Wichita    	0   0   0   0   0   0   0   0   
+Boston<->Worcester        	0   0   0   0   0   0   0   0   
+chicopee<->Worcester      	0   0   0   0   0   0   0   0   
+Rutland<->Worcester       	0   0   0   0   0   0   0   0   
+Cincinnati<->wytheville   	0   0   0   0   0   0   0   0   
+Richmond<->wytheville     	0   0   0   0   0   0   0   0   
+Washington<->wytheville   	0   0   0   0   0   0   0   0   
+Rutland<->Westbrook       	0   0   0   0   0   0   0   0   
+
+processing demand from tallahassee to Syracuse with 1 slots
+
+path from tallahassee to Syracuse not found.
+
+processing demand from Memphis to Minneapolis with 8 slots
+
+path from Memphis to Minneapolis not found.
+
+processing demand from Modesto to Stamford with 3 slots
+
+path from Modesto to Stamford not found.
+
+processing demand from Providence to SanDiego with 3 slots
+
+path from Providence to SanDiego not found.
+
+processing demand from Allentown to Columbia with 8 slots
+
+path from Allentown to Columbia not found.
+
+processing demand from Savannah to Bridgeport with 5 slots
+
+path from Savannah to Bridgeport not found.
+
+processing demand from ElPaso to Buffalo with 6 slots
+
+path from ElPaso to Buffalo not found.
+
+processing demand from Mobile to FortCollins with 6 slots
+
+path from Mobile to FortCollins not found.
+
+processing demand from SiouxFalls to Saltlakecity with 6 slots
+
+path from SiouxFalls to Saltlakecity not found.
+
+processing demand from shreveport to Bakersfield with 7 slots
+
+path from shreveport to Bakersfield not found.
+
+processing demand from Philadelphia to Portland with 8 slots
+
+path from Philadelphia to Portland not found.
+
+processing demand from Richmond to Houston with 8 slots
+
+path from Richmond to Houston not found.
+
+processing demand from SiouxFalls to Nashville with 5 slots
+
+path from SiouxFalls to Nashville not found.
+
+processing demand from Allentown to Houston with 3 slots
+
+path from Allentown to Houston not found.
+
+processing demand from Manchester to Boston with 7 slots
+
+trying main path: Manchester->Boston
+trying secundary path: Manchester->Westbrook->Boston
+demand supplied
+
+                          	0nnn1nnn2nnn3nnn4nnn5nnn6nnn7nnn
+Amarilho<->Albuquerque    	0   0   0   0   0   0   0   0   
+Denver<->Albuquerque      	0   0   0   0   0   0   0   0   
+NewYork<->Allentown       	0   0   0   0   0   0   0   0   
+Scranton<->Allentown      	0   0   0   0   0   0   0   0   
+Stamford<->Allentown      	0   0   0   0   0   0   0   0   
+Birminghan<->Atlanta      	12* 12* 0   0   0   0   0   0   
+Macon<->Atlanta           	16* 16* 16* 16* 16* 16* 0   0   
+Atlanta<->Augusta         	16  16  16  16  16  16  0   0   
+Modesto<->Bakersfield     	0   0   0   0   0   0   0   0   
+SanDiego<->Bakersfield    	0   0   0   0   0   0   0   0   
+SanJose<->Bakersfield     	0   0   0   0   0   0   0   0   
+Spokane<->Billings        	0   0   0   0   0   0   0   0   
+Allentown<->Binghamton    	0   0   0   0   0   0   0   0   
+Scranton<->Binghamton     	0   0   0   0   0   0   0   0   
+Syracuse<->Binghamton     	0   0   0   0   0   0   0   0   
+Jackson<->Birminghan      	12  12  0   0   0   0   0   0   
+Portland<->Boise          	0   0   0   0   0   0   0   0   
+Spokane<->Boise           	0   0   0   0   0   0   0   0   
+Manchester<->Boston       	38  38  38  38  38  38  38  0   
+Stamford<->Bridgeport     	0   0   0   0   0   0   0   0   
+Cleveland<->Buffalo       	0   0   0   0   0   0   0   0   
+Syracuse<->Buffalo        	0   0   0   0   0   0   0   0   
+Cincinnati<->Charleston   	0   0   0   0   0   0   0   0   
+Columbus<->Charleston     	0   0   0   0   0   0   0   0   
+Pittsburgh<->Charleston   	0   0   0   0   0   0   0   0   
+wytheville<->Charleston   	0   0   0   0   0   0   0   0   
+Atlanta<->Charlotte       	0   0   0   0   0   0   0   0   
+Atlanta<->chattanooga     	0   0   0   0   0   0   0   0   
+Milwaukee<->Chicago       	23* 23* 23* 23* 23* 23* 23* 23* 
+Peoria<->Chicago          	23* 23* 23* 23* 23* 23* 23* 23* 
+Knoxville<->Cincinnati    	0   0   0   0   0   0   0   0   
+Louisville<->Cincinnati   	0   0   0   0   0   0   0   0   
+Miami<->clearwater        	0   0   0   0   0   0   0   0   
+Columbus<->Cleveland      	0   0   0   0   0   0   0   0   
+Pittsburgh<->Cleveland    	0   0   0   0   0   0   0   0   
+Toledo<->Cleveland        	0   0   0   0   0   0   0   0   
+Augusta<->Columbia        	0   0   0   0   0   0   0   0   
+Cincinnati<->Columbus     	0   0   0   0   0   0   0   0   
+Indianapolis<->Columbus   	0   0   0   0   0   0   0   0   
+Toledo<->Columbus         	0   0   0   0   0   0   0   0   
+Houston<->Dallas          	12* 12* 0   0   0   0   0   0   
+Oklahomacity<->Dallas     	12* 12* 0   0   0   0   0   0   
+Waco<->Dallas             	9   9   9   9   9   9   9   0   
+Amarilho<->Denver         	0   0   0   0   0   0   0   0   
+Saltlakecity<->Denver     	0   0   0   0   0   0   0   0   
+Kansascity<->DesMoines    	0   0   0   0   0   0   0   0   
+Minneapolis<->DesMoines   	23* 23* 23* 23* 23* 23* 23* 23* 
+Peoria<->DesMoines        	23* 23* 23* 23* 23* 23* 23* 23* 
+Grandrapids<->Detroit     	0   0   0   0   0   0   0   0   
+Albuquerque<->ElPaso      	0   0   0   0   0   0   0   0   
+lubbock<->ElPaso          	0   0   0   0   0   0   0   0   
+Billings<->Fargo          	0   0   0   0   0   0   0   0   
+Minneapolis<->Fargo       	0   0   0   0   0   0   0   0   
+Billings<->FortCollins    	0   0   0   0   0   0   0   0   
+Denver<->FortCollins      	0   0   0   0   0   0   0   0   
+Charlotte<->Greensboro    	0   0   0   0   0   0   0   0   
+Raleigh<->Greensboro      	0   0   0   0   0   0   0   0   
+wytheville<->Greensboro   	0   0   0   0   0   0   0   0   
+Bridgeport<->Hartford     	0   0   0   0   0   0   0   0   
+chicopee<->Hartford       	0   0   0   0   0   0   0   0   
+LakeKatrina<->Hartford    	0   0   0   0   0   0   0   0   
+SanAntonio<->Houston      	0   0   0   0   0   0   0   0   
+Southbend<->Indianapolis  	0   0   0   0   0   0   0   0   
+StLouis<->Indianapolis    	0   0   0   0   0   0   0   0   
+Memphis<->Jackson         	0   0   0   0   0   0   0   0   
+Neworleans<->Jackson      	12  12  0   0   0   0   0   0   
+Gainesville<->Jacksonville	16  16  16  16  16  16  0   0   
+Orlando<->Jacksonville    	16* 16* 16* 16* 16* 16* 0   0   
+Jacksonville<->Jupiter    	0   0   0   0   0   0   0   0   
+Miami<->Jupiter           	0   0   0   0   0   0   0   0   
+Oklahomacity<->Kansascity 	0   0   0   0   0   0   0   0   
+StLouis<->Kansascity      	0   0   0   0   0   0   0   0   
+Wichita<->Kansascity      	0   0   0   0   0   0   0   0   
+Charlotte<->Knoxville     	0   0   0   0   0   0   0   0   
+chattanooga<->Knoxville   	0   0   0   0   0   0   0   0   
+Nashville<->Knoxville     	0   0   0   0   0   0   0   0   
+Binghamton<->LakeKatrina  	0   0   0   0   0   0   0   0   
+Schenectady<->LakeKatrina 	0   0   0   0   0   0   0   0   
+Stamford<->LakeKatrina    	0   0   0   0   0   0   0   0   
+Saltlakecity<->Lasvegas   	0   0   0   0   0   0   0   0   
+SanDiego<->Lasvegas       	0   0   0   0   0   0   0   0   
+Oklahomacity<->Littlerock 	12* 12* 0   0   0   0   0   0   
+shreveport<->Littlerock   	0   0   0   0   0   0   0   0   
+SanJose<->LosAngelos      	0   0   0   0   0   0   0   0   
+Indianapolis<->Louisville 	0   0   0   0   0   0   0   0   
+Nashville<->Louisville    	0   0   0   0   0   0   0   0   
+Amarilho<->lubbock        	0   0   0   0   0   0   0   0   
+Dallas<->lubbock          	9*  9*  9*  9*  9*  9*  9*  0   
+Augusta<->Macon           	0   0   0   0   0   0   0   0   
+Waycross<->Macon          	16* 16* 16* 16* 16* 16* 0   0   
+Worcester<->Manchester    	0   0   0   0   0   0   0   0   
+Littlerock<->Memphis      	12* 12* 0   0   0   0   0   0   
+Nashville<->Memphis       	12* 12* 0   0   0   0   0   0   
+StLouis<->Memphis         	0   0   0   0   0   0   0   0   
+Minneapolis<->Milwaukee   	23  23  23  23  23  23  23  23  
+Atlanta<->Montgomery      	12* 12* 0   0   0   0   0   0   
+Birminghan<->Montgomery   	12  12  0   0   0   0   0   0   
+Mobile<->Montgomery       	0   0   0   0   0   0   0   0   
+Birminghan<->Nashville    	12* 12* 0   0   0   0   0   0   
+StLouis<->Nashville       	0   0   0   0   0   0   0   0   
+Houston<->Neworleans      	12  12  0   0   0   0   0   0   
+Mobile<->Neworleans       	0   0   0   0   0   0   0   0   
+Amarilho<->Oklahomacity   	0   0   0   0   0   0   0   0   
+Denver<->Omaha            	0   0   0   0   0   0   0   0   
+DesMoines<->Omaha         	0   0   0   0   0   0   0   0   
+Kansascity<->Omaha        	0   0   0   0   0   0   0   0   
+clearwater<->Orlando      	0   0   0   0   0   0   0   0   
+Gainesville<->Orlando     	16* 16* 16* 16* 16* 16* 0   0   
+Jupiter<->Orlando         	0   0   0   0   0   0   0   0   
+Springfield<->Peoria      	0   0   0   0   0   0   0   0   
+Allentown<->Philadelphia  	0   0   0   0   0   0   0   0   
+Washington<->Philadelphia 	0   0   0   0   0   0   0   0   
+Washington<->Pittsburgh   	0   0   0   0   0   0   0   0   
+Eugene<->Portland         	0   0   0   0   0   0   0   0   
+Seattle<->Portland        	0   0   0   0   0   0   0   0   
+Boston<->Providence       	0   0   0   0   0   0   0   0   
+Hartford<->Providence     	0   0   0   0   0   0   0   0   
+Worcester<->Providence    	0   0   0   0   0   0   0   0   
+Columbia<->Raleigh        	0   0   0   0   0   0   0   0   
+Richmond<->Raleigh        	0   0   0   0   0   0   0   0   
+Savannah<->Raleigh        	0   0   0   0   0   0   0   0   
+Washington<->Richmond     	0   0   0   0   0   0   0   0   
+Schenectady<->Rutland     	0   0   0   0   0   0   0   0   
+Eugene<->Sacramento       	0   0   0   0   0   0   0   0   
+Modesto<->Sacramento      	0   0   0   0   0   0   0   0   
+Saltlakecity<->Sacramento 	0   0   0   0   0   0   0   0   
+Boise<->Saltlakecity      	0   0   0   0   0   0   0   0   
+lubbock<->SanAntonio      	9*  9*  9*  9*  9*  9*  9*  0   
+LosAngelos<->SanDiego     	0   0   0   0   0   0   0   0   
+Tucson<->SanDiego         	0   0   0   0   0   0   0   0   
+Sacramento<->SanFrancisco 	0   0   0   0   0   0   0   0   
+Modesto<->SanJose         	0   0   0   0   0   0   0   0   
+SanFrancisco<->SanJose    	0   0   0   0   0   0   0   0   
+Augusta<->Savannah        	16  16  16  16  16  16  0   0   
+Jacksonville<->Savannah   	16  16  16  16  16  16  0   0   
+Waycross<->Savannah       	0   0   0   0   0   0   0   0   
+Syracuse<->Schenectady    	0   0   0   0   0   0   0   0   
+Pittsburgh<->Scranton     	0   0   0   0   0   0   0   0   
+Spokane<->Seattle         	0   0   0   0   0   0   0   0   
+Dallas<->shreveport       	0   0   0   0   0   0   0   0   
+Jackson<->shreveport      	0   0   0   0   0   0   0   0   
+Fargo<->SiouxFalls        	0   0   0   0   0   0   0   0   
+Omaha<->SiouxFalls        	0   0   0   0   0   0   0   0   
+Chicago<->Southbend       	0   0   0   0   0   0   0   0   
+Grandrapids<->Southbend   	0   0   0   0   0   0   0   0   
+Oklahomacity<->StLouis    	0   0   0   0   0   0   0   0   
+Springfield<->StLouis     	0   0   0   0   0   0   0   0   
+NewYork<->Stamford        	0   0   0   0   0   0   0   0   
+Gainesville<->tallahassee 	0   0   0   0   0   0   0   0   
+Jacksonville<->tallahassee	0   0   0   0   0   0   0   0   
+Mobile<->tallahassee      	0   0   0   0   0   0   0   0   
+Albuquerque<->Tempe       	0   0   0   0   0   0   0   0   
+Lasvegas<->Tempe          	0   0   0   0   0   0   0   0   
+Tucson<->Tempe            	0   0   0   0   0   0   0   0   
+Detroit<->Toledo          	0   0   0   0   0   0   0   0   
+Southbend<->Toledo        	0   0   0   0   0   0   0   0   
+ElPaso<->Tucson           	0   0   0   0   0   0   0   0   
+SanAntonio<->Waco         	9*  9*  9*  9*  9*  9*  9*  0   
+Jacksonville<->Waycross   	16* 16* 16* 16* 16* 16* 0   0   
+tallahassee<->Waycross    	0   0   0   0   0   0   0   0   
+Boston<->Westbrook        	38* 38* 38* 38* 38* 38* 38* 0   
+Manchester<->Westbrook    	38* 38* 38* 38* 38* 38* 38* 0   
+Denver<->Wichita          	0   0   0   0   0   0   0   0   
+Oklahomacity<->Wichita    	0   0   0   0   0   0   0   0   
+Boston<->Worcester        	0   0   0   0   0   0   0   0   
+chicopee<->Worcester      	0   0   0   0   0   0   0   0   
+Rutland<->Worcester       	0   0   0   0   0   0   0   0   
+Cincinnati<->wytheville   	0   0   0   0   0   0   0   0   
+Richmond<->wytheville     	0   0   0   0   0   0   0   0   
+Washington<->wytheville   	0   0   0   0   0   0   0   0   
+Rutland<->Westbrook       	0   0   0   0   0   0   0   0   
+
+processing demand from Manchester to Greensboro with 7 slots
+
+path from Manchester to Greensboro not found.
+
+processing demand from Worcester to Wichita with 1 slots
+
+path from Worcester to Wichita not found.
+
+processing demand from Richmond to StLouis with 3 slots
+
+path from Richmond to StLouis not found.
+
+processing demand from Cleveland to Knoxville with 2 slots
+
+path from Cleveland to Knoxville not found.
+
+processing demand from lubbock to Neworleans with 1 slots
+
+trying main path: lubbock->Amarilho->Oklahomacity->Littlerock->Memphis->Jackson->Birminghan->Atlanta->Montgomery->Mobile->Neworleans
+trying secundary path: lubbock->SanAntonio->Houston->Neworleans
+demand supplied
+
+                          	0nnn1nnn2nnn3nnn4nnn5nnn6nnn7nnn                          	0nnn1nnn2nnn3nnn4nnn5nnn6nnn7nnn
+Amarilho<->Albuquerque    	0   0   0   0   0   0   0   0   Amarilho<->Albuquerque    	0   0   0   0   0   0   0   0   
+Denver<->Albuquerque      	0   0   0   0   0   0   0   0   Denver<->Albuquerque      	0   0   0   0   0   0   0   0   
+NewYork<->Allentown       	0   0   0   0   0   0   0   0   NewYork<->Allentown       	0   0   0   0   0   0   0   0   
+Scranton<->Allentown      	0   0   0   0   0   0   0   0   Scranton<->Allentown      	0   0   0   0   0   0   0   0   
+Stamford<->Allentown      	0   0   0   0   0   0   0   0   Stamford<->Allentown      	0   0   0   0   0   0   0   0   
+Birminghan<->Atlanta      	12* 12* 43  0   0   0   0   0   Birminghan<->Atlanta      	0   0   0   0   0   0   0   0   
+Macon<->Atlanta           	16* 16* 16* 16* 16* 16* 0   0   Macon<->Atlanta           	0   0   0   0   0   0   0   0   
+Atlanta<->Augusta         	16  16  16  16  16  16  0   0   Atlanta<->Augusta         	0   0   0   0   0   0   0   0   
+Modesto<->Bakersfield     	0   0   0   0   0   0   0   0   Modesto<->Bakersfield     	0   0   0   0   0   0   0   0   
+SanDiego<->Bakersfield    	0   0   0   0   0   0   0   0   SanDiego<->Bakersfield    	0   0   0   0   0   0   0   0   
+SanJose<->Bakersfield     	0   0   0   0   0   0   0   0   SanJose<->Bakersfield     	0   0   0   0   0   0   0   0   
+Spokane<->Billings        	0   0   0   0   0   0   0   0   Spokane<->Billings        	0   0   0   0   0   0   0   0   
+Allentown<->Binghamton    	0   0   0   0   0   0   0   0   Allentown<->Binghamton    	0   0   0   0   0   0   0   0   
+Scranton<->Binghamton     	0   0   0   0   0   0   0   0   Scranton<->Binghamton     	0   0   0   0   0   0   0   0   
+Syracuse<->Binghamton     	0   0   0   0   0   0   0   0   Syracuse<->Binghamton     	0   0   0   0   0   0   0   0   
+Jackson<->Birminghan      	12  12  43  0   0   0   0   0   Jackson<->Birminghan      	0   0   0   0   0   0   0   0   
+Portland<->Boise          	0   0   0   0   0   0   0   0   Portland<->Boise          	0   0   0   0   0   0   0   0   
+Spokane<->Boise           	0   0   0   0   0   0   0   0   Spokane<->Boise           	0   0   0   0   0   0   0   0   
+Manchester<->Boston       	38  38  38  38  38  38  38  0   Manchester<->Boston       	0   0   0   0   0   0   0   0   
+Stamford<->Bridgeport     	0   0   0   0   0   0   0   0   Stamford<->Bridgeport     	0   0   0   0   0   0   0   0   
+Cleveland<->Buffalo       	0   0   0   0   0   0   0   0   Cleveland<->Buffalo       	0   0   0   0   0   0   0   0   
+Syracuse<->Buffalo        	0   0   0   0   0   0   0   0   Syracuse<->Buffalo        	0   0   0   0   0   0   0   0   
+Cincinnati<->Charleston   	0   0   0   0   0   0   0   0   Cincinnati<->Charleston   	0   0   0   0   0   0   0   0   
+Columbus<->Charleston     	0   0   0   0   0   0   0   0   Columbus<->Charleston     	0   0   0   0   0   0   0   0   
+Pittsburgh<->Charleston   	0   0   0   0   0   0   0   0   Pittsburgh<->Charleston   	0   0   0   0   0   0   0   0   
+wytheville<->Charleston   	0   0   0   0   0   0   0   0   wytheville<->Charleston   	0   0   0   0   0   0   0   0   
+Atlanta<->Charlotte       	0   0   0   0   0   0   0   0   Atlanta<->Charlotte       	0   0   0   0   0   0   0   0   
+Atlanta<->chattanooga     	0   0   0   0   0   0   0   0   Atlanta<->chattanooga     	0   0   0   0   0   0   0   0   
+Milwaukee<->Chicago       	23* 23* 23* 23* 23* 23* 23* 23* Milwaukee<->Chicago       	0   0   0   0   0   0   0   0   
+Peoria<->Chicago          	23* 23* 23* 23* 23* 23* 23* 23* Peoria<->Chicago          	0   0   0   0   0   0   0   0   
+Knoxville<->Cincinnati    	0   0   0   0   0   0   0   0   Knoxville<->Cincinnati    	0   0   0   0   0   0   0   0   
+Louisville<->Cincinnati   	0   0   0   0   0   0   0   0   Louisville<->Cincinnati   	0   0   0   0   0   0   0   0   
+Miami<->clearwater        	0   0   0   0   0   0   0   0   Miami<->clearwater        	0   0   0   0   0   0   0   0   
+Columbus<->Cleveland      	0   0   0   0   0   0   0   0   Columbus<->Cleveland      	0   0   0   0   0   0   0   0   
+Pittsburgh<->Cleveland    	0   0   0   0   0   0   0   0   Pittsburgh<->Cleveland    	0   0   0   0   0   0   0   0   
+Toledo<->Cleveland        	0   0   0   0   0   0   0   0   Toledo<->Cleveland        	0   0   0   0   0   0   0   0   
+Augusta<->Columbia        	0   0   0   0   0   0   0   0   Augusta<->Columbia        	0   0   0   0   0   0   0   0   
+Cincinnati<->Columbus     	0   0   0   0   0   0   0   0   Cincinnati<->Columbus     	0   0   0   0   0   0   0   0   
+Indianapolis<->Columbus   	0   0   0   0   0   0   0   0   Indianapolis<->Columbus   	0   0   0   0   0   0   0   0   
+Toledo<->Columbus         	0   0   0   0   0   0   0   0   Toledo<->Columbus         	0   0   0   0   0   0   0   0   
+Houston<->Dallas          	12* 12* 0   0   0   0   0   0   Houston<->Dallas          	0   0   0   0   0   0   0   0   
+Oklahomacity<->Dallas     	12* 12* 0   0   0   0   0   0   Oklahomacity<->Dallas     	0   0   0   0   0   0   0   0   
+Waco<->Dallas             	9   9   9   9   9   9   9   0   Waco<->Dallas             	0   0   0   0   0   0   0   0   
+Amarilho<->Denver         	0   0   0   0   0   0   0   0   Amarilho<->Denver         	0   0   0   0   0   0   0   0   
+Saltlakecity<->Denver     	0   0   0   0   0   0   0   0   Saltlakecity<->Denver     	0   0   0   0   0   0   0   0   
+Kansascity<->DesMoines    	0   0   0   0   0   0   0   0   Kansascity<->DesMoines    	0   0   0   0   0   0   0   0   
+Minneapolis<->DesMoines   	23* 23* 23* 23* 23* 23* 23* 23* Minneapolis<->DesMoines   	0   0   0   0   0   0   0   0   
+Peoria<->DesMoines        	23* 23* 23* 23* 23* 23* 23* 23* Peoria<->DesMoines        	0   0   0   0   0   0   0   0   
+Grandrapids<->Detroit     	0   0   0   0   0   0   0   0   Grandrapids<->Detroit     	0   0   0   0   0   0   0   0   
+Albuquerque<->ElPaso      	0   0   0   0   0   0   0   0   Albuquerque<->ElPaso      	0   0   0   0   0   0   0   0   
+lubbock<->ElPaso          	0   0   0   0   0   0   0   0   lubbock<->ElPaso          	0   0   0   0   0   0   0   0   
+Billings<->Fargo          	0   0   0   0   0   0   0   0   Billings<->Fargo          	0   0   0   0   0   0   0   0   
+Minneapolis<->Fargo       	0   0   0   0   0   0   0   0   Minneapolis<->Fargo       	0   0   0   0   0   0   0   0   
+Billings<->FortCollins    	0   0   0   0   0   0   0   0   Billings<->FortCollins    	0   0   0   0   0   0   0   0   
+Denver<->FortCollins      	0   0   0   0   0   0   0   0   Denver<->FortCollins      	0   0   0   0   0   0   0   0   
+Charlotte<->Greensboro    	0   0   0   0   0   0   0   0   Charlotte<->Greensboro    	0   0   0   0   0   0   0   0   
+Raleigh<->Greensboro      	0   0   0   0   0   0   0   0   Raleigh<->Greensboro      	0   0   0   0   0   0   0   0   
+wytheville<->Greensboro   	0   0   0   0   0   0   0   0   wytheville<->Greensboro   	0   0   0   0   0   0   0   0   
+Bridgeport<->Hartford     	0   0   0   0   0   0   0   0   Bridgeport<->Hartford     	0   0   0   0   0   0   0   0   
+chicopee<->Hartford       	0   0   0   0   0   0   0   0   chicopee<->Hartford       	0   0   0   0   0   0   0   0   
+LakeKatrina<->Hartford    	0   0   0   0   0   0   0   0   LakeKatrina<->Hartford    	0   0   0   0   0   0   0   0   
+SanAntonio<->Houston      	0   0   43* 0   0   0   0   0   SanAntonio<->Houston      	0   0   0   0   0   0   0   0   
+Southbend<->Indianapolis  	0   0   0   0   0   0   0   0   Southbend<->Indianapolis  	0   0   0   0   0   0   0   0   
+StLouis<->Indianapolis    	0   0   0   0   0   0   0   0   StLouis<->Indianapolis    	0   0   0   0   0   0   0   0   
+Memphis<->Jackson         	0   0   43  0   0   0   0   0   Memphis<->Jackson         	0   0   0   0   0   0   0   0   
+Neworleans<->Jackson      	12  12  0   0   0   0   0   0   Neworleans<->Jackson      	0   0   0   0   0   0   0   0   
+Gainesville<->Jacksonville	16  16  16  16  16  16  0   0   Gainesville<->Jacksonville	0   0   0   0   0   0   0   0   
+Orlando<->Jacksonville    	16* 16* 16* 16* 16* 16* 0   0   Orlando<->Jacksonville    	0   0   0   0   0   0   0   0   
+Jacksonville<->Jupiter    	0   0   0   0   0   0   0   0   Jacksonville<->Jupiter    	0   0   0   0   0   0   0   0   
+Miami<->Jupiter           	0   0   0   0   0   0   0   0   Miami<->Jupiter           	0   0   0   0   0   0   0   0   
+Oklahomacity<->Kansascity 	0   0   0   0   0   0   0   0   Oklahomacity<->Kansascity 	0   0   0   0   0   0   0   0   
+StLouis<->Kansascity      	0   0   0   0   0   0   0   0   StLouis<->Kansascity      	0   0   0   0   0   0   0   0   
+Wichita<->Kansascity      	0   0   0   0   0   0   0   0   Wichita<->Kansascity      	0   0   0   0   0   0   0   0   
+Charlotte<->Knoxville     	0   0   0   0   0   0   0   0   Charlotte<->Knoxville     	0   0   0   0   0   0   0   0   
+chattanooga<->Knoxville   	0   0   0   0   0   0   0   0   chattanooga<->Knoxville   	0   0   0   0   0   0   0   0   
+Nashville<->Knoxville     	0   0   0   0   0   0   0   0   Nashville<->Knoxville     	0   0   0   0   0   0   0   0   
+Binghamton<->LakeKatrina  	0   0   0   0   0   0   0   0   Binghamton<->LakeKatrina  	0   0   0   0   0   0   0   0   
+Schenectady<->LakeKatrina 	0   0   0   0   0   0   0   0   Schenectady<->LakeKatrina 	0   0   0   0   0   0   0   0   
+Stamford<->LakeKatrina    	0   0   0   0   0   0   0   0   Stamford<->LakeKatrina    	0   0   0   0   0   0   0   0   
+Saltlakecity<->Lasvegas   	0   0   0   0   0   0   0   0   Saltlakecity<->Lasvegas   	0   0   0   0   0   0   0   0   
+SanDiego<->Lasvegas       	0   0   0   0   0   0   0   0   SanDiego<->Lasvegas       	0   0   0   0   0   0   0   0   
+Oklahomacity<->Littlerock 	12* 12* 43  0   0   0   0   0   Oklahomacity<->Littlerock 	0   0   0   0   0   0   0   0   
+shreveport<->Littlerock   	0   0   0   0   0   0   0   0   shreveport<->Littlerock   	0   0   0   0   0   0   0   0   
+SanJose<->LosAngelos      	0   0   0   0   0   0   0   0   SanJose<->LosAngelos      	0   0   0   0   0   0   0   0   
+Indianapolis<->Louisville 	0   0   0   0   0   0   0   0   Indianapolis<->Louisville 	0   0   0   0   0   0   0   0   
+Nashville<->Louisville    	0   0   0   0   0   0   0   0   Nashville<->Louisville    	0   0   0   0   0   0   0   0   
+Amarilho<->lubbock        	0   0   43  0   0   0   0   0   Amarilho<->lubbock        	0   0   0   0   0   0   0   0   
+Dallas<->lubbock          	9*  9*  9*  9*  9*  9*  9*  0   Dallas<->lubbock          	0   0   0   0   0   0   0   0   
+Augusta<->Macon           	0   0   0   0   0   0   0   0   Augusta<->Macon           	0   0   0   0   0   0   0   0   
+Waycross<->Macon          	16* 16* 16* 16* 16* 16* 0   0   Waycross<->Macon          	0   0   0   0   0   0   0   0   
+Worcester<->Manchester    	0   0   0   0   0   0   0   0   Worcester<->Manchester    	0   0   0   0   0   0   0   0   
+Littlerock<->Memphis      	12* 12* 43  0   0   0   0   0   Littlerock<->Memphis      	0   0   0   0   0   0   0   0   
+Nashville<->Memphis       	12* 12* 0   0   0   0   0   0   Nashville<->Memphis       	0   0   0   0   0   0   0   0   
+StLouis<->Memphis         	0   0   0   0   0   0   0   0   StLouis<->Memphis         	0   0   0   0   0   0   0   0   
+Minneapolis<->Milwaukee   	23  23  23  23  23  23  23  23  Minneapolis<->Milwaukee   	0   0   0   0   0   0   0   0   
+Atlanta<->Montgomery      	12* 12* 43  0   0   0   0   0   Atlanta<->Montgomery      	0   0   0   0   0   0   0   0   
+Birminghan<->Montgomery   	12  12  0   0   0   0   0   0   Birminghan<->Montgomery   	0   0   0   0   0   0   0   0   
+Mobile<->Montgomery       	0   0   43  0   0   0   0   0   Mobile<->Montgomery       	0   0   0   0   0   0   0   0   
+Birminghan<->Nashville    	12* 12* 0   0   0   0   0   0   Birminghan<->Nashville    	0   0   0   0   0   0   0   0   
+StLouis<->Nashville       	0   0   0   0   0   0   0   0   StLouis<->Nashville       	0   0   0   0   0   0   0   0   
+Houston<->Neworleans      	12  12  43* 0   0   0   0   0   Houston<->Neworleans      	0   0   0   0   0   0   0   0   
+Mobile<->Neworleans       	0   0   43  0   0   0   0   0   Mobile<->Neworleans       	0   0   0   0   0   0   0   0   
+Amarilho<->Oklahomacity   	0   0   43  0   0   0   0   0   Amarilho<->Oklahomacity   	0   0   0   0   0   0   0   0   
+Denver<->Omaha            	0   0   0   0   0   0   0   0   Denver<->Omaha            	0   0   0   0   0   0   0   0   
+DesMoines<->Omaha         	0   0   0   0   0   0   0   0   DesMoines<->Omaha         	0   0   0   0   0   0   0   0   
+Kansascity<->Omaha        	0   0   0   0   0   0   0   0   Kansascity<->Omaha        	0   0   0   0   0   0   0   0   
+clearwater<->Orlando      	0   0   0   0   0   0   0   0   clearwater<->Orlando      	0   0   0   0   0   0   0   0   
+Gainesville<->Orlando     	16* 16* 16* 16* 16* 16* 0   0   Gainesville<->Orlando     	0   0   0   0   0   0   0   0   
+Jupiter<->Orlando         	0   0   0   0   0   0   0   0   Jupiter<->Orlando         	0   0   0   0   0   0   0   0   
+Springfield<->Peoria      	0   0   0   0   0   0   0   0   Springfield<->Peoria      	0   0   0   0   0   0   0   0   
+Allentown<->Philadelphia  	0   0   0   0   0   0   0   0   Allentown<->Philadelphia  	0   0   0   0   0   0   0   0   
+Washington<->Philadelphia 	0   0   0   0   0   0   0   0   Washington<->Philadelphia 	0   0   0   0   0   0   0   0   
+Washington<->Pittsburgh   	0   0   0   0   0   0   0   0   Washington<->Pittsburgh   	0   0   0   0   0   0   0   0   
+Eugene<->Portland         	0   0   0   0   0   0   0   0   Eugene<->Portland         	0   0   0   0   0   0   0   0   
+Seattle<->Portland        	0   0   0   0   0   0   0   0   Seattle<->Portland        	0   0   0   0   0   0   0   0   
+Boston<->Providence       	0   0   0   0   0   0   0   0   Boston<->Providence       	0   0   0   0   0   0   0   0   
+Hartford<->Providence     	0   0   0   0   0   0   0   0   Hartford<->Providence     	0   0   0   0   0   0   0   0   
+Worcester<->Providence    	0   0   0   0   0   0   0   0   Worcester<->Providence    	0   0   0   0   0   0   0   0   
+Columbia<->Raleigh        	0   0   0   0   0   0   0   0   Columbia<->Raleigh        	0   0   0   0   0   0   0   0   
+Richmond<->Raleigh        	0   0   0   0   0   0   0   0   Richmond<->Raleigh        	0   0   0   0   0   0   0   0   
+Savannah<->Raleigh        	0   0   0   0   0   0   0   0   Savannah<->Raleigh        	0   0   0   0   0   0   0   0   
+Washington<->Richmond     	0   0   0   0   0   0   0   0   Washington<->Richmond     	0   0   0   0   0   0   0   0   
+Schenectady<->Rutland     	0   0   0   0   0   0   0   0   Schenectady<->Rutland     	0   0   0   0   0   0   0   0   
+Eugene<->Sacramento       	0   0   0   0   0   0   0   0   Eugene<->Sacramento       	0   0   0   0   0   0   0   0   
+Modesto<->Sacramento      	0   0   0   0   0   0   0   0   Modesto<->Sacramento      	0   0   0   0   0   0   0   0   
+Saltlakecity<->Sacramento 	0   0   0   0   0   0   0   0   Saltlakecity<->Sacramento 	0   0   0   0   0   0   0   0   
+Boise<->Saltlakecity      	0   0   0   0   0   0   0   0   Boise<->Saltlakecity      	0   0   0   0   0   0   0   0   
+lubbock<->SanAntonio      	9*  9*  9*  9*  9*  9*  9*  0   lubbock<->SanAntonio      	0   0   43* 0   0   0   0   0   
+LosAngelos<->SanDiego     	0   0   0   0   0   0   0   0   LosAngelos<->SanDiego     	0   0   0   0   0   0   0   0   
+Tucson<->SanDiego         	0   0   0   0   0   0   0   0   Tucson<->SanDiego         	0   0   0   0   0   0   0   0   
+Sacramento<->SanFrancisco 	0   0   0   0   0   0   0   0   Sacramento<->SanFrancisco 	0   0   0   0   0   0   0   0   
+Modesto<->SanJose         	0   0   0   0   0   0   0   0   Modesto<->SanJose         	0   0   0   0   0   0   0   0   
+SanFrancisco<->SanJose    	0   0   0   0   0   0   0   0   SanFrancisco<->SanJose    	0   0   0   0   0   0   0   0   
+Augusta<->Savannah        	16  16  16  16  16  16  0   0   Augusta<->Savannah        	0   0   0   0   0   0   0   0   
+Jacksonville<->Savannah   	16  16  16  16  16  16  0   0   Jacksonville<->Savannah   	0   0   0   0   0   0   0   0   
+Waycross<->Savannah       	0   0   0   0   0   0   0   0   Waycross<->Savannah       	0   0   0   0   0   0   0   0   
+Syracuse<->Schenectady    	0   0   0   0   0   0   0   0   Syracuse<->Schenectady    	0   0   0   0   0   0   0   0   
+Pittsburgh<->Scranton     	0   0   0   0   0   0   0   0   Pittsburgh<->Scranton     	0   0   0   0   0   0   0   0   
+Spokane<->Seattle         	0   0   0   0   0   0   0   0   Spokane<->Seattle         	0   0   0   0   0   0   0   0   
+Dallas<->shreveport       	0   0   0   0   0   0   0   0   Dallas<->shreveport       	0   0   0   0   0   0   0   0   
+Jackson<->shreveport      	0   0   0   0   0   0   0   0   Jackson<->shreveport      	0   0   0   0   0   0   0   0   
+Fargo<->SiouxFalls        	0   0   0   0   0   0   0   0   Fargo<->SiouxFalls        	0   0   0   0   0   0   0   0   
+Omaha<->SiouxFalls        	0   0   0   0   0   0   0   0   Omaha<->SiouxFalls        	0   0   0   0   0   0   0   0   
+Chicago<->Southbend       	0   0   0   0   0   0   0   0   Chicago<->Southbend       	0   0   0   0   0   0   0   0   
+Grandrapids<->Southbend   	0   0   0   0   0   0   0   0   Grandrapids<->Southbend   	0   0   0   0   0   0   0   0   
+Oklahomacity<->StLouis    	0   0   0   0   0   0   0   0   Oklahomacity<->StLouis    	0   0   0   0   0   0   0   0   
+Springfield<->StLouis     	0   0   0   0   0   0   0   0   Springfield<->StLouis     	0   0   0   0   0   0   0   0   
+NewYork<->Stamford        	0   0   0   0   0   0   0   0   NewYork<->Stamford        	0   0   0   0   0   0   0   0   
+Gainesville<->tallahassee 	0   0   0   0   0   0   0   0   Gainesville<->tallahassee 	0   0   0   0   0   0   0   0   
+Jacksonville<->tallahassee	0   0   0   0   0   0   0   0   Jacksonville<->tallahassee	0   0   0   0   0   0   0   0   
+Mobile<->tallahassee      	0   0   0   0   0   0   0   0   Mobile<->tallahassee      	0   0   0   0   0   0   0   0   
+Albuquerque<->Tempe       	0   0   0   0   0   0   0   0   Albuquerque<->Tempe       	0   0   0   0   0   0   0   0   
+Lasvegas<->Tempe          	0   0   0   0   0   0   0   0   Lasvegas<->Tempe          	0   0   0   0   0   0   0   0   
+Tucson<->Tempe            	0   0   0   0   0   0   0   0   Tucson<->Tempe            	0   0   0   0   0   0   0   0   
+Detroit<->Toledo          	0   0   0   0   0   0   0   0   Detroit<->Toledo          	0   0   0   0   0   0   0   0   
+Southbend<->Toledo        	0   0   0   0   0   0   0   0   Southbend<->Toledo        	0   0   0   0   0   0   0   0   
+ElPaso<->Tucson           	0   0   0   0   0   0   0   0   ElPaso<->Tucson           	0   0   0   0   0   0   0   0   
+SanAntonio<->Waco         	9*  9*  9*  9*  9*  9*  9*  0   SanAntonio<->Waco         	0   0   0   0   0   0   0   0   
+Jacksonville<->Waycross   	16* 16* 16* 16* 16* 16* 0   0   Jacksonville<->Waycross   	0   0   0   0   0   0   0   0   
+tallahassee<->Waycross    	0   0   0   0   0   0   0   0   tallahassee<->Waycross    	0   0   0   0   0   0   0   0   
+Boston<->Westbrook        	38* 38* 38* 38* 38* 38* 38* 0   Boston<->Westbrook        	0   0   0   0   0   0   0   0   
+Manchester<->Westbrook    	38* 38* 38* 38* 38* 38* 38* 0   Manchester<->Westbrook    	0   0   0   0   0   0   0   0   
+Denver<->Wichita          	0   0   0   0   0   0   0   0   Denver<->Wichita          	0   0   0   0   0   0   0   0   
+Oklahomacity<->Wichita    	0   0   0   0   0   0   0   0   Oklahomacity<->Wichita    	0   0   0   0   0   0   0   0   
+Boston<->Worcester        	0   0   0   0   0   0   0   0   Boston<->Worcester        	0   0   0   0   0   0   0   0   
+chicopee<->Worcester      	0   0   0   0   0   0   0   0   chicopee<->Worcester      	0   0   0   0   0   0   0   0   
+Rutland<->Worcester       	0   0   0   0   0   0   0   0   Rutland<->Worcester       	0   0   0   0   0   0   0   0   
+Cincinnati<->wytheville   	0   0   0   0   0   0   0   0   Cincinnati<->wytheville   	0   0   0   0   0   0   0   0   
+Richmond<->wytheville     	0   0   0   0   0   0   0   0   Richmond<->wytheville     	0   0   0   0   0   0   0   0   
+Washington<->wytheville   	0   0   0   0   0   0   0   0   Washington<->wytheville   	0   0   0   0   0   0   0   0   
+Rutland<->Westbrook       	0   0   0   0   0   0   0   0   Rutland<->Westbrook       	0   0   0   0   0   0   0   0   
+
+processing demand from Columbus to Neworleans with 2 slots
+
+path from Columbus to Neworleans not found.
+
+processing demand from chattanooga to Amarilho with 9 slots
+
+path from chattanooga to Amarilho not found.
+
+processing demand from Charlotte to Albuquerque with 4 slots
+
+path from Charlotte to Albuquerque not found.
+
+processing demand from Denver to Boise with 8 slots
+
+path from Denver to Boise not found.
+
+processing demand from Montgomery to Richmond with 6 slots
+
+path from Montgomery to Richmond not found.
+
+processing demand from Charlotte to Southbend with 2 slots
+
+path from Charlotte to Southbend not found.
+
+processing demand from tallahassee to SanFrancisco with 4 slots
+
+path from tallahassee to SanFrancisco not found.
+
+processing demand from Chicago to Philadelphia with 4 slots
+
+path from Chicago to Philadelphia not found.
+
+processing demand from Hartford to wytheville with 7 slots
+
+path from Hartford to wytheville not found.
+
+processing demand from Jacksonville to Schenectady with 1 slots
+
+path from Jacksonville to Schenectady not found.
+
+processing demand from shreveport to Dallas with 1 slots
+
+path from shreveport to Dallas not found.
+
+processing demand from Memphis to Charleston with 8 slots
+
+trying main path: Memphis->Jackson->Birminghan->Atlanta->Charlotte->Knoxville->Cincinnati->Charleston
+It's not possible to supply demand of 8  from Memphis to Charleston
+
+processing demand from SanJose to Waycross with 7 slots
+
+path from SanJose to Waycross not found.
+
+processing demand from Chicago to Richmond with 6 slots
+
+path from Chicago to Richmond not found.
+
+processing demand from Oklahomacity to Waycross with 7 slots
+
+path from Oklahomacity to Waycross not found.
+
+processing demand from Cleveland to Sacramento with 7 slots
+
+path from Cleveland to Sacramento not found.
+
+processing demand from Seattle to Savannah with 8 slots
+
+path from Seattle to Savannah not found.
+
+processing demand from Tempe to Gainesville with 7 slots
+
+path from Tempe to Gainesville not found.
+
+processing demand from Littlerock to Kansascity with 5 slots
+
+path from Littlerock to Kansascity not found.
+
+processing demand from Boise to Fargo with 8 slots
+
+path from Boise to Fargo not found.
+
+processing demand from Louisville to tallahassee with 8 slots
+
+path from Louisville to tallahassee not found.
+
+processing demand from Grandrapids to Bridgeport with 2 slots
+
+path from Grandrapids to Bridgeport not found.
+
+processing demand from SanFrancisco to SanAntonio with 8 slots
+
+path from SanFrancisco to SanAntonio not found.
+
+processing demand from Tucson to Indianapolis with 8 slots
+
+path from Tucson to Indianapolis not found.
+
+processing demand from Neworleans to Stamford with 1 slots
+
+path from Neworleans to Stamford not found.
+
+processing demand from Fargo to Jacksonville with 4 slots
+
+path from Fargo to Jacksonville not found.
+
+processing demand from shreveport to Nashville with 4 slots
+
+trying main path: shreveport->Jackson->Birminghan->Nashville
+trying secundary path: shreveport->Littlerock->Memphis->Nashville
+demand supplied
+
+                          	0nnn1nnn2nnn3nnn4nnn5nnn6nnn7nnn                          	0nnn1nnn2nnn3nnn4nnn5nnn6nnn7nnn
+Amarilho<->Albuquerque    	0   0   0   0   0   0   0   0   Amarilho<->Albuquerque    	0   0   0   0   0   0   0   0   
+Denver<->Albuquerque      	0   0   0   0   0   0   0   0   Denver<->Albuquerque      	0   0   0   0   0   0   0   0   
+NewYork<->Allentown       	0   0   0   0   0   0   0   0   NewYork<->Allentown       	0   0   0   0   0   0   0   0   
+Scranton<->Allentown      	0   0   0   0   0   0   0   0   Scranton<->Allentown      	0   0   0   0   0   0   0   0   
+Stamford<->Allentown      	0   0   0   0   0   0   0   0   Stamford<->Allentown      	0   0   0   0   0   0   0   0   
+Birminghan<->Atlanta      	12* 12* 43  0   0   0   0   0   Birminghan<->Atlanta      	0   0   0   0   0   0   0   0   
+Macon<->Atlanta           	16* 16* 16* 16* 16* 16* 0   0   Macon<->Atlanta           	0   0   0   0   0   0   0   0   
+Atlanta<->Augusta         	16  16  16  16  16  16  0   0   Atlanta<->Augusta         	0   0   0   0   0   0   0   0   
+Modesto<->Bakersfield     	0   0   0   0   0   0   0   0   Modesto<->Bakersfield     	0   0   0   0   0   0   0   0   
+SanDiego<->Bakersfield    	0   0   0   0   0   0   0   0   SanDiego<->Bakersfield    	0   0   0   0   0   0   0   0   
+SanJose<->Bakersfield     	0   0   0   0   0   0   0   0   SanJose<->Bakersfield     	0   0   0   0   0   0   0   0   
+Spokane<->Billings        	0   0   0   0   0   0   0   0   Spokane<->Billings        	0   0   0   0   0   0   0   0   
+Allentown<->Binghamton    	0   0   0   0   0   0   0   0   Allentown<->Binghamton    	0   0   0   0   0   0   0   0   
+Scranton<->Binghamton     	0   0   0   0   0   0   0   0   Scranton<->Binghamton     	0   0   0   0   0   0   0   0   
+Syracuse<->Binghamton     	0   0   0   0   0   0   0   0   Syracuse<->Binghamton     	0   0   0   0   0   0   0   0   
+Jackson<->Birminghan      	12  12  43  70  70  70  70  0   Jackson<->Birminghan      	0   0   0   0   0   0   0   0   
+Portland<->Boise          	0   0   0   0   0   0   0   0   Portland<->Boise          	0   0   0   0   0   0   0   0   
+Spokane<->Boise           	0   0   0   0   0   0   0   0   Spokane<->Boise           	0   0   0   0   0   0   0   0   
+Manchester<->Boston       	38  38  38  38  38  38  38  0   Manchester<->Boston       	0   0   0   0   0   0   0   0   
+Stamford<->Bridgeport     	0   0   0   0   0   0   0   0   Stamford<->Bridgeport     	0   0   0   0   0   0   0   0   
+Cleveland<->Buffalo       	0   0   0   0   0   0   0   0   Cleveland<->Buffalo       	0   0   0   0   0   0   0   0   
+Syracuse<->Buffalo        	0   0   0   0   0   0   0   0   Syracuse<->Buffalo        	0   0   0   0   0   0   0   0   
+Cincinnati<->Charleston   	0   0   0   0   0   0   0   0   Cincinnati<->Charleston   	0   0   0   0   0   0   0   0   
+Columbus<->Charleston     	0   0   0   0   0   0   0   0   Columbus<->Charleston     	0   0   0   0   0   0   0   0   
+Pittsburgh<->Charleston   	0   0   0   0   0   0   0   0   Pittsburgh<->Charleston   	0   0   0   0   0   0   0   0   
+wytheville<->Charleston   	0   0   0   0   0   0   0   0   wytheville<->Charleston   	0   0   0   0   0   0   0   0   
+Atlanta<->Charlotte       	0   0   0   0   0   0   0   0   Atlanta<->Charlotte       	0   0   0   0   0   0   0   0   
+Atlanta<->chattanooga     	0   0   0   0   0   0   0   0   Atlanta<->chattanooga     	0   0   0   0   0   0   0   0   
+Milwaukee<->Chicago       	23* 23* 23* 23* 23* 23* 23* 23* Milwaukee<->Chicago       	0   0   0   0   0   0   0   0   
+Peoria<->Chicago          	23* 23* 23* 23* 23* 23* 23* 23* Peoria<->Chicago          	0   0   0   0   0   0   0   0   
+Knoxville<->Cincinnati    	0   0   0   0   0   0   0   0   Knoxville<->Cincinnati    	0   0   0   0   0   0   0   0   
+Louisville<->Cincinnati   	0   0   0   0   0   0   0   0   Louisville<->Cincinnati   	0   0   0   0   0   0   0   0   
+Miami<->clearwater        	0   0   0   0   0   0   0   0   Miami<->clearwater        	0   0   0   0   0   0   0   0   
+Columbus<->Cleveland      	0   0   0   0   0   0   0   0   Columbus<->Cleveland      	0   0   0   0   0   0   0   0   
+Pittsburgh<->Cleveland    	0   0   0   0   0   0   0   0   Pittsburgh<->Cleveland    	0   0   0   0   0   0   0   0   
+Toledo<->Cleveland        	0   0   0   0   0   0   0   0   Toledo<->Cleveland        	0   0   0   0   0   0   0   0   
+Augusta<->Columbia        	0   0   0   0   0   0   0   0   Augusta<->Columbia        	0   0   0   0   0   0   0   0   
+Cincinnati<->Columbus     	0   0   0   0   0   0   0   0   Cincinnati<->Columbus     	0   0   0   0   0   0   0   0   
+Indianapolis<->Columbus   	0   0   0   0   0   0   0   0   Indianapolis<->Columbus   	0   0   0   0   0   0   0   0   
+Toledo<->Columbus         	0   0   0   0   0   0   0   0   Toledo<->Columbus         	0   0   0   0   0   0   0   0   
+Houston<->Dallas          	12* 12* 0   0   0   0   0   0   Houston<->Dallas          	0   0   0   0   0   0   0   0   
+Oklahomacity<->Dallas     	12* 12* 0   0   0   0   0   0   Oklahomacity<->Dallas     	0   0   0   0   0   0   0   0   
+Waco<->Dallas             	9   9   9   9   9   9   9   0   Waco<->Dallas             	0   0   0   0   0   0   0   0   
+Amarilho<->Denver         	0   0   0   0   0   0   0   0   Amarilho<->Denver         	0   0   0   0   0   0   0   0   
+Saltlakecity<->Denver     	0   0   0   0   0   0   0   0   Saltlakecity<->Denver     	0   0   0   0   0   0   0   0   
+Kansascity<->DesMoines    	0   0   0   0   0   0   0   0   Kansascity<->DesMoines    	0   0   0   0   0   0   0   0   
+Minneapolis<->DesMoines   	23* 23* 23* 23* 23* 23* 23* 23* Minneapolis<->DesMoines   	0   0   0   0   0   0   0   0   
+Peoria<->DesMoines        	23* 23* 23* 23* 23* 23* 23* 23* Peoria<->DesMoines        	0   0   0   0   0   0   0   0   
+Grandrapids<->Detroit     	0   0   0   0   0   0   0   0   Grandrapids<->Detroit     	0   0   0   0   0   0   0   0   
+Albuquerque<->ElPaso      	0   0   0   0   0   0   0   0   Albuquerque<->ElPaso      	0   0   0   0   0   0   0   0   
+lubbock<->ElPaso          	0   0   0   0   0   0   0   0   lubbock<->ElPaso          	0   0   0   0   0   0   0   0   
+Billings<->Fargo          	0   0   0   0   0   0   0   0   Billings<->Fargo          	0   0   0   0   0   0   0   0   
+Minneapolis<->Fargo       	0   0   0   0   0   0   0   0   Minneapolis<->Fargo       	0   0   0   0   0   0   0   0   
+Billings<->FortCollins    	0   0   0   0   0   0   0   0   Billings<->FortCollins    	0   0   0   0   0   0   0   0   
+Denver<->FortCollins      	0   0   0   0   0   0   0   0   Denver<->FortCollins      	0   0   0   0   0   0   0   0   
+Charlotte<->Greensboro    	0   0   0   0   0   0   0   0   Charlotte<->Greensboro    	0   0   0   0   0   0   0   0   
+Raleigh<->Greensboro      	0   0   0   0   0   0   0   0   Raleigh<->Greensboro      	0   0   0   0   0   0   0   0   
+wytheville<->Greensboro   	0   0   0   0   0   0   0   0   wytheville<->Greensboro   	0   0   0   0   0   0   0   0   
+Bridgeport<->Hartford     	0   0   0   0   0   0   0   0   Bridgeport<->Hartford     	0   0   0   0   0   0   0   0   
+chicopee<->Hartford       	0   0   0   0   0   0   0   0   chicopee<->Hartford       	0   0   0   0   0   0   0   0   
+LakeKatrina<->Hartford    	0   0   0   0   0   0   0   0   LakeKatrina<->Hartford    	0   0   0   0   0   0   0   0   
+SanAntonio<->Houston      	0   0   43* 0   0   0   0   0   SanAntonio<->Houston      	0   0   0   0   0   0   0   0   
+Southbend<->Indianapolis  	0   0   0   0   0   0   0   0   Southbend<->Indianapolis  	0   0   0   0   0   0   0   0   
+StLouis<->Indianapolis    	0   0   0   0   0   0   0   0   StLouis<->Indianapolis    	0   0   0   0   0   0   0   0   
+Memphis<->Jackson         	0   0   43  0   0   0   0   0   Memphis<->Jackson         	0   0   0   0   0   0   0   0   
+Neworleans<->Jackson      	12  12  0   0   0   0   0   0   Neworleans<->Jackson      	0   0   0   0   0   0   0   0   
+Gainesville<->Jacksonville	16  16  16  16  16  16  0   0   Gainesville<->Jacksonville	0   0   0   0   0   0   0   0   
+Orlando<->Jacksonville    	16* 16* 16* 16* 16* 16* 0   0   Orlando<->Jacksonville    	0   0   0   0   0   0   0   0   
+Jacksonville<->Jupiter    	0   0   0   0   0   0   0   0   Jacksonville<->Jupiter    	0   0   0   0   0   0   0   0   
+Miami<->Jupiter           	0   0   0   0   0   0   0   0   Miami<->Jupiter           	0   0   0   0   0   0   0   0   
+Oklahomacity<->Kansascity 	0   0   0   0   0   0   0   0   Oklahomacity<->Kansascity 	0   0   0   0   0   0   0   0   
+StLouis<->Kansascity      	0   0   0   0   0   0   0   0   StLouis<->Kansascity      	0   0   0   0   0   0   0   0   
+Wichita<->Kansascity      	0   0   0   0   0   0   0   0   Wichita<->Kansascity      	0   0   0   0   0   0   0   0   
+Charlotte<->Knoxville     	0   0   0   0   0   0   0   0   Charlotte<->Knoxville     	0   0   0   0   0   0   0   0   
+chattanooga<->Knoxville   	0   0   0   0   0   0   0   0   chattanooga<->Knoxville   	0   0   0   0   0   0   0   0   
+Nashville<->Knoxville     	0   0   0   0   0   0   0   0   Nashville<->Knoxville     	0   0   0   0   0   0   0   0   
+Binghamton<->LakeKatrina  	0   0   0   0   0   0   0   0   Binghamton<->LakeKatrina  	0   0   0   0   0   0   0   0   
+Schenectady<->LakeKatrina 	0   0   0   0   0   0   0   0   Schenectady<->LakeKatrina 	0   0   0   0   0   0   0   0   
+Stamford<->LakeKatrina    	0   0   0   0   0   0   0   0   Stamford<->LakeKatrina    	0   0   0   0   0   0   0   0   
+Saltlakecity<->Lasvegas   	0   0   0   0   0   0   0   0   Saltlakecity<->Lasvegas   	0   0   0   0   0   0   0   0   
+SanDiego<->Lasvegas       	0   0   0   0   0   0   0   0   SanDiego<->Lasvegas       	0   0   0   0   0   0   0   0   
+Oklahomacity<->Littlerock 	12* 12* 43  0   0   0   0   0   Oklahomacity<->Littlerock 	0   0   0   0   0   0   0   0   
+shreveport<->Littlerock   	0   0   0   70* 70* 70* 70* 0   shreveport<->Littlerock   	0   0   0   0   0   0   0   0   
+SanJose<->LosAngelos      	0   0   0   0   0   0   0   0   SanJose<->LosAngelos      	0   0   0   0   0   0   0   0   
+Indianapolis<->Louisville 	0   0   0   0   0   0   0   0   Indianapolis<->Louisville 	0   0   0   0   0   0   0   0   
+Nashville<->Louisville    	0   0   0   0   0   0   0   0   Nashville<->Louisville    	0   0   0   0   0   0   0   0   
+Amarilho<->lubbock        	0   0   43  0   0   0   0   0   Amarilho<->lubbock        	0   0   0   0   0   0   0   0   
+Dallas<->lubbock          	9*  9*  9*  9*  9*  9*  9*  0   Dallas<->lubbock          	0   0   0   0   0   0   0   0   
+Augusta<->Macon           	0   0   0   0   0   0   0   0   Augusta<->Macon           	0   0   0   0   0   0   0   0   
+Waycross<->Macon          	16* 16* 16* 16* 16* 16* 0   0   Waycross<->Macon          	0   0   0   0   0   0   0   0   
+Worcester<->Manchester    	0   0   0   0   0   0   0   0   Worcester<->Manchester    	0   0   0   0   0   0   0   0   
+Littlerock<->Memphis      	12* 12* 43  70* 70* 70* 70* 0   Littlerock<->Memphis      	0   0   0   0   0   0   0   0   
+Nashville<->Memphis       	12* 12* 0   70* 70* 70* 70* 0   Nashville<->Memphis       	0   0   0   0   0   0   0   0   
+StLouis<->Memphis         	0   0   0   0   0   0   0   0   StLouis<->Memphis         	0   0   0   0   0   0   0   0   
+Minneapolis<->Milwaukee   	23  23  23  23  23  23  23  23  Minneapolis<->Milwaukee   	0   0   0   0   0   0   0   0   
+Atlanta<->Montgomery      	12* 12* 43  0   0   0   0   0   Atlanta<->Montgomery      	0   0   0   0   0   0   0   0   
+Birminghan<->Montgomery   	12  12  0   0   0   0   0   0   Birminghan<->Montgomery   	0   0   0   0   0   0   0   0   
+Mobile<->Montgomery       	0   0   43  0   0   0   0   0   Mobile<->Montgomery       	0   0   0   0   0   0   0   0   
+Birminghan<->Nashville    	12* 12* 0   70  70  70  70  0   Birminghan<->Nashville    	0   0   0   0   0   0   0   0   
+StLouis<->Nashville       	0   0   0   0   0   0   0   0   StLouis<->Nashville       	0   0   0   0   0   0   0   0   
+Houston<->Neworleans      	12  12  43* 0   0   0   0   0   Houston<->Neworleans      	0   0   0   0   0   0   0   0   
+Mobile<->Neworleans       	0   0   43  0   0   0   0   0   Mobile<->Neworleans       	0   0   0   0   0   0   0   0   
+Amarilho<->Oklahomacity   	0   0   43  0   0   0   0   0   Amarilho<->Oklahomacity   	0   0   0   0   0   0   0   0   
+Denver<->Omaha            	0   0   0   0   0   0   0   0   Denver<->Omaha            	0   0   0   0   0   0   0   0   
+DesMoines<->Omaha         	0   0   0   0   0   0   0   0   DesMoines<->Omaha         	0   0   0   0   0   0   0   0   
+Kansascity<->Omaha        	0   0   0   0   0   0   0   0   Kansascity<->Omaha        	0   0   0   0   0   0   0   0   
+clearwater<->Orlando      	0   0   0   0   0   0   0   0   clearwater<->Orlando      	0   0   0   0   0   0   0   0   
+Gainesville<->Orlando     	16* 16* 16* 16* 16* 16* 0   0   Gainesville<->Orlando     	0   0   0   0   0   0   0   0   
+Jupiter<->Orlando         	0   0   0   0   0   0   0   0   Jupiter<->Orlando         	0   0   0   0   0   0   0   0   
+Springfield<->Peoria      	0   0   0   0   0   0   0   0   Springfield<->Peoria      	0   0   0   0   0   0   0   0   
+Allentown<->Philadelphia  	0   0   0   0   0   0   0   0   Allentown<->Philadelphia  	0   0   0   0   0   0   0   0   
+Washington<->Philadelphia 	0   0   0   0   0   0   0   0   Washington<->Philadelphia 	0   0   0   0   0   0   0   0   
+Washington<->Pittsburgh   	0   0   0   0   0   0   0   0   Washington<->Pittsburgh   	0   0   0   0   0   0   0   0   
+Eugene<->Portland         	0   0   0   0   0   0   0   0   Eugene<->Portland         	0   0   0   0   0   0   0   0   
+Seattle<->Portland        	0   0   0   0   0   0   0   0   Seattle<->Portland        	0   0   0   0   0   0   0   0   
+Boston<->Providence       	0   0   0   0   0   0   0   0   Boston<->Providence       	0   0   0   0   0   0   0   0   
+Hartford<->Providence     	0   0   0   0   0   0   0   0   Hartford<->Providence     	0   0   0   0   0   0   0   0   
+Worcester<->Providence    	0   0   0   0   0   0   0   0   Worcester<->Providence    	0   0   0   0   0   0   0   0   
+Columbia<->Raleigh        	0   0   0   0   0   0   0   0   Columbia<->Raleigh        	0   0   0   0   0   0   0   0   
+Richmond<->Raleigh        	0   0   0   0   0   0   0   0   Richmond<->Raleigh        	0   0   0   0   0   0   0   0   
+Savannah<->Raleigh        	0   0   0   0   0   0   0   0   Savannah<->Raleigh        	0   0   0   0   0   0   0   0   
+Washington<->Richmond     	0   0   0   0   0   0   0   0   Washington<->Richmond     	0   0   0   0   0   0   0   0   
+Schenectady<->Rutland     	0   0   0   0   0   0   0   0   Schenectady<->Rutland     	0   0   0   0   0   0   0   0   
+Eugene<->Sacramento       	0   0   0   0   0   0   0   0   Eugene<->Sacramento       	0   0   0   0   0   0   0   0   
+Modesto<->Sacramento      	0   0   0   0   0   0   0   0   Modesto<->Sacramento      	0   0   0   0   0   0   0   0   
+Saltlakecity<->Sacramento 	0   0   0   0   0   0   0   0   Saltlakecity<->Sacramento 	0   0   0   0   0   0   0   0   
+Boise<->Saltlakecity      	0   0   0   0   0   0   0   0   Boise<->Saltlakecity      	0   0   0   0   0   0   0   0   
+lubbock<->SanAntonio      	9*  9*  9*  9*  9*  9*  9*  0   lubbock<->SanAntonio      	0   0   43* 0   0   0   0   0   
+LosAngelos<->SanDiego     	0   0   0   0   0   0   0   0   LosAngelos<->SanDiego     	0   0   0   0   0   0   0   0   
+Tucson<->SanDiego         	0   0   0   0   0   0   0   0   Tucson<->SanDiego         	0   0   0   0   0   0   0   0   
+Sacramento<->SanFrancisco 	0   0   0   0   0   0   0   0   Sacramento<->SanFrancisco 	0   0   0   0   0   0   0   0   
+Modesto<->SanJose         	0   0   0   0   0   0   0   0   Modesto<->SanJose         	0   0   0   0   0   0   0   0   
+SanFrancisco<->SanJose    	0   0   0   0   0   0   0   0   SanFrancisco<->SanJose    	0   0   0   0   0   0   0   0   
+Augusta<->Savannah        	16  16  16  16  16  16  0   0   Augusta<->Savannah        	0   0   0   0   0   0   0   0   
+Jacksonville<->Savannah   	16  16  16  16  16  16  0   0   Jacksonville<->Savannah   	0   0   0   0   0   0   0   0   
+Waycross<->Savannah       	0   0   0   0   0   0   0   0   Waycross<->Savannah       	0   0   0   0   0   0   0   0   
+Syracuse<->Schenectady    	0   0   0   0   0   0   0   0   Syracuse<->Schenectady    	0   0   0   0   0   0   0   0   
+Pittsburgh<->Scranton     	0   0   0   0   0   0   0   0   Pittsburgh<->Scranton     	0   0   0   0   0   0   0   0   
+Spokane<->Seattle         	0   0   0   0   0   0   0   0   Spokane<->Seattle         	0   0   0   0   0   0   0   0   
+Dallas<->shreveport       	0   0   0   0   0   0   0   0   Dallas<->shreveport       	0   0   0   0   0   0   0   0   
+Jackson<->shreveport      	0   0   0   70  70  70  70  0   Jackson<->shreveport      	0   0   0   0   0   0   0   0   
+Fargo<->SiouxFalls        	0   0   0   0   0   0   0   0   Fargo<->SiouxFalls        	0   0   0   0   0   0   0   0   
+Omaha<->SiouxFalls        	0   0   0   0   0   0   0   0   Omaha<->SiouxFalls        	0   0   0   0   0   0   0   0   
+Chicago<->Southbend       	0   0   0   0   0   0   0   0   Chicago<->Southbend       	0   0   0   0   0   0   0   0   
+Grandrapids<->Southbend   	0   0   0   0   0   0   0   0   Grandrapids<->Southbend   	0   0   0   0   0   0   0   0   
+Oklahomacity<->StLouis    	0   0   0   0   0   0   0   0   Oklahomacity<->StLouis    	0   0   0   0   0   0   0   0   
+Springfield<->StLouis     	0   0   0   0   0   0   0   0   Springfield<->StLouis     	0   0   0   0   0   0   0   0   
+NewYork<->Stamford        	0   0   0   0   0   0   0   0   NewYork<->Stamford        	0   0   0   0   0   0   0   0   
+Gainesville<->tallahassee 	0   0   0   0   0   0   0   0   Gainesville<->tallahassee 	0   0   0   0   0   0   0   0   
+Jacksonville<->tallahassee	0   0   0   0   0   0   0   0   Jacksonville<->tallahassee	0   0   0   0   0   0   0   0   
+Mobile<->tallahassee      	0   0   0   0   0   0   0   0   Mobile<->tallahassee      	0   0   0   0   0   0   0   0   
+Albuquerque<->Tempe       	0   0   0   0   0   0   0   0   Albuquerque<->Tempe       	0   0   0   0   0   0   0   0   
+Lasvegas<->Tempe          	0   0   0   0   0   0   0   0   Lasvegas<->Tempe          	0   0   0   0   0   0   0   0   
+Tucson<->Tempe            	0   0   0   0   0   0   0   0   Tucson<->Tempe            	0   0   0   0   0   0   0   0   
+Detroit<->Toledo          	0   0   0   0   0   0   0   0   Detroit<->Toledo          	0   0   0   0   0   0   0   0   
+Southbend<->Toledo        	0   0   0   0   0   0   0   0   Southbend<->Toledo        	0   0   0   0   0   0   0   0   
+ElPaso<->Tucson           	0   0   0   0   0   0   0   0   ElPaso<->Tucson           	0   0   0   0   0   0   0   0   
+SanAntonio<->Waco         	9*  9*  9*  9*  9*  9*  9*  0   SanAntonio<->Waco         	0   0   0   0   0   0   0   0   
+Jacksonville<->Waycross   	16* 16* 16* 16* 16* 16* 0   0   Jacksonville<->Waycross   	0   0   0   0   0   0   0   0   
+tallahassee<->Waycross    	0   0   0   0   0   0   0   0   tallahassee<->Waycross    	0   0   0   0   0   0   0   0   
+Boston<->Westbrook        	38* 38* 38* 38* 38* 38* 38* 0   Boston<->Westbrook        	0   0   0   0   0   0   0   0   
+Manchester<->Westbrook    	38* 38* 38* 38* 38* 38* 38* 0   Manchester<->Westbrook    	0   0   0   0   0   0   0   0   
+Denver<->Wichita          	0   0   0   0   0   0   0   0   Denver<->Wichita          	0   0   0   0   0   0   0   0   
+Oklahomacity<->Wichita    	0   0   0   0   0   0   0   0   Oklahomacity<->Wichita    	0   0   0   0   0   0   0   0   
+Boston<->Worcester        	0   0   0   0   0   0   0   0   Boston<->Worcester        	0   0   0   0   0   0   0   0   
+chicopee<->Worcester      	0   0   0   0   0   0   0   0   chicopee<->Worcester      	0   0   0   0   0   0   0   0   
+Rutland<->Worcester       	0   0   0   0   0   0   0   0   Rutland<->Worcester       	0   0   0   0   0   0   0   0   
+Cincinnati<->wytheville   	0   0   0   0   0   0   0   0   Cincinnati<->wytheville   	0   0   0   0   0   0   0   0   
+Richmond<->wytheville     	0   0   0   0   0   0   0   0   Richmond<->wytheville     	0   0   0   0   0   0   0   0   
+Washington<->wytheville   	0   0   0   0   0   0   0   0   Washington<->wytheville   	0   0   0   0   0   0   0   0   
+Rutland<->Westbrook       	0   0   0   0   0   0   0   0   Rutland<->Westbrook       	0   0   0   0   0   0   0   0   
+
+processing demand from Greensboro to SanFrancisco with 8 slots
+
+path from Greensboro to SanFrancisco not found.
+
+processing demand from Toledo to Dallas with 1 slots
+
+path from Toledo to Dallas not found.
+
+processing demand from Grandrapids to Lasvegas with 6 slots
+
+path from Grandrapids to Lasvegas not found.
+
+processing demand from Miami to Saltlakecity with 8 slots
+
+path from Miami to Saltlakecity not found.
+
+processing demand from Charleston to Schenectady with 8 slots
+
+path from Charleston to Schenectady not found.
+
+processing demand from Boise to Greensboro with 2 slots
+
+path from Boise to Greensboro not found.
+
+processing demand from Dallas to Minneapolis with 4 slots
+
+path from Dallas to Minneapolis not found.
+
+processing demand from Bakersfield to Buffalo with 5 slots
+
+path from Bakersfield to Buffalo not found.
+
+processing demand from Charleston to Memphis with 5 slots
+
+path from Charleston to Memphis not found.
+
+processing demand from Worcester to SanFrancisco with 8 slots
+
+path from Worcester to SanFrancisco not found.
+
+processing demand from Cincinnati to Miami with 4 slots
+
+path from Cincinnati to Miami not found.
+
+processing demand from Houston to Macon with 9 slots
+
+trying main path: Houston->Neworleans->Jackson->Birminghan->Atlanta->Macon
+It's not possible to supply demand of 9  from Houston to Macon
+
+processing demand from Modesto to Fargo with 1 slots
+
+path from Modesto to Fargo not found.
+
+processing demand from LakeKatrina to Waycross with 3 slots
+
+path from LakeKatrina to Waycross not found.
+
+processing demand from Jacksonville to Philadelphia with 1 slots
+
+path from Jacksonville to Philadelphia not found.
+
+processing demand from Schenectady to SanAntonio with 2 slots
+
+path from Schenectady to SanAntonio not found.
+
+processing demand from Birminghan to Schenectady with 2 slots
+
+path from Birminghan to Schenectady not found.
+
+processing demand from Tempe to Columbus with 1 slots
+
+path from Tempe to Columbus not found.
+
+processing demand from Stamford to Rutland with 4 slots
+
+path from Stamford to Rutland not found.
+
+processing demand from Minneapolis to SanJose with 6 slots
+
+path from Minneapolis to SanJose not found.
+
+processing demand from Columbia to Stamford with 7 slots
+
+path from Columbia to Stamford not found.
+
+processing demand from Modesto to Jackson with 5 slots
+
+path from Modesto to Jackson not found.
+
+processing demand from chattanooga to Miami with 8 slots
+
+path from chattanooga to Miami not found.
+
+processing demand from Tucson to Detroit with 4 slots
+
+path from Tucson to Detroit not found.
+
+processing demand from Orlando to Buffalo with 7 slots
 

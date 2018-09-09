@@ -110,13 +110,12 @@ namespace RoutingAndSpectrumAllocation
 
                     var reference = emptys.FirstOrDefault(r => r.Link.GetLinkId() == link.GetLinkId());
 
-                    if (reference == null)
-                        emptys.Insert(0,availableSlot);
-                    else
+                    if (reference != null)
                     {
                         availableSlot.Availables.AddRange(reference.Availables);
-                        reference.Availables = availableSlot.Availables.Distinct().ToList();
+                        emptys.Remove(reference);
                     }
+                    emptys.Insert(0,availableSlot);
                 }
             }
 

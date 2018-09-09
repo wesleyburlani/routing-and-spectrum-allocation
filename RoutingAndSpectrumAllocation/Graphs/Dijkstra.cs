@@ -39,9 +39,9 @@ namespace RoutingAndSpectrumAllocation.Graphs
 
                     path = new GraphPath(nodeDijkstra.Path.Path);
                     path.Path.Add(neighboor);
-                    GraphLink link = graph.Links.FirstOrDefault(r => r.From == neighboor);
+                    GraphLink link = graph.Links.FirstOrDefault(r => r.To == neighboor);
                     if(link == null && !directional)
-                        link = graph.Links.FirstOrDefault(r => r.To == neighboor);
+                        link = graph.Links.FirstOrDefault(r => r.From == neighboor);
                     priorityList.Add(new InternalNodeDijkstra(neighboor, path, nodeDijkstra.Distance + link.Cost));
                     priorityList.Sort((x,y) => x.CompareTo(y));
                 }

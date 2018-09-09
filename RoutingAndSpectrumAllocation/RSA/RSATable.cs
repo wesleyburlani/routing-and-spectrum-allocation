@@ -30,41 +30,81 @@ namespace RoutingAndSpectrumAllocation.RSA
         public string ToStringTable()
         {
             List<string> list = Table.Keys.ToList();
-            int maxDemands = Table.Values.Select(r => r.Values.Select(y => y.Values.Count()).Max()).Max();
+            int maxDemands = GetMaxNumberOfDemands();
+            int maxValueLength = GetMaxColumnSpacing();
             int maxLength = list.Select(r => r.Count()).Max();
 
             string table = "";
             for (int y = 0; y < maxDemands; y++)
-            {
-                for (int k = 0; k < maxLength; k++)
-                    table += " ";
-                table += "\t";
-
-                for (int j = 0; j < NumberOfLinkChannels; j++)
-                    table += j + "\t";
-            }
+                table = PrintFirstTableLine(maxValueLength, maxLength, table);
+            
             table += "\n";
 
             for (int i = 0; i < list.Count(); i++)
             {
                 for (int y = 0; y < maxDemands; y++)
                 {
-                    table += $"{list[i]}";
-                    for (int k = 0; k < maxLength - list[i].Count(); k++)
-                        table += " ";
-                    table += "\t";
-                    for (int j = 0; j < NumberOfLinkChannels; j++)
-                    {
-                        int lenght = Table[list[i]][j].Values.Count;
-                        if (y >= lenght)
-                            table += "0\t";
-                        else
-                            table += (Table[list[i]][j].Values[y]) + (Table[list[i]][j].IsProtectionDemand ? "*" : "") + "\t";
-                    }
+                    table = PrintLineHashId(list, maxLength, table, i);
+                    table = PrintLineValues(list, maxValueLength, table, i, y);
                 }
                 table += "\n";
             }
             return table;
-        }   
+        }
+
+        private string PrintLineValues(List<string> list, int maxValueLength, string table, int i, int y)
+        {
+            for (int j = 0; j < NumberOfLinkChannels; j++)
+            {
+                int lenght = Table[list[i]][j].Values.Count;
+                string value = y >= lenght ? "0" : Table[list[i]][j].Values[y] + (Table[list[i]][j].IsProtectionDemand ? "*" : "");
+                table += value;
+                for (int x = 0; x < maxValueLength - value.Count(); x++)
+                    table += " ";
+            }
+            return table;
+        }
+
+        private static string PrintLineHashId(List<string> list, int maxLength, string table, int i)
+        {
+            table += $"{list[i]}";
+            for (int k = 0; k < maxLength - list[i].Count(); k++)
+                table += " ";
+            table += "\t";
+            return table;
+        }
+
+        private string PrintFirstTableLine(int maxValueLength, int maxLength, string table)
+        {
+            for (int k = 0; k < maxLength; k++)
+                table += " ";
+            table += "\t";
+
+            for (int j = 0; j < NumberOfLinkChannels; j++)
+            {
+                table += j;
+                for (int x = 0; x < maxValueLength - NumberOfLinkChannels.ToString().Length; x++)
+                    table += " ";
+            }
+
+            return table;
+        }
+
+        private int GetMaxNumberOfDemands()
+        {
+            return Table.Values.Select(r => r.Values.Select(y => y.Values.Count()).Max()).Max();
+        }
+
+        private int GetMaxColumnSpacing()
+        {
+            int maxValueLength = 0;
+            foreach (var e in Table.Values)
+                foreach (var r in e.Values)
+                    foreach (var c in r.Values)
+                        if (maxValueLength < c.Length)
+                            maxValueLength = c.Length;
+            maxValueLength += 2;
+            return maxValueLength;
+        }
     }
 }
