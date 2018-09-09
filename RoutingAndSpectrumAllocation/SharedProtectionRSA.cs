@@ -3,19 +3,20 @@ using RoutingAndSpectrumAllocation.Graphs;
 using RoutingAndSpectrumAllocation.InputReaders;
 using RoutingAndSpectrumAllocation.Loggers;
 using RoutingAndSpectrumAllocation.RSA;
+using RoutingAndSpectrumAllocation.Utils;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace RoutingAndSpectrumAllocation.Utils
+namespace RoutingAndSpectrumAllocation
 {
-    public class DedicatedProtectionRSA : RoutingAndSpectrumAllocation
+    public class SharedProtectionRSA : RoutingAndSpectrumAllocation
     {
         IDisjointedPathPairSearcher DisjointedPathPairSearcher { get; set; }
         List<DemandLinkPair> DemandSupplyMemory = new List<DemandLinkPair>();
 
-        public DedicatedProtectionRSA(
+        public SharedProtectionRSA(
             IGraphInputReader inputReader,
             IProgramLogger infologger,
             ILogger storageLogger,
@@ -64,17 +65,17 @@ namespace RoutingAndSpectrumAllocation.Utils
 
                 await InfoLogger.LogInformation($"trying main path: {string.Join("->", path.Item1.Path)}");
 
-                List<AvailableSlot> availableTableSlots = GetAvailableTableSlots(graph, path.Item1, tableMemory);
+                List<AvailableSlot> availableTableSlots = base.GetAvailableTableSlots(graph, path.Item1, tableMemory);
 
                 if (RSATableFill.FillDemandOnTable(ref tableMemory, graph, demand, path.Item1, availableTableSlots))
                 {
-                    availableTableSlots = GetAvailableTableSlots(graph, path.Item2, tableMemory);
+                    availableTableSlots = GetAdditionalAvailableTableSlots(graph, path, tableMemory);
 
                     await InfoLogger.LogInformation($"trying secundary path: {string.Join("->", path.Item2.Path)}");
 
                     if (RSATableFill.FillDemandOnTable(ref tableMemory, graph, demand, path.Item2, availableTableSlots, true))
                     {
-                        DemandSupplyMemory.Add(new DemandLinkPair(demand, path.Item1));
+                        DemandSupplyMemory.Add(new DemandLinkPair(demand, path));
                         filled = true;
                         await InfoLogger.LogInformation($"demand supplied\n");
                         table = tableMemory;
@@ -90,11 +91,46 @@ namespace RoutingAndSpectrumAllocation.Utils
             return table;
         }
 
-        protected override List<AvailableSlot> GetAvailableTableSlots(Graph graph, GraphPath path, RSATable table)
+        private List<AvailableSlot> GetAdditionalAvailableTableSlots(Graph graph, Tuple<GraphPath,GraphPath>  path, RSATable table)
         {
-            List<AvailableSlot> emptys = base.GetAvailableTableSlots(graph, path, table);
+            List<AvailableSlot> emptys = base.GetAvailableTableSlots(graph, path.Item2, table);
+
+            foreach (DemandLinkPair savedMainPath in this.DemandSupplyMemory)
+            {
+                if (HasOverrideLink(path.Item1, savedMainPath.TuplePaths.Item1))
+                    continue;
+
+                foreach (GraphLink link in path.Item2.ToLinks(graph.Links))
+                {
+                    AvailableSlot availableSlot = new AvailableSlot
+                    {
+                        Link = link,
+                        Availables = table.Table[link.GetLinkId()].Where(r => r.Value.IsProtectionDemand && r.Value.Values.Count() == 1 && r.Value.Values.Contains(savedMainPath.Demand.Id.ToString())).Select(r => r.Key).ToList()
+                    };
+
+                    var reference = emptys.FirstOrDefault(r => r.Link.GetLinkId() == link.GetLinkId());
+
+                    if (reference == null)
+                        emptys.Insert(0,availableSlot);
+                    else
+                    {
+                        availableSlot.Availables.AddRange(reference.Availables);
+                        reference.Availables = availableSlot.Availables.Distinct().ToList();
+                    }
+                }
+            }
 
             return emptys;
+        }
+
+        private bool HasOverrideLink(GraphPath mainPath, GraphPath savedMainPath)
+        {
+            foreach(string link in mainPath.Path)
+            {
+                if (savedMainPath.Path.FirstOrDefault(r => r == link) != null)
+                    return true;
+            }
+            return false;
         }
     }
 }
