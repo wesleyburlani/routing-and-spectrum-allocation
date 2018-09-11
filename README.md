@@ -4,15 +4,9 @@ This project applies the RSA algorithm to supply random demands.
 
 It builds the graph based on 2 ".csv" files where 1 of them contains the graph links and the other contains the graph nodes. Like the follow example: 
 
-### nodes file example:
+[Nodes file example](/RoutingAndSpectrumAllocation/Data/arnes_nodes.csv)
 
-Id,Lat,Long,Type<br/>
-Celje,46.29,15.27,EOCC
-
-### links file example: 
-
-From,To,Length,Capacity,Cost,Designation,Delay<br/>
-Koper,Ljubljana,100.165198199944,50,0,[Koper<->Ljubljana(1)],FIBER
+[Links file example](/RoutingAndSpectrumAllocation/Data/arnes_links.csv)
 
 And after read them, it generates ramdon demands and applies Routing and spectrum allocation(RSA), returning the results on 3 files:<br/> 
 
@@ -32,8 +26,8 @@ There are 5 configuration variables to fill on "Program.cs" file:<br/>
 
 ## NuGET dependencies
 
-* Microsoft.Extensions.DependencyInjection 2.1.1
-* Newtonsoft.Json 11.0.2
+* [Microsoft.Extensions.DependencyInjection 2.1.1](https://www.nuget.org/packages/Microsoft.Extensions.DependencyInjection.Abstractions/)
+* [Newtonsoft.Json 11.0.2](https://www.nuget.org/packages/Newtonsoft.Json/)
 
 ## Program Options
 
