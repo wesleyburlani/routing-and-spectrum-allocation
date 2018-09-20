@@ -11,13 +11,14 @@ namespace RoutingAndSpectrumAllocation.RSA
         public Dictionary<string, Dictionary<int, RSATableElement>> Table { get; set; }
         private List<GraphLink> Links { get; set; }
         private int NumberOfLinkChannels { get; set; }
+        public double LinkCapacity { get; set; }
 
-        public RSATable(List<GraphLink> links, int numberOfLinkChannels)
+        public RSATable(List<GraphLink> links, int numberOfLinkChannels, double linkCapacity = 12.5)
         {
             Links = links;
             NumberOfLinkChannels = numberOfLinkChannels;
             Table = new Dictionary<string, Dictionary<int, RSATableElement>>();
-            
+            LinkCapacity = linkCapacity;
             foreach(GraphLink link in Links)
             {
                 Table[link.GetLinkId()] = new Dictionary<int, RSATableElement>();
@@ -57,7 +58,8 @@ namespace RoutingAndSpectrumAllocation.RSA
             for (int j = 0; j < NumberOfLinkChannels; j++)
             {
                 int lenght = Table[list[i]][j].Values.Count;
-                string value = y >= lenght ? "0" : Table[list[i]][j].Values[y] + (Table[list[i]][j].IsProtectionDemand ? "*" : "");
+                string modulation = Table[list[i]][j].ModulationFormat == null ? "" : "-" + Table[list[i]][j].ModulationFormat.GetType().Name;
+                string value = y >= lenght ? "0" : Table[list[i]][j].Values[y] + modulation + (Table[list[i]][j].IsProtectionDemand ? "*" : "");
                 table += value;
                 for (int x = 0; x < maxValueLength - value.Count(); x++)
                     table += " ";
@@ -101,8 +103,8 @@ namespace RoutingAndSpectrumAllocation.RSA
             foreach (var e in Table.Values)
                 foreach (var r in e.Values)
                     foreach (var c in r.Values)
-                        if (maxValueLength < c.Length)
-                            maxValueLength = c.Length;
+                        if (maxValueLength < c.Length + 7)
+                            maxValueLength = c.Length + 7;
             maxValueLength += 2;
             return maxValueLength;
         }

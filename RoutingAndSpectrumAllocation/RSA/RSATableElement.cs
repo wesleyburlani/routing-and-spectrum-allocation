@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using RoutingAndSpectrumAllocation.ModulationFormarts;
 
 namespace RoutingAndSpectrumAllocation.RSA
 {
@@ -14,5 +15,6 @@ namespace RoutingAndSpectrumAllocation.RSA
 
         public bool IsProtectionDemand { get; set; }
         public List<string> Values { get; set; }
+        public IModulationFormat ModulationFormat { get; set; }
     }
 }

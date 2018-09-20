@@ -38,7 +38,8 @@ namespace RoutingAndSpectrumAllocation.Demands
                     continue;
 
                 int demand = random.Next(1, 10);
-                demands.Add(new Demand(it,linkIds[first], linkIds[second], demand));
+                double demandInGbps = 40.0;
+                demands.Add(new Demand(it,linkIds[first], linkIds[second], demand, demandInGbps));
                 memory.Add(hash);
             }
 

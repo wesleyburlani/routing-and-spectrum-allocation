@@ -36,7 +36,7 @@ namespace RoutingAndSpectrumAllocation
                 GraphNode nodeFrom = graph.Nodes.FirstOrDefault(r => r.Id == demand.NodeIdFrom);
                 GraphNode nodeTo = graph.Nodes.FirstOrDefault(r => r.Id == demand.NodeIdTo);
 
-                await InfoLogger.LogInformation($"processing demand from {demand.NodeIdFrom} to {demand.NodeIdTo} with {demand.Slots} slots\n");
+                await InfoLogger.LogInformation($"processing demand from {demand.NodeIdFrom} to {demand.NodeIdTo} of {demand.DemandInGBps} gbps or {demand.Slots} slots\n");
 
                 List<Tuple<GraphPath, GraphPath>> paths = DisjointedPathPairSearcher.GetDisjointedPaths(graph, nodeFrom, nodeTo, 1, 1);
 
@@ -63,7 +63,7 @@ namespace RoutingAndSpectrumAllocation
             {
                 var tableMemory = table.CopyObject<RSATable>();
 
-                await InfoLogger.LogInformation($"trying main path: {string.Join("->", path.Item1.Path)}");
+                await InfoLogger.LogInformation($"trying main path: {string.Join("->", path.Item1.Path)} distance: {path.Item1.ToLinks(graph.Links).Sum(r=>r.Length)}");
 
                 List<AvailableSlot> availableTableSlots = base.GetAvailableTableSlots(graph, path.Item1, tableMemory);
 
@@ -71,7 +71,7 @@ namespace RoutingAndSpectrumAllocation
                 {
                     availableTableSlots = GetAdditionalAvailableTableSlots(graph, path, tableMemory);
 
-                    await InfoLogger.LogInformation($"trying secundary path: {string.Join("->", path.Item2.Path)}");
+                    await InfoLogger.LogInformation($"trying secundary path: {string.Join("->", path.Item2.Path)} distance: {path.Item2.ToLinks(graph.Links).Sum(r => r.Length)}");
 
                     if (RSATableFill.FillDemandOnTable(ref tableMemory, graph, demand, path.Item2, availableTableSlots, true))
                     {

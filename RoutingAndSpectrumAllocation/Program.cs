@@ -22,7 +22,7 @@ namespace RoutingAndSpectrumAllocation
             serviceCollection.AddScoped<IProgramLogger>(c => new FileProgramLogger(LogPath));
             //serviceCollection.AddScoped<IProgramLogger, NullFileProgramLogger>();
             serviceCollection.AddScoped<ILogger>(c => new JsonFileLogger(LogPath));
-            serviceCollection.AddScoped<IRSATableFill, FirstFitRSATableFill>();
+            serviceCollection.AddScoped<IRSATableFill, FirstFitRMLSATableFill>();
             serviceCollection.AddScoped<IGraphInputReader>(c => new CsvGraphInputReader(CsvLineSeparator, CsvColumnSeparator));
             serviceCollection.AddScoped<IPathSearcher, Dijkstra>();
             serviceCollection.AddScoped<IDisjointedPathPairSearcher, Suurballe>();

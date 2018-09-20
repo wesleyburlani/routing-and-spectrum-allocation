@@ -33,7 +33,7 @@ namespace RoutingAndSpectrumAllocation
                 GraphNode nodeFrom = graph.Nodes.FirstOrDefault(r => r.Id == demand.NodeIdFrom);
                 GraphNode nodeTo = graph.Nodes.FirstOrDefault(r => r.Id == demand.NodeIdTo);
 
-                await InfoLogger.LogInformation($"processing demand from {demand.NodeIdFrom} to {demand.NodeIdTo} with {demand.Slots} slots\n");
+                await InfoLogger.LogInformation($"processing demand from {demand.NodeIdFrom} to {demand.NodeIdTo} of {demand.DemandInGBps} gbps or {demand.Slots} slots\n");
 
                 List<GraphPath> paths = PathSearcher.GetPaths(graph, nodeFrom, nodeTo, 2);
 
@@ -58,7 +58,7 @@ namespace RoutingAndSpectrumAllocation
             bool filled = false;
             foreach (var path in paths)
             {
-                await InfoLogger.LogInformation($"trying path: {string.Join("->", path.Path)}");
+                await InfoLogger.LogInformation($"trying path: {string.Join("->", path.Path)}  distance: {path.ToLinks(graph.Links).Sum(r => r.Length)}");
 
                 List<AvailableSlot> availableTableSlots = GetAvailableTableSlots(graph, path, table);
 
