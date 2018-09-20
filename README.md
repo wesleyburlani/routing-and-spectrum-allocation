@@ -4,15 +4,9 @@ This project applies the RSA algorithm to supply random demands.
 
 It builds the graph based on 2 ".csv" files where 1 of them contains the graph links and the other contains the graph nodes. Like the follow example: 
 
-### nodes file example:
+[Nodes file example](/RoutingAndSpectrumAllocation/Data/arnes_nodes.csv)
 
-Id,Lat,Long,Type<br/>
-Celje,46.29,15.27,EOCC
-
-### links file example: 
-
-From,To,Length,Capacity,Cost,Designation,Delay<br/>
-Koper,Ljubljana,100.165198199944,50,0,[Koper<->Ljubljana(1)],FIBER
+[Links file example](/RoutingAndSpectrumAllocation/Data/arnes_links.csv)
 
 And after read them, it generates ramdon demands and applies Routing and spectrum allocation(RSA), returning the results on 3 files:<br/> 
 
@@ -32,5 +26,25 @@ There are 5 configuration variables to fill on "Program.cs" file:<br/>
 
 ## NuGET dependencies
 
-* Microsoft.Extensions.DependencyInjection 2.1.1
-* Newtonsoft.Json 11.0.2
+* [Microsoft.Extensions.DependencyInjection 2.1.1](https://www.nuget.org/packages/Microsoft.Extensions.DependencyInjection.Abstractions/)
+* [Newtonsoft.Json 11.0.2](https://www.nuget.org/packages/Newtonsoft.Json/)
+
+## Program Options
+
+This program contains a lot of different ways to make routing and spectrum alocations. To change it's behavior you need to edit "Program.cs" file setting up the desired behavior changing the dependency injections. The following interfaces must be instanciated: 
+
+#### IRoutingAndSpectrumAllocation 
+Sets the RSA behavior. It can be instanciated by: SingleRSA, DedicatedProtectionRSA and SharedProtectionRSA. Where: 
+* <b>SingleRSA:</b> Fills 1 dedicated allocation on RSA table that means the main path to destiantion node;
+* <b>DedicatedProtectionRSA:</b> Fiils 2 dedicated allocations on RSA table that mens 1 main path and 1 secundary path to destination node;
+* <b>SharedProtectionRSA:</b> Fills 1 dedicated allcation and 1 shared allocation on RSA table that means a main dedicated path to destination a secundary shared path that can be shared with another secundary path from another demand that main paths can't be unavailable simutaneously;
+
+
+#### IProgramLogger
+Set logs behavior to program output. It can be instanciated by: FileProgramLogger and  NullFileProgramLogger. Where:
+* <b>FileProgramLogger:</b> Persists program output on a ".txt" file that the path is specified "LogPath" constant string;
+* <b>NullProgramLogger:</b> Ignores program output;
+
+
+
+
