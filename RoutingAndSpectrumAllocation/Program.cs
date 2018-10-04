@@ -18,11 +18,11 @@ namespace RoutingAndSpectrumAllocation
         {
             ServiceCollection serviceCollection = new ServiceCollection();
 
-            serviceCollection.AddSingleton<IRoutingAndSpectrumAllocation, SharedProtectionRSA>();
+            serviceCollection.AddSingleton<IRoutingAndSpectrumAllocation, DedicatedProtectionRSA>();
             serviceCollection.AddScoped<IProgramLogger>(c => new FileProgramLogger(LogPath));
             //serviceCollection.AddScoped<IProgramLogger, NullFileProgramLogger>();
             serviceCollection.AddScoped<ILogger>(c => new JsonFileLogger(LogPath));
-            serviceCollection.AddScoped<IRSATableFill, FirstFitRMLSATableFill>();
+            serviceCollection.AddScoped<IRSATableFill, FirstFitRSATableFill>();
             serviceCollection.AddScoped<IGraphInputReader>(c => new CsvGraphInputReader(CsvLineSeparator, CsvColumnSeparator));
             serviceCollection.AddScoped<IPathSearcher, Dijkstra>();
             serviceCollection.AddScoped<IDisjointedPathPairSearcher, Suurballe>();

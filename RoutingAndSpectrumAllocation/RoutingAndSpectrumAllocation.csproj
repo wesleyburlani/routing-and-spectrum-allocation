@@ -15,4 +15,7 @@
     <Folder Include="ModulationFormarts\" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Compile Remove="Demands\DemandReader.cs" />
+  </ItemGroup>
 </Project>

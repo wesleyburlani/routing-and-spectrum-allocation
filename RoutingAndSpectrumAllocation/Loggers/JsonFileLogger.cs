@@ -18,12 +18,12 @@ namespace RoutingAndSpectrumAllocation.Loggers
             string path = FileLoggingPath;
 
             if (string.IsNullOrEmpty(subFolder) == false)
-                path += "\\" + subFolder.Trim('\\');
+                path += "/" + subFolder.Trim('/');
 
             if (Directory.Exists(path) == false)
                 Directory.CreateDirectory(path);
 
-            await File.WriteAllTextAsync(path + $"\\{Id}.json", JsonConvert.SerializeObject(obj, Formatting.Indented));
+            await File.WriteAllTextAsync(path + $"/{Id}.json", JsonConvert.SerializeObject(obj, Formatting.Indented));
         }
     }
 }

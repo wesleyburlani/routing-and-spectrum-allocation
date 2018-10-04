@@ -14,12 +14,12 @@ namespace RoutingAndSpectrumAllocation.Loggers
             if (Directory.Exists(Path) == false)
                 Directory.CreateDirectory(Path);
 
-            File.WriteAllText(Path + $"\\log.txt", "");
+            File.WriteAllText(Path + $"/log.txt", "");
         }
 
         public async Task LogInformation(string payload)
         {
-            await File.AppendAllTextAsync(Path + $"\\log.txt", payload + "\n");
+            await File.AppendAllTextAsync(Path + $"/log.txt", payload + "\n");
         }
     }
 }

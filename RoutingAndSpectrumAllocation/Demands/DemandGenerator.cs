@@ -1,13 +1,15 @@
-﻿using RoutingAndSpectrumAllocation.Graphs;
+﻿using Newtonsoft.Json;
+using RoutingAndSpectrumAllocation.Graphs;
 using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 
 namespace RoutingAndSpectrumAllocation.Demands
 {
-    public class RandomDemandGenerator 
+    public class DemandGenerator 
     {
-        public RandomDemandGenerator(List<GraphLink> links)
+        public DemandGenerator(List<GraphLink> links)
         {
             Links = links;
         }
@@ -16,6 +18,9 @@ namespace RoutingAndSpectrumAllocation.Demands
 
         public List<Demand> GetDemands()
         {
+            if (File.Exists("../Output/demands.json"))
+                return JsonConvert.DeserializeObject<List<Demand>>(File.ReadAllText("../Output/demands.json"));
+
             List<Demand> demands = new List<Demand>();
 
             List<string> linkIds = GetLinkIds();

@@ -57,6 +57,8 @@ namespace RoutingAndSpectrumAllocation.Graphs
                     List<GraphPath> path2 = PathSearcher.GetPaths(ring, nodeFrom, nodeTo, 1, true);
 
                     GraphPath resultSecundaryPath = path2.FirstOrDefault();
+
+
                     Tuple<GraphPath, GraphPath> disjointedPath = new Tuple<GraphPath, GraphPath>(resultMainPath, resultSecundaryPath);
                     disjointedPaths.Add(disjointedPath);
                 }

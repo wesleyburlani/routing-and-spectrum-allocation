@@ -66,7 +66,7 @@ namespace RoutingAndSpectrumAllocation
 
         private static List<Demand> GetDemands(Graph graph)
         {
-            RandomDemandGenerator generator = new RandomDemandGenerator(graph.Links);
+            DemandGenerator generator = new DemandGenerator(graph.Links);
             return generator.GetDemands();
         }
 
