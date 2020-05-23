@@ -2448,7 +2448,7 @@ path from Portland to Scranton not found.
 processing demand from Kansascity to chattanooga of 40 gbps or 1 slots
 
 path from Kansascity to chattanooga not found.
-
+"/" + subFolder.Trim('/');
 processing demand from Worcester to Wichita of 40 gbps or 6 slots
 
 path from Worcester to Wichita not found.

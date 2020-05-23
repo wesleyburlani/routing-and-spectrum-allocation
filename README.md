@@ -45,6 +45,18 @@ Set logs behavior to program output. It can be instanciated by: FileProgramLogge
 * <b>FileProgramLogger:</b> Persists program output on a ".txt" file that the path is specified "LogPath" constant string;
 * <b>NullProgramLogger:</b> Ignores program output;
 
+### Running Locally ###
 
+To run the program locally, you need to run the following commands:
 
+```sh
+docker-compose run rsa bash //to enter on container
+```
 
+```sh
+dotnet run & //to execute program in background
+```
+
+```sh
+cat Output/log.txt // to follow program logs
+```
